@@ -1,0 +1,10 @@
+{
+    "label": "Deployment",
+    "position": 5,
+    "className": "red",
+    "collapsed": true,
+    "link": {
+      "type": "generated-index",
+      "description": "Creating a Private AI Server"
+    }
+  }
