@@ -13,7 +13,7 @@ Demo App to be created
 ![Demo App](../../../static/img/VanillaJS/Demo_App.png)
 
 
-## Connecting to CFG AI
+## Connecting to SEMOSS
 
 - [Generating Access and Secret Keys](../Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md)
 
@@ -31,7 +31,7 @@ Once you have access to the demo app's code you may notice that there is a porti
 
 ![Importing Insight](../../../static/img/VanillaJS/ImportingInsight.PNG)
 
-This is an integral portion to being able to access the models, storage catalogues, databases, etc that is stored in your CFG AI instance. If you'd like to know more about what an Insight is, and why it is useful, you can read more about it here:
+This is an integral portion to being able to access the models, storage catalogues, databases, etc that is stored in your SEMOSS instance. If you'd like to know more about what an Insight is, and why it is useful, you can read more about it here:
 
 [What is an Insight](../../Get%20Started/Key%20Concepts.md#what-is-an-insight)
 
@@ -39,11 +39,11 @@ There is also some documentation on what actions having access to Insight allows
 
 [Usefulness of an Insight](../Establish%20Connection%20to%20CFG%20Portal/Using%20the%20SDK.md#using-insights)
 
-For now, however, we just want to make note that we are importing an Insight, and later on creating an insight, allowing us the ability to access the information stored in our CFG AI app, whether that be where our app is hosted or if we were to run the app locally. 
+For now, however, we just want to make note that we are importing an Insight, and later on creating an insight, allowing us the ability to access the information stored in our SEMOSS app, whether that be where our app is hosted or if we were to run the app locally. 
 
 ## Calling an LLM 
 
-Now that we have imported an Insight into our app, we have access to the LLMs stored in the model catalogue of our CFG AI instance. 
+Now that we have imported an Insight into our app, we have access to the LLMs stored in the model catalogue of our SEMOSS instance. 
 
 ![Model Catalog](../../../static/img/VanillaJS/ModelCatalog.png)
 
@@ -104,7 +104,7 @@ You are now ready to upload your app.
 
 5. Click "Upload" (Note: this may take a few minutes to spin up). 
 
-6. Ta-da! You have successfully created an app in the CFG AI Server! (Note:If you get an error, click to go back on your browser and you should be able to see you app in the catalogue)
+6. Ta-da! You have successfully created an app in the SEMOSS Server! (Note:If you get an error, click to go back on your browser and you should be able to see you app in the catalogue)
 ![Final](../../../static/img/VanillaJS/DemoApp_Added.PNG)
 
 7. Note the final portion of the url when you navigate to your app. This will be the App ID that is necessary for local development.

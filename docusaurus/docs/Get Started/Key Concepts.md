@@ -5,7 +5,7 @@ sidebar_position: 1
 
 
 ## Overview
-CFG AI is a platform that enables developers to create Generative AI (GenAI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. 
+SEMOSS is a platform that enables developers to create Generative AI (GenAI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. 
 
 ## Key Concepts
 This overview will cover the following topics: 
@@ -18,7 +18,7 @@ This overview will cover the following topics:
 
 ![App Library](../../static/img/OverviewImages/AppLibrary.PNG)
 
-> _The CFG AI App Library Homepage_
+> _The SEMOSS App Library Homepage_
 
 ### What is a GenAI App? 
 
@@ -37,7 +37,7 @@ A GenAI app consists of three key components:
 
 ![PolicyBot](../../static/img/OverviewImages/PolicyBot.png)
 
-> _Policy Bot, an example of a GenAI app hosted on CFG AI_
+> _Policy Bot, an example of a GenAI app hosted on SEMOSS_
 
 In practice, these three work together in a unified workflow: 
 1. The end user enters input into the UI. Based on the user's input, the UI will make calls to the middleware code.
@@ -46,19 +46,19 @@ In practice, these three work together in a unified workflow:
 
 ### What is an Insight? 
 
-Throughout this documentation we will be using the term **'Insight'**, so it behooves us to take a moment and explain what that is. In CFG AI, an **Insight** is best described as a temporary space that allows you to create what you want. Put simply, it is a hosted workspace where you are able to upload your app and access your hosted data. 
+Throughout this documentation we will be using the term **'Insight'**, so it behooves us to take a moment and explain what that is. In SEMOSS, an **Insight** is best described as a temporary space that allows you to create what you want. Put simply, it is a hosted workspace where you are able to upload your app and access your hosted data. 
 
 ![Insight](../../static/img/OverviewImages/Insight.PNG)
 
-One of the key components for integrating your data app with the greater CFG AI environment is the **InsightProvider** that is built into the SEMOSS SDK. The main purpose of this InsightProvider is to give your app access to all of your hosted data, and to create the Insight that is going to host your app. To perform actions in an **Insight** we must use a pixel command.
+One of the key components for integrating your data app with the greater SEMOSS environment is the **InsightProvider** that is built into the SEMOSS SDK. The main purpose of this InsightProvider is to give your app access to all of your hosted data, and to create the Insight that is going to host your app. To perform actions in an **Insight** we must use a pixel command.
 
 ### What is a Pixel?
 
-A **pixel** is a CFG AI specific term that references a backend call. It is similar to a standardized API call, though it does not require you to specify the type of API call (i.e POST/PUT/GET/DELETE). The pixel call generally specifies a **reactor** that is being called, and then any input variables that the reactor needs. When discussing pixel calls in this documentation we will also include a sample of the pixel string structure required. 
+A **pixel** is a SEMOSS specific term that references a backend call. It is similar to a standardized API call, though it does not require you to specify the type of API call (i.e POST/PUT/GET/DELETE). The pixel call generally specifies a **reactor** that is being called, and then any input variables that the reactor needs. When discussing pixel calls in this documentation we will also include a sample of the pixel string structure required. 
 
 ### What is a Reactor?
 
-A **reactor** is a business logic unit of **pixel** which performs the desired operation for the user. At its core, a reactor is just a Java class file. A reactor file is put inside a java folder within the App folder when custom backend code is required. It can directly interact with the CFG AI server.
+A **reactor** is a business logic unit of **pixel** which performs the desired operation for the user. At its core, a reactor is just a Java class file. A reactor file is put inside a java folder within the App folder when custom backend code is required. It can directly interact with the SEMOSS server.
 
 ### Anatomy of GenAI Apps
 
@@ -67,7 +67,7 @@ Generally, the anatomy of an app will follow the file structure seen below:
 
 1. **client** - houses frontend code, which can be a React application or any other desired framework
     * _**Not supported** - Streamlit_
-2. **java** - a conglomerate of Java classes (what we call "reactors") that can directly interact with the CFG AI Server
+2. **java** - a conglomerate of Java classes (what we call "reactors") that can directly interact with the SEMOSS Server
     * It is not necessary to have a Java folder unless custom backend code is required 
 3. **classes** - contains the compiled reactors within the Java folder
 4. **portals** - bundled version of frontend code (static HTML/CSS/JavaScript version of your frontend code)  

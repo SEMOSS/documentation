@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'CFG AI Walkthrough'
+sidebar_label: 'SEMOSS Walkthrough'
 sidebar_position: 1
 ---
 
@@ -12,19 +12,19 @@ import StorageCatalogDemo from '../../../static/Demos/StorageCatalog.mp4'
 import RemovingApp from '../../../static/Demos/RemovingApp.mp4'
 
   
-# CFG AI Overview
+# SEMOSS Overview
 
-CFG AI is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your CFG AI instance. 
+SEMOSS is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your SEMOSS instance. 
 
 ## App Library
-App Library is a section in CFG AI which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use. App Library also let developers create Gen AI applications by adding App details and uploading code for the app.
+App Library is a section in SEMOSS which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use. App Library also let developers create Gen AI applications by adding App details and uploading code for the app.
 
 <ReactPlayer controls url={AppLibraryIntro} />
 
 ## Adding a Model 
-Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on CFG AI are built on these models. 
+Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on SEMOSS are built on these models. 
 
-To connect to existing Models or add new Models, click on the **vector** icon on the left side of CFG AI portal which will take you to Model catalog.
+To connect to existing Models or add new Models, click on the **vector** icon on the left side of SEMOSS portal which will take you to Model catalog.
 
 ![App Library](../../../static/img/Navigating/CFG%20AI%20Walkthrough/ModelCatalogIconHighlight.PNG)
 > _Highlighted icon for Model Catalog_
@@ -50,9 +50,9 @@ There are primarily three types of models available with different characteristi
 **Embedded -** These kind of models are integrated with other softwares or platforms focused on specific functions. These can be blended seamlessly into the existing system.
 
 ## Adding a Storage Source
-Storage is used to store data that is created while using Gen AI Apps on CFG AI. There are a number of options on which Storage can be hosted (eg- Amazon S3, Google Cloud Storage, Dropbox etc). 
+Storage is used to store data that is created while using Gen AI Apps on SEMOSS. There are a number of options on which Storage can be hosted (eg- Amazon S3, Google Cloud Storage, Dropbox etc). 
 
-To connect to existing Storage or add new Storage, click on the **box** icon on the left side of CFG AI portal which will take you to Storage catalog.
+To connect to existing Storage or add new Storage, click on the **box** icon on the left side of SEMOSS portal which will take you to Storage catalog.
 
 ![Storage icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/StorageCatalogIcon.PNG)
 > _Highlighted icon for Storage Catalogue_
@@ -136,13 +136,13 @@ storageEngine.deleteFromStorage(storagePath = 'your/storage/file/path', leaveFol
 
 
 ## Adding a Database
-Databases are organized data that is linked with Gen AI Apps on CFG AI and can be used by those Apps to use data. Databases enable Apps to provide results as per requirement. You can create a new database or add locally available databases to CFG AI which can be then connected to Apps.
+Databases are organized data that is linked with Gen AI Apps on SEMOSS and can be used by those Apps to use data. Databases enable Apps to provide results as per requirement. You can create a new database or add locally available databases to SEMOSS which can be then connected to Apps.
 
 ### Pre-requisites
-- Before adding a Database to your CFG AI instance, it must be detached from any existing instance otherwise it might return an error.
+- Before adding a Database to your SEMOSS instance, it must be detached from any existing instance otherwise it might return an error.
 - When you attach a Database, all data files for the Database must be available
 
-To connect to an existing Database or add a new Database, click on the **cylinderical** icon on the left side of CFG AI portal which will take you to Data catalog.
+To connect to an existing Database or add a new Database, click on the **cylinderical** icon on the left side of SEMOSS portal which will take you to Data catalog.
 
 ![Database icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20icon.PNG)
 > _Highlighted icon for Database Catalogue_
@@ -228,7 +228,7 @@ Once the file is uploaded, run the following command.
 <ReactPlayer controls url={VectorCatalogDemo} />
 
 ## Access to resources
-**Discoverable items** in catalogs are the resources which are created by other users and present on CFG AI portal. You need to request access to those resources to use them.
+**Discoverable items** in catalogs are the resources which are created by other users and present on SEMOSS portal. You need to request access to those resources to use them.
 
 ![Discoverable Items](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Discoverable%20Items.PNG)
 > _Discoverable Models_
@@ -254,7 +254,7 @@ As mentioned in the section above, there are 3 separate permission levels that a
 An author user has the ability to edit the database and to also grant users access to the resource. On a given team, only one or two people should have Author level privileges. This is to limit the amount of people that are able to change the resource. 
 
 **Editor**  
-An Editor has access to the database and can freely make pixel calls to query the resource. This should be the base level that is given to most users, especially to developers who want to create Gen AI apps that utilize the CFG AI server. 
+An Editor has access to the database and can freely make pixel calls to query the resource. This should be the base level that is given to most users, especially to developers who want to create Gen AI apps that utilize the SEMOSS server. 
 
 **Read-Only**  
 This level of access should only be given to users who are meant to demo already created applications. They will be unable to generate new data but can see any generated data. 
@@ -275,14 +275,14 @@ This tab is present in **Database** only and consists of information related to 
 **Settings**  
 This tab is present in **My Resources** and consists of adjustable settings related to resource. You can also add or remove members and give them permissions by their role. There is also an option to edit SMSS properties within the **Settings** tab. 
 
-## Removing an App from CFG AI
+## Removing an App from SEMOSS
 
-If you ever want to remove an App from your CFG AI server, the first thing that you should do is navigate to your settings sections (the gear). 
+If you ever want to remove an App from your SEMOSS server, the first thing that you should do is navigate to your settings sections (the gear). 
 
 ![Settings Tool](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Settings%20Tool%20icon.PNG)
 > _The settings tool_
 
-Inside Settings, you should see a screen that has a settings sections for each of the resources you have in CFG AI. Click on App Settings. 
+Inside Settings, you should see a screen that has a settings sections for each of the resources you have in SEMOSS. Click on App Settings. 
 
 ![App Settings](../../../static/img/Navigating/CFG%20AI%20Walkthrough/CfGAI%20Settings_2.PNG)
 > _This will house all the Gen AI apps that you have in your App Catalog_
@@ -300,7 +300,7 @@ Once inside an app, you can easily delete it by clicking the delete button.
 > **Warning**:
 > This will **delete** the App for all users! 
 
-This process can be replicated for all other resource types (databases, models, storage catalogs, etc) in CFG AI! 
+This process can be replicated for all other resource types (databases, models, storage catalogs, etc) in SEMOSS! 
 
 <ReactPlayer controls url={RemovingApp} />
 

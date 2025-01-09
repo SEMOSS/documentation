@@ -7,7 +7,7 @@ sidebar_position: 5
 
 
 ## Overview
-A reactor is a business logic unit of **[Pixel](./Pixel%20Calls.md)** which performs the desired operation for the user. At its core, a reactor is just a Java class file. A reactor file is put inside a java folder within the App folder when custom backend code is required. It can directly interact with the CFG AI server.
+A reactor is a business logic unit of **[Pixel](./Pixel%20Calls.md)** which performs the desired operation for the user. At its core, a reactor is just a Java class file. A reactor file is put inside a java folder within the App folder when custom backend code is required. It can directly interact with the SEMOSS server.
 
 Example
 
@@ -31,13 +31,13 @@ Based on the requirements, logic (lines after execute) can be simple, as in the 
 ## Prerequisites
 
 ### Install Maven
-**Maven** is a dependency management tool for Java projects. When creating custom reactors, you will borrow classes and methods from a **SEMOSS** source that CFG AI maintains through its [Maven Repository](https://mvnrepository.com/artifact/org.semoss/semoss). 
+**Maven** is a dependency management tool for Java projects. When creating custom reactors, you will borrow classes and methods from a **SEMOSS** source that SEMOSS maintains through its [Maven Repository](https://mvnrepository.com/artifact/org.semoss/semoss). 
 
-Please make sure that you have already set up CFG AI and installed Maven according to one of the guides below based on your chosen setup type:
-* **If you use the public CFG AI server or Dockerized CFG AI (common)**: [Getting Started: Maven Setup](./Packages%20and%20Prereqs.md)
+Please make sure that you have already set up SEMOSS and installed Maven according to one of the guides below based on your chosen setup type:
+* **If you use the public SEMOSS server or Dockerized SEMOSS (common)**: [Getting Started: Maven Setup](./Packages%20and%20Prereqs.md)
 * **If you use a fully local installation***: [Download Required Software](../Advanced%20Installation/Local%20BE%20Install%20Guide.md) and [Change Maven Environment Variables](../Advanced%20Installation/Local%20BE%20Install%20Guide.md/#Change-Environment-variables)
 
-  _*Fully local installations are uncommon and typically only recommended for users who wish to directly modify the CFG AI source code._
+  _*Fully local installations are uncommon and typically only recommended for users who wish to directly modify the SEMOSS source code._
 
 ### Create your package directory structure
 1. To get started, navigate to the `java` folder inside of your app project folder. If you have not created an app project folder yet, please review the project directory structure [here](../How%20To/React%20App%20Technical%20Guide.md/##App-Structure) first.
@@ -150,7 +150,7 @@ As shown in the above example, there are 3 input arguments indicating that the r
 
 You can put any number of input arguments, and you can also specify whether these arguments should be **required** or **optional**.
 
-These input values will be passed into the reactor through a pixel call, which is run in the CFG AI terminal. When we enter inputs using a pixel call, it identifies which Java reactor to interact with using those inputs.
+These input values will be passed into the reactor through a pixel call, which is run in the SEMOSS terminal. When we enter inputs using a pixel call, it identifies which Java reactor to interact with using those inputs.
 
 ### How data is passed into a reactor
 Each reactor has a NounStore Object, under the variable name store.
@@ -187,8 +187,8 @@ Put the Reactor file in inside Java folder within the App folder for App to be u
 Here we will demonstrate how we can create a Reactor by using examples below -
 
 #### Example 1
-#### CFG AI Database CRUD (Create Read Update Delete) Operations Tutorial
-CFG AI allows quick end to end customization to facilitate create, read, update, and delete operations on a database. In this tutorial, we will be performing CRUD operations on a Movie dataset.
+#### SEMOSS Database CRUD (Create Read Update Delete) Operations Tutorial
+SEMOSS allows quick end to end customization to facilitate create, read, update, and delete operations on a database. In this tutorial, we will be performing CRUD operations on a Movie dataset.
 
 The metamodel for the database is shown below:
 ![Movie Metamodel](../../static/img/Creating%20a%20custom%20reactor/movie-metamodel.PNG)
@@ -197,8 +197,8 @@ The metamodel for the database is shown below:
 **Reference the [Movie Management Project](../../static/assets/Backend%20Files/Project) to follow along with this tutorial.**
 *The project folder contains insights to allow the user to perform CRUD operations and the java classes to perform the CRUD operations in the assets/java folder. For simplicity, we have omitted pixel input/output definition. Documentation for grabbing inputs can be referenced in other tutorials.*
 
-##### CFG AI Database Connection
-To perform operations on a database in CFG AI you can get the database by the id. In this example our database is a `RDBMSNativeEngine`. The `RDBMSNativeEngine` provides a method to get a PreparedStatement`getPreparedStatement(String query)`.
+##### SEMOSS Database Connection
+To perform operations on a database in SEMOSS you can get the database by the id. In this example our database is a `RDBMSNativeEngine`. The `RDBMSNativeEngine` provides a method to get a PreparedStatement`getPreparedStatement(String query)`.
 
 ##### Creating a New Genre
 To create a new genre, we first create our sql query to perform the insertion into the table. Then, we get our database connection and create a PreparedStatement from the query. Finally, we add our arguments and execute the PreparedStatment.
@@ -224,7 +224,7 @@ To create a new genre, we first create our sql query to perform the insertion in
 
 ```
 
-**This reactor can be tested in the pixel console in CFG AI by running:**
+**This reactor can be tested in the pixel console in SEMOSS by running:**
 ```
 AddGenre(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], title=["Semoss"], genre=["Tech Documentary"]);
 ```
@@ -270,7 +270,7 @@ In our Movie Database a Movie Title is the primary key. If we update a Movie Tit
 
 ```
 
-**This reactor can be tested in the pixel console in CFG AI by running:**
+**This reactor can be tested in the pixel console in SEMOSS by running:**
 ```
 UpdateMovie(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], title=["Semoss"],  newTitle=["SEMOSS"]);
 ```
@@ -294,7 +294,7 @@ To perform a deletion on the database, first we write our deletion query. Then, 
 		ConnectionUtils.closePreparedStatement(ps);
 	}
 ```
-**This reactor can be tested in the pixel console in CFG AI by running:**
+**This reactor can be tested in the pixel console in SEMOSS by running:**
 ```
 DeleteGenre(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], genre=["Tech Documentary"]);
 ```
@@ -354,7 +354,7 @@ These import statements refer to classes that SEMOSS provides through its [Maven
 ## Validating and Testing a Reactor
 1. Now that a custom reactor has been coded/developed, the next step is to add the reactor to your java folder and test it using the **Editor**.
 
-   For that, open the CFG AI server and and click on **BI** in App Library as shown below.
+   For that, open the SEMOSS server and and click on **BI** in App Library as shown below.
    ![BI](../../static/img/Creating%20a%20custom%20reactor/InsideBI.PNG)
    > _BI in App Library_
 
@@ -387,7 +387,7 @@ These import statements refer to classes that SEMOSS provides through its [Maven
 
 
 ## Calling a Reactor using Pixel
-Now after creating a reactor the next step is to Test whether reactor is working as required. For that, open the CFG AI server and and click on **Terminal** in App Library as shown below.
+Now after creating a reactor the next step is to Test whether reactor is working as required. For that, open the SEMOSS server and and click on **Terminal** in App Library as shown below.
 
 ![Terminal](../../static/img/Creating%20a%20custom%20reactor/Terminal.PNG)
 > _Terminal in App Library_

@@ -9,7 +9,7 @@ sidebar_position: 1
 
 The intent of this guide is to get a user up and running with a sample React app, allowing them to start developing a Gen AI app quickly and efficiently. 
 
-This guide is perfect if you have an idea for a prompt and want access to your hosted data in CFG AI. 
+This guide is perfect if you have an idea for a prompt and want access to your hosted data in SEMOSS. 
 
 ## Prerequisites
 
@@ -30,11 +30,11 @@ npm install -g pnpm
 
 For this project we will be using our Policy App. To access this app, please navigate to:
 
-[CFG AI Apps GitHub](https://github.com/Deloitte-Default/cfgai-apps)
+[SEMOSS Apps GitHub](https://github.com/Deloitte-Default/cfgai-apps)
 > **Note**
 > This is a protected GitHub, make sure you have access and are signed in, you'll otherwise get a 404 Error.
 
-If you do not have access to this GitHub, that's ok! Please contact a CFG AI member and they will give you read/write privileges as soon as they can. 
+If you do not have access to this GitHub, that's ok! Please contact a SEMOSS member and they will give you read/write privileges as soon as they can. 
 
 As you can see there are a fair amount of apps to choose from here. 
 
@@ -63,7 +63,7 @@ Here we will start the cloning process. Looking at the GitHub repository, click 
 After this we can clone it to our local with a quick terminal command:
 
 ![pic6](../../../static/img/policyapp/policy6pic.PNG)
-> _Cloning CFG AI App locally_
+> _Cloning SEMOSS App locally_
 
 As you can see in the picture above, the root folder is the new Gitlab folder that I created specifically to house my AI apps. 
 
@@ -87,7 +87,7 @@ cd policy/client
 > _Access to Policy App client folder in VS_
 
 
-The client folder will be where all of our Frontend code resides. To read a more comprehensive guide on the structure of a CFG AI app, you can look at this guide: [React App Technical Guide](React%20App%20In-Depth%20Guide.md). For now we will focus on the client folder. 
+The client folder will be where all of our Frontend code resides. To read a more comprehensive guide on the structure of a SEMOSS app, you can look at this guide: [React App Technical Guide](React%20App%20In-Depth%20Guide.md). For now we will focus on the client folder. 
 
 ### Step 3: Installing Dependencies
 
@@ -99,15 +99,15 @@ pnpm install
 
 If you do not have access to pnpm or node, there are instructions for downloading those in the [Frontend Installation Guide](../../Advanced%20Installation/Frontend%20Installation.md)
 
-Now we are ready to connect the Policy App to CFG AI! 
+Now we are ready to connect the Policy App to SEMOSS! 
 
-## Connecting to CFG AI
+## Connecting to SEMOSS
 
-Now that we have access to sample code and have taken care of all dependencies, we want to connect our app to CFG AI and get started developing. 
+Now that we have access to sample code and have taken care of all dependencies, we want to connect our app to SEMOSS and get started developing. 
 
 ### Step 1: Creating a .env.local file
 
-In order to connect to CFG AI we first need to amend our .env files to point to the correct access and secret keys. 
+In order to connect to SEMOSS we first need to amend our .env files to point to the correct access and secret keys. 
 
 First navigate to your .env file. It should look like this:
 
@@ -149,7 +149,7 @@ Now we are ready to connect our App!
 
 ### Step 3: Starting a Frontend Server
 
-We are going to create a local frontend server that will connect to our CFG AI server. 
+We are going to create a local frontend server that will connect to our SEMOSS server. 
 
 Navigate back to your terminal. Make sure that you are still in `policy/client`. 
 
@@ -160,14 +160,14 @@ Once you are in the right directory run `pnpm run dev` in your terminal.
 
 In most instances this will create a local server in port 3000. 
 
-Once it fully loads, you should be connected to CFG AI and your frontend should look like this:
+Once it fully loads, you should be connected to SEMOSS and your frontend should look like this:
 
 ![Pic13](../../../static/img/policyapp/policy13pic.PNG)
 >_Policy App running on local server_
 
-Congrats! You are now connected to CFG AI. 
+Congrats! You are now connected to SEMOSS. 
 
-If this is your first time connecting to CFG, then you might need to populate your server with the resources you need to start analyzing data. Head over to [Navigating CFG AI](../../Get%20Started/Navigation) to learn more. 
+If this is your first time connecting to CFG, then you might need to populate your server with the resources you need to start analyzing data. Head over to [Navigating SEMOSS](../../Get%20Started/Navigation) to learn more. 
 
 ## Customizing the Policy Bot
 
@@ -184,9 +184,9 @@ For a more detailed guide on building your own Gen AI app, you can continue lear
 
 This is a more in-depth guide that goes into each portion of the development. 
 
-## Adding Your App to the CFG AI App Catalog
+## Adding Your App to the SEMOSS App Catalog
 
-If you are happy with where your app is, and want to publish it to the CFG AI App Catalog, the process is fairly simple. 
+If you are happy with where your app is, and want to publish it to the SEMOSS App Catalog, the process is fairly simple. 
 
 ### Bundle Your App
 
@@ -201,7 +201,7 @@ In order to have your app reflect all of your recent changes, you need to make s
 
 From the `client` directory, run the command `npm run build` in your terminal. Webpack will bundle your app and the bundled files will automatically be added to your `/portals` directory. If you don't see any files populate that folder, then you likely have an issue with your Webpack configuration.
 
-## Adding Your App to the CFG AI App Catalog
+## Adding Your App to the SEMOSS App Catalog
 
 1. Compress all the directories in your project _except_ your `/client` folder. Ensure that you do this within the app directory. For example, if my app files are in a folder called `/MyApp`, I should not zip `/MyApp` itself. I should navigate into `/MyApp` and zip all the relevant directories inside of it. 
 
@@ -219,7 +219,7 @@ From the `client` directory, run the command `npm run build` in your terminal. W
 
 ![Upload App Assets Modal](../../../static/img/AppUseCaseImages/asset_upload_dialog.png)
 
-6. Ta-da! You have successfully uploaded your code app to the CFG AI Server!
+6. Ta-da! You have successfully uploaded your code app to the SEMOSS Server!
 
 ## Updating your App In CFG
 

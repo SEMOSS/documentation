@@ -3,20 +3,20 @@ sidebar_label: 'Frontend Installation'
 sidebar_position: 3
 ---
 
-# Local CFG AI Front End Installation Guide
+# Local SEMOSS Front End Installation Guide
 
 ## Overview
 
-The main way that you'll interact with a Gen AI app is through the CFG AI server. By using the SDK you will be able to access the data that you have stored inside your server. However, you can also setup CFG AI to run locally. 
+The main way that you'll interact with a Gen AI app is through the SEMOSS server. By using the SDK you will be able to access the data that you have stored inside your server. However, you can also setup SEMOSS to run locally. 
 
-There are several reasons why this might be useful to you, the main one being that you will have admin privileges back in, and that you can change the CFG AI interface to fit your needs more directly. 
+There are several reasons why this might be useful to you, the main one being that you will have admin privileges back in, and that you can change the SEMOSS interface to fit your needs more directly. 
 
-This guide will go through what steps to take to get CFG AI to run locally as a frontend server.
+This guide will go through what steps to take to get SEMOSS to run locally as a frontend server.
 
 ## Prerequisites
 
 ### Node.js
-You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Deloitte-issued Windows machines, you should download `node-v18.16.0-x64.msi`). 
+You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Windows machines, you should download `node-v18.16.0-x64.msi`). 
 
 ### Code Editor
 You'll need to have your code editor of choice downloaded on your machine. We suggest [Visual Studio Code](https://code.visualstudio.com/)
@@ -24,7 +24,7 @@ You'll need to have your code editor of choice downloaded on your machine. We su
 
 ## Setting up a Project Directory
 
-In order to have CFG AI running locally, you will need to also supplement it with a running backend. You can find a guide to getting your local backend set up using this [link](Docker%20BE%20Install%20Guide.md).
+In order to have SEMOSS running locally, you will need to also supplement it with a running backend. You can find a guide to getting your local backend set up using this [link](Docker%20BE%20Install%20Guide.md).
 
 Once you have your backend structure set up we will navigate to your workspace folder, and select our tomcat server:
 ![Tomcat Server](../../static/img/FELocalInstall/choosingTomcat.png)
@@ -38,11 +38,11 @@ Now navigate to the webapps folder in your local terminal.
 ![Local Terminal](../../static/img/FELocalInstall/terminal.png)
 
 
-Once you have your terminal setup, you can navigate to the CFG AI repository in github
+Once you have your terminal setup, you can navigate to the SEMOSS repository in github
 
-[CFG AI UI repository](https://github.com/Deloitte-Default/cfgai-ui)
+[SEMOSS UI repository](https://github.com/Deloitte-Default/cfgai-ui)
 
-If this link does not properly open up for you, then please email CFGAI@deloitte.com to have your member permissions updated.
+If this link does not properly open up for you, then please email SEMOSS@deloitte.com to have your member permissions updated.
 
 Inside of the repository click the green code button and copy the code for cloning the repo. You can click the circled button to copy the link that is there. 
 
@@ -74,23 +74,23 @@ To do so open a terminal and install it using:
 
 ```npm install -g pnpm```
 
-### Step 2: Installing CFG AI's packages
+### Step 2: Installing SEMOSS's packages
 
-Now that we have access to pnpm we are ready to install all necessary CFG AI packages. 
+Now that we have access to pnpm we are ready to install all necessary SEMOSS packages. 
 
-Navigate to your newly created repository inside of webapps, open the `cfgai-ui` folder inside of your code editor of choice. 
+Navigate to your newly created repository inside of webapps, open the `SEMOSS-ui` folder inside of your code editor of choice. 
 
 ![VS Code terminal](../../static/img/FELocalInstall/semossuiterminal.PNG)
 
 We are going to open a new terminal inside of VS code for the next few portions. You can use an external terminal as well, the results will be the same. 
 
-Inside the root folder of CFG AI we are going to run 
+Inside the root folder of SEMOSS we are going to run 
 
 ```pnpm install```
 
 This will go through all of the contents of the `package.lock` file and download them. For reference, here is the [package.lock file](https://github.com/Deloitte-Default/cfgai-ui/blob/dev/package.json)
 
-The install command will also go through and install of the packages that each portion of CFG AI uses so it might take some time. 
+The install command will also go through and install of the packages that each portion of SEMOSS uses so it might take some time. 
 
 ### Step 3: Setting Up Your .env.local file
 
@@ -148,17 +148,17 @@ This will go through each individual package, bundle them, and create a local se
 
 Once your webpack has compiled you can navigate over to 
 
-```http://localhost:9090/cfgai-ui/packages/client/dist/#/```
+```http://localhost:9090/semoss-ui/packages/client/dist/#/```
 
 Here you will have to register a user using the native registration. 
 
 ![Registering](../../static/img/FELocalInstall/registering.png)
 
-Once you've registered a user, you can use the credentials to log into CFG AI. This will just be a local user, we recommend using a generic name such as Admin or your first name. 
+Once you've registered a user, you can use the credentials to log into SEMOSS. This will just be a local user, we recommend using a generic name such as Admin or your first name. 
 
 ![Final Page](../../static/img/FELocalInstall/finalPage.PNG)
 
-Please note that the url here is slightly different than the one shared. This is using an older version of CFG AI. 
+Please note that the url here is slightly different than the one shared. This is using an older version of SEMOSS. 
 
 Congratulations! You have everything up and running! 
 

@@ -6,7 +6,7 @@
 
 ## Semoss Installation for Windows
 
-To carry development process around CFG AI platform, we need to install Semoss and other tools in our local environment. Below documentation serves as a comprehensive guide to assist developers in setting up local environment with essential tools required for the work.
+To carry development process around SEMOSS platform, we need to install Semoss and other tools in our local environment. Below documentation serves as a comprehensive guide to assist developers in setting up local environment with essential tools required for the work.
 
 It provides clear, step by step instructions that cater to both beginner and experienced developers. Whether you are setting up a new environment or reconfiguring your existing setup, this guide will ensure that you have all the tools you need to develop, test and deploy product features effectively.
 
@@ -91,8 +91,8 @@ Click on [Maven](https://maven.apache.org/download.cgi)
   - Since we placed the tomcat folder in the workspace, the path is: C:\workspace\apache-tomcat 9.0.##\webapps
 ![webapps](../../../static/img/SemossDevInstallation/WebappsPath.png)
 
-- Open terminal at this location and run **Git clone** the cfgai-ui folder from [cfgai-ui](https://github.com/Deloitte-Default/cfgai-ui) to your local
-![cfgai-ui folder](../../../static/img/SemossDevInstallation/cfgai-uifolder.png)
+- Open terminal at this location and run **Git clone** the semoss-ui folder from [semoss-ui](https://github.com/Deloitte-Default/cfgai-ui) to your local
+![semoss-ui folder](../../../static/img/SemossDevInstallation/cfgai-uifolder.png)
 - Ensure you are on dev branch
 - Rename semoss-ui folder as SemossWeb
   - In the SemossWeb folder create a new file named “.env.local”, and copy the following contents (without the inverted commas) into that folder ():
@@ -120,7 +120,7 @@ C:/workspace/apache-tomcat 9.0.##/webapps/SemossWeb (this is your root directory
   - Since we placed the tomcat folder in the workspace, the path is: C:\workspace\apache-tomcat 9.0.##\webapps
 ![webapps](../../../static/img/SemossDevInstallation/webappsappconstant.png)
 
-- Click on **cfgai-ui**
+- Click on **semoss-ui**
 - Go to Packages, then go to Legacy
 - Right click the **app.constants.js** file and click Edit with Notepad++
 ![Legacy folder](../../../static/img/SemossDevInstallation/LegacyFolder.png)
@@ -500,7 +500,7 @@ NETTY_PYTHON true
   ```
   py -m pip install --upgrade -r https://raw.githubusercontent.com/SEMOSS/docker-r-python/R4.2.1-debian11/semoss_requirements.txt
   ```
-  - CFG AI: 
+  - SEMOSS: 
   ```
   py -m pip install --upgrade -r https://raw.githubusercontent.com/SEMOSS/docker-r-python/cuda12-R4.2.1/cfgai_requirements.txt
   ```
