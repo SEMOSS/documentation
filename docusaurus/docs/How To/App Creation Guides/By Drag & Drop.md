@@ -58,7 +58,7 @@ Here it is important to understand difference between query and query cell. Quer
 
 Sometimes these cells functions maybe required in some other queries as well. For example, talking to a bank server may even be required when authenticating the user. So some other query (like User autentication in our example) may also use 'talking to the bank server' query cell which is defined in the 'payment query'. Thus we see that we can even connect cells which are part of different queries or notebooks.
 
-Under cells, we can choose either of **Code** cell (represented by **<> cell**) or **Query Import** cell and then write a code or query to access CFG resources as per app requirement.
+Under cells, we can choose either of **Code** cell (represented by **\<\> cell**) or **Query Import** cell and then write a code or query to access CFG resources as per app requirement.
 
 ![Multiple cells](../../../static/img/Navigating/Create%20New%20App/DND9.png)
 
