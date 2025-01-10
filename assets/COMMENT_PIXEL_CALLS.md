@@ -1,7 +1,7 @@
 # Pixel Calls
 
 ## What is a Pixel Call
-Pixel is a domain specific language (DSL) specific to CFG AI that is used as the payload for all the operations that can be performed on an insight. Every Pixel has a java class to handle the business logic on the backend, we call this java class a "Reactor".
+Pixel is a domain specific language (DSL) specific to SEMOSS that is used as the payload for all the operations that can be performed on an insight. Every Pixel has a java class to handle the business logic on the backend, we call this java class a "Reactor".
 
 ## How do you write a Pixel Call
 A Pixel call has some important components:
@@ -18,7 +18,7 @@ A Pixel call has some important components:
         ```
 3.  Some Pixel commands use pipes (“|”). A pipe is used to indicate that you would like to chain a Pixel command with a previous one. Essentially, the output of one reactor is taken and put into the next reactor so that the Pixel commands build off of each other.
 
-4.  Finally, a semi-colon (“;”)! A semicolon is a terminator and will be found at the end of your chain of commands. A semicolon indicates that you want to create a sink. It is best to create a sink when you are at a logical endpoint, meaning you do not need to use the output of your command for another reactor. For example, a logical endpoint is when you want to push your data to the frontend of CFG AI so that it can be viewed.
+4.  Finally, a semi-colon (“;”)! A semicolon is a terminator and will be found at the end of your chain of commands. A semicolon indicates that you want to create a sink. It is best to create a sink when you are at a logical endpoint, meaning you do not need to use the output of your command for another reactor. For example, a logical endpoint is when you want to push your data to the frontend of SEMOSS so that it can be viewed.
 
 <!-- create a sink, sorry if I'm misinterpreting. I wouldn't over explain this just say a (;) means it is the end of the chain of commands-->
 

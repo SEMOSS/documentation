@@ -1,5 +1,5 @@
-# CFG AI Database CRUD Operations Tutorial
-CFG AI allows quick end to end customization to facilitate create, read, update, and delete operations on a database. In this tutorial, we will be performing CRUD operations on a Movie dataset.
+# SEMOSS Database CRUD Operations Tutorial
+SEMOSS allows quick end to end customization to facilitate create, read, update, and delete operations on a database. In this tutorial, we will be performing CRUD operations on a Movie dataset.
 
 The metamodel for the database is shown below:
 
@@ -9,8 +9,8 @@ The metamodel for the database is shown below:
 *The project folder contains insights to allow the user to perform CRUD operations and the java classes to perform the CRUD operations in the assets/java folder. For simplicity, we have omitted pixel input/output definition. Documentation for grabbing inputs can be referenced in other tutorials.*
 
 
-## CFG AI Database Connection
-To perform operations on a database in CFG AI you can get the database by the id. In this example our database is a `RDBMSNativeEngine`. The `RDBMSNativeEngine` provides a method to get a PreparedStatement`getPreparedStatement(String query)`.
+## SEMOSS Database Connection
+To perform operations on a database in SEMOSS you can get the database by the id. In this example our database is a `RDBMSNativeEngine`. The `RDBMSNativeEngine` provides a method to get a PreparedStatement`getPreparedStatement(String query)`.
 
 
 ## Creating a New Genre
@@ -37,7 +37,7 @@ To create a new genre, we first create our sql query to perform the insertion in
 
 ```
 
-**This reactor can be tested in the pixel console in CFG AI by running:**<br>
+**This reactor can be tested in the pixel console in SEMOSS by running:**<br>
 ```
 AddGenre(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], title=["Semoss"], genre=["Tech Documentary"]);
 ```
@@ -83,7 +83,7 @@ In our Movie Database a Movie Title is the primary key. If we update a Movie Tit
 
 ```
 
-**This reactor can be tested in the pixel console in CFG AI by running:**<br>
+**This reactor can be tested in the pixel console in SEMOSS by running:**<br>
 ```
 UpdateMovie(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], title=["Semoss"],  newTitle=["SEMOSS"]);
 ```
@@ -107,7 +107,7 @@ To perform a deletion on the database, first we write our deletion query. Then, 
 		ConnectionUtils.closePreparedStatement(ps);
 	}
 ```
-**This reactor can be tested in the pixel console in CFG AI by running:**<br>
+**This reactor can be tested in the pixel console in SEMOSS by running:**<br>
 ```
 DeleteGenre(database=["2555ec1b-e1a2-4905-91e0-022dc57fc564"], genre=["Tech Documentary"]);
 ```

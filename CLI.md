@@ -38,7 +38,7 @@ This command will initialize, configure and save the App. It will also generate 
 
 ![Npx Init Output](images/CLI/NpxInitOutput.png)
 
-You can also view the app ID by going to the the "App Settings" page of CFG AI:
+You can also view the app ID by going to the the "App Settings" page of SEMOSS:
 
 ![App Settings](images/CLI/AppSettings.png)
 
