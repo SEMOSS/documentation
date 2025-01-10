@@ -29,7 +29,7 @@ So in the above example we told the App about itself. Mentioned what all inputs 
 
 Now, the inputs that we are letting the user decide are called input parameters. And we need to tell the App what all things we want to define as input parameters (which user will provide data for). To do that, include the input parameters inside double curly brackets {{ }}. By this the app knows that these things the user will provide as input parameters. So, our sample prompt will actually look like,
 
-Prompt- Suppose you are a travel agent. The user will provide with the {{destination}}, {{number of days}} of travel, and their {{travel pace}} preference (slow or fast). Prepare an itinerary for them.
+Prompt- 'Suppose you are a travel agent. The user will provide with the \{\{destination \}\}, \{\{number of days \}\} of travel, and their \{\{travel pace \}\} preference (slow or fast). Prepare an itinerary for them.'
 
 You can even define the input parameters under the 'Define input' section. Just click on the word you want to create as a input parameter. However in this method you won't be able to create an input parameter with multiple words. For example- you can assign 'destination' as an input parameter but no 'number of days'. So it is recommended to use the curly brackets method only.
 

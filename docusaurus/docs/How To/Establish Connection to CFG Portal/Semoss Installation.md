@@ -202,7 +202,7 @@ C:/workspace/apache-tomcat 9.0.##/webapps/SemossWeb (this is your root directory
 
 - Open your Windows File Explorer and navigate to the following path: **C:\workspace\apache-tomcat-9.0.30\conf**
 - Right click on **server.xml** and Open With **Notepad++**
-- Find the line that says **<Connector and the port number** (should be around line 69)
+- Find the line that says **\<Connector and the port number** (should be around line 69)
 ![server.xml](../../../static/img/SemossDevInstallation/server.xml.png)
 
 - Change the port to 9090
@@ -402,11 +402,11 @@ We now need to navigate to each project within the command prompt and run a mave
 - Cran is where R will download the packages from. If you want to set a default CRAN you can do so just by using the RProfile.site file. Located in the ~R Installation Dir / etc/RProfile.site
 - You can either uncomment the lines and put the following for CRAN or just copy paste the lines below
 - #set a CRAN mirror
-  local({r <- getOption("repos")
+  local(\{r \<- getOption("repos")
   
-  r["CRAN"] <- "https://cloud.r-project.org/"
+  r["CRAN"] \<- "https://cloud.r-project.org/"
   
-  options(repos=r)})
+  options(repos=r)\})
 
 ### Edit your Environment Variables
 - Search **Environment Variables** in the Windows Search
@@ -694,7 +694,7 @@ Click on [iTerm2](https://iterm2.com/)
 - Check if it exists by opening Finder and selecting your home profile
 - Enable viewing hidden files (such as .zshenv) through the shortcut of command + shift + . (dot)
 - If the file does not exist, open VS code and select command + N, or go to File >> New text file
-- Save the file as .zshenv under your home directory of /Users/<username>
+- Save the file as .zshenv under your home directory of `/Users/<username>`
 
 ![Semoss](../../../static/img/SemossDevInstallation/Picture7.png)
 
@@ -708,7 +708,7 @@ brew install pyenv
 
 - Edit ~/.zshenv (this can be done through nano/vim on command line or VS code)
 - At the bottom of the file, add: 
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew’
+alias brew='env PATH="$\{PATH//$(pyenv root)\/shims:/\}" brew’
 
 - Open a new iTerm window or terminal window
 - Run: pyenv install 3.11
@@ -725,7 +725,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 - Edit ~/.zshenv (this can be done through nano/vim on command line or VS code
 - At the bottom of the file, add: 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+`export NVM_DIR="$\(\[ -z "${XDG_CONFIG_HOME\-}" \] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"`
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" #
 - This loads nvm
 - Open a new iTerm window or terminal window
@@ -894,23 +894,22 @@ BaseFolder C:\\workspace\\Semoss to your Semoss folder
 ### Create settings.xml
 - Add a settings.xml into your ~/.m2 directory
   - If you do not see this folder in your finder, open finder and use command+shift+. (dot) to see hidden files/folders
+  ```
 - Save the below into a file named settings.xml in ~/.m2  (under you user home)
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+\<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  ...
-  <servers>
-    <server>
-      <id>3rdPartyJARs</id>
-      <username>semossdevuser</username>
-      <password>foxhole</password>
-      <configuration></configuration>
-    </server>
-  </servers>
-  ...
-</settings>
-
+  \<servers\>
+    \<server\>
+      \<id\>3rdPartyJARs\</id\>
+      \<username\>semossdevuser\</username\>
+      \<password\>foxhole\</password\>
+      \<configuration\>\</configuration\>
+    \</server\>
+  \</servers\>
+\</settings>\
+```
 ![Semoss](../../../static/img/SemossDevInstallation/Mac9.png)
 
 ### Update Maven
@@ -1269,7 +1268,7 @@ PATH=/Library/Frameworks/R.framework/Resources/bin R_DOC_DIR=/Library/Frameworks
 	server.xml
 	- Open your Windows File Explorer and navigate to the following path: C:\workspace\apache-tomcat-9.0.30\conf
 	- Right click on server.xml and Open With Notepad++
-	- Find the line that says <Connector and the port number (should be around line 63)
+	- Find the line that says \<Connector and the port number (should be around line 63)
 	- Change the port to 9090
 	- Save and close the file
 
@@ -1300,8 +1299,8 @@ PATH=/Library/Frameworks/R.framework/Resources/bin R_DOC_DIR=/Library/Frameworks
 -If you are getting a message that your server port is already in use, follow these steps:
 	- Close Eclipse
 	- Open Command prompt as an Administrator
-	- Run the command: netstat -ano | findstr : <9090>
-	- Replace <9090> with the port number that is in use if it is different
+	- Run the command: `netstat -ano | findstr : <9090>`
+	- Replace `<9090>` with the port number that is in use if it is different
 	- The output will specify the process identifier that is running (numbers to the right of ‘LISTENING’)
 	- Run the command: taskkill /PID <PID> /F
 	- Replace <PID> with the process identifier in step 4
