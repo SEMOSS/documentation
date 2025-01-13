@@ -42,7 +42,7 @@ Once you have your terminal setup, you can navigate to the SEMOSS repository in 
 
 [SEMOSS UI repository](https://github.com/Deloitte-Default/cfgai-ui)
 
-If this link does not properly open up for you, then please email SEMOSS@deloitte.com to have your member permissions updated.
+If this link does not properly open up for you, then please email SEMOSS@deloitte.com to request access.
 
 Inside of the repository click the green code button and copy the code for cloning the repo. You can click the circled button to copy the link that is there. 
 
