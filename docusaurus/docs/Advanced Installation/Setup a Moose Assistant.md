@@ -7,7 +7,7 @@ import ReactPlayer from 'react-player'
 import MooseAIAssistantDemonstration1 from '../../static/Demos/MooseAIAssistantDemonstration1.mp4'
 
 # Overview
-Moose AI is an AI smart assistant widget that can be added to a SEMOSS insight to assist the user with data inquiries. You can follow the steps below to set up Moose AI on your CFG instance. 
+Moose AI is an AI smart assistant widget that can be added to a SEMOSS insight to assist the user with data inquiries. You can follow the steps below to set up Moose AI on your  instance. 
 
 <ReactPlayer controls url={MooseAIAssistantDemonstration1}/>
 
@@ -45,11 +45,11 @@ Moose AI is an AI smart assistant widget that can be added to a SEMOSS insight t
 - Open the **Command Prompt**, type the following command
 `py –[YOUR PYTHON VERSION NUMBER] -m pip install --upgrade openai`
 
-**Note:** YOUR PYTHON VERSION NUMBER is thge python version installed in your machine.
+**Note:** YOUR PYTHON VERSION NUMBER is the python version installed in your machine.
 
 **Start using MooseAI**
 - Go to Eclispe and restart your **Tomcat server**.
-- Open **CFG instance** in your browser. Log out once and log back in.
+- Open **SEMOSS instance** in your browser. Log out once and log back in.
 - Create a new insight and select the database.
 - From the settings below, change the frane type to **Python** and then click on **Import**.
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Overview 
 
-The SEMOSS SDK (Software Developer Kit) gives you access to the data that you have stored inside of your CFG instance. It also allows you to make pixel calls, login, and query LLMs. 
+The SEMOSS SDK (Software Developer Kit) gives you access to the data that you have stored inside of your SEMOSS instance. It also allows you to make pixel calls, login, and query LLMs. 
 
 - [Using the SEMOSS SDK](#using-the-semoss-sdk)
 - [SEMOSS Environment Variables](#environment-variables)
