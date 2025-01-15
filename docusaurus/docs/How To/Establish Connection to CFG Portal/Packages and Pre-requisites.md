@@ -2,18 +2,18 @@
 sidebar_label: 'Packages and Prerequisites'
 sidebar_position: 2
 ---
-# Packages and Prerequisites for CFG AI Apps
+# Packages and Prerequisites for SEMOSS Apps
 
 ## Overview
 
-In this section we will go through what front end and back end packages are necessary for most CFG AI apps. 
+In this section we will go through what front end and back end packages are necessary for most SEMOSS apps. 
 
 ## Front End Prerequisities
 
 For front end development the main prerequisities that you need are Node, pnpm, and the SEMOSS SDK. 
 
 ### Node.js
-You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Deloitte-issued Windows machines, you should download `node-v18.16.0-x64.msi`). 
+You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Windows machines, you should download `node-v18.16.0-x64.msi`). 
 
 ### Code Editor
 You'll need to have your code editor of choice downloaded on your machine. We suggest [Visual Studio Code](https://code.visualstudio.com/)
@@ -39,7 +39,7 @@ To do so open a terminal and install it using:
 ```npm install -g pnpm```
 
 #### Installing the SEMOSS SDK
-The SEMOSS SDK includes software-building tools for a connecting CFG AI to a custom React app. To use the SDK, ensure you have node, node package manager, and code editor installed. 
+The SEMOSS SDK includes software-building tools for a connecting SEMOSS to a custom React app. To use the SDK, ensure you have node, node package manager, and code editor installed. 
 
 Use PNPM/NPM to install the following packages and add them to your project.
 
@@ -52,30 +52,30 @@ For a deep dive into the directory structure of your project, see the [React App
 
 ### Optional: Fully Local Front End Installation 
 
-You **do NOT need a fully local front end installation** to build apps that run on CFG AI.
+You **do NOT need a fully local front end installation** to build apps that run on SEMOSS.
 
-However, if you wish to contribute to the CFG AI project or want visibility into the front end source code, please follow this guide: [Frontend Local Installation Guide](../../Advanced%20Installation/Frontend%20Installation.md)
+However, if you wish to contribute to the SEMOSS project or want visibility into the front end source code, please follow this guide: [Frontend Local Installation Guide](../../Advanced%20Installation/Frontend%20Installation.md)
 
 ## Back End Prerequisities
 
 Please Note that these are only necessary if you are planning on running a local back end. The majority of projects do not need to do so. Please refer to the [Docker BE Install Guide](../../Advanced%20Installation/Docker%20BE%20Install%20Guide.md) to see if you need to go through a back end installation.   
 
 ### Back End Setup Overview
-Though it is possible to develop apps solely with front end frameworks, CFG AI allows you to incorporate custom back end logic using **Java** and **Python**. To get started with custom back end development, follow the [Java Setup](#java-setup) and [Python Setup](#python-setup) sections below.
+Though it is possible to develop apps solely with front end frameworks, SEMOSS allows you to incorporate custom back end logic using **Java** and **Python**. To get started with custom back end development, follow the [Java Setup](#java-setup) and [Python Setup](#python-setup) sections below.
 
 **Optional - Web Server vs. Local Instance: Which should I choose?**
 
-Next, choose whether you want to connect with the **web version** of CFG AI, or if you want to run a **local instance** of CFG AI instead.
-Note that the primary way that most users will interact with the CFG AI back end is through its **[live web server](https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/#/)**. If you followed the previous section on [generating access and secret keys](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys), then you already can access this web server.
+Next, choose whether you want to connect with the **web version** of SEMOSS, or if you want to run a **local instance** of SEMOSS instead.
+Note that the primary way that most users will interact with the SEMOSS back end is through its **[live web server](https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/#/)**. If you followed the previous section on [generating access and secret keys](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys), then you already can access this web server.
 
-However, if you wish to have **admin privileges** or **greater control of an CFG AI instance**, you can choose to run the CFG AI server locally. CFG AI provides two methods to run a CFG AI instance locally, which are:
+However, if you wish to have **admin privileges** or **greater control of an SEMOSS instance**, you can choose to run the SEMOSS server locally. SEMOSS provides two methods to run a SEMOSS instance locally, which are:
 1. [Docker Container](#optional-starting-the-dockerized-back-end)
 2. [Fully Local Installation](#optional-fully-local-back-end-installation)
 
 ### Java Setup 
 #### Java SE Development Kit 8u831 (JDK8) Download
 > **Important**
-> _Please note that the specific edition of Java that CFG AI requires is **Java SE Development Kit 8u381**. You MUST use this version of Java SE._
+> _Please note that the specific edition of Java that SEMOSS requires is **Java SE Development Kit 8u381**. You MUST use this version of Java SE._
 
 If you already have **Java SE Development Kit 8u831 (JDK8)** installed, skip to the next section: **[`JAVA_HOME` Environment Variable](#java_home-environment-variable)**.
 1. Click on the following link to access the Java downloads page: [Java SE Development Kit (JDK8)​](https://www.oracle.com/java/technologies/downloads/#java8)
@@ -137,8 +137,8 @@ If you already have **Python 3.9+** installed, skip to the next section: **[`PYT
 8. Click OK, the OK again to save the System Environment variables.
 9. If you had any open IDEs or processes that use the `PATH` or `PYTHONHOME` variables, you will need to stop those processes and **restart them** to pull in the new paths.
 
-#### Python Packages Available within CFG AI
-CFG AI currently comes bundled with the packages in the below list. 
+#### Python Packages Available within SEMOSS
+SEMOSS currently comes bundled with the packages in the below list. 
 
 You can choose to install the relevant packages for your project from the below list by running the following command:
 `pip install PACKAGE_NAME==VERSION_NUMBER`
@@ -163,7 +163,7 @@ where `PACKAGE_NAME` and `VERSION_NUMBER` are replaced with the actual name and 
 
 After installing the packages, you can view where they are installed by navigating to the `Lib` folder within your `PYTHON_HOME` directory (ex: `C:\Users\YOUR_USERNAME\AppData\Local\Programs\Python\Python310\Lib`).
 
-If the following packages are not satisfactory for your application, then please email CFGAI@deloitte.com for support with additional packages.
+If the following packages are not satisfactory for your application, then please email SEMOSS@deloitte.com for support with additional packages.
 
 ```
 accelerate==0.25.0
@@ -486,11 +486,11 @@ const hello = (name) => {
 ```
 
 ### Optional: Starting the Dockerized Back End
-For users who wish to have **admin privileges** or want to host a **private instance** of CFG AI, CFG AI has made it possible for users to run CFG AI locally by packaging its back end into a **Docker image**. The Docker image allows users to quickly start running CFG AI inside of a container. To run the back end, please follow this guide: [Docker BE Install Guide](../../Advanced%20Installation/Docker%20BE%20Install%20Guide.md)
+For users who wish to have **admin privileges** or want to host a **private instance** of SEMOSS, SEMOSS has made it possible for users to run SEMOSS locally by packaging its back end into a **Docker image**. The Docker image allows users to quickly start running SEMOSS inside of a container. To run the back end, please follow this guide: [Docker BE Install Guide](../../Advanced%20Installation/Docker%20BE%20Install%20Guide.md)
 
-If you need **even greater control** over CFG AI, including the ability to directly modify core CFG AI source code or to bring your own dependencies, please follow the instructions in the next section (Optional: Fully Local Back End Installation).
+If you need **even greater control** over SEMOSS, including the ability to directly modify core SEMOSS source code or to bring your own dependencies, please follow the instructions in the next section (Optional: Fully Local Back End Installation).
 
 ### Optional: Fully Local Back End Installation
-You **do NOT need to do a full local installation** in order to run CFG AI locally. For most users, it is sufficient to simply download **Java** and **Python**, and then run the back end in a **Docker container** as noted in the previous section.
+You **do NOT need to do a full local installation** in order to run SEMOSS locally. For most users, it is sufficient to simply download **Java** and **Python**, and then run the back end in a **Docker container** as noted in the previous section.
 
-However, if you wish to **contribute to the CFG AI project** or want **visibility into the back end source code**, please follow the instructions in this guide: [Local BE Install Guide](../../Advanced%20Installation/Local%20BE%20Install%20Guide.md). 
+However, if you wish to **contribute to the SEMOSS project** or want **visibility into the back end source code**, please follow the instructions in this guide: [Local BE Install Guide](../../Advanced%20Installation/Local%20BE%20Install%20Guide.md). 

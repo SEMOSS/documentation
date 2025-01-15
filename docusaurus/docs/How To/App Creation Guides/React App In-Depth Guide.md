@@ -3,30 +3,30 @@ sidebar_label: 'React App In-Depth Guide'
 sidebar_position: 4
 ---
 
-# Creating a CFG AI GenAI App Using React
+# Creating a SEMOSS GenAI App Using React
 
 ## Overview
-This documentation focuses on the front end aspects of building a GenAI app. React is a Javascript-based User Interface (UI) framework. It improves reusability of UI elements to keep code readable and DRY ("Don't Repeat Yourself"). You can leverage React to develop a hosted front end with the potential to have some custom backend functionality that is deployed on the CFG AI Server.
+This documentation focuses on the front end aspects of building a GenAI app. React is a Javascript-based User Interface (UI) framework. It improves reusability of UI elements to keep code readable and DRY ("Don't Repeat Yourself"). You can leverage React to develop a hosted front end with the potential to have some custom backend functionality that is deployed on the SEMOSS Server.
 
 The languages used in this app will be Typescript/Javascript, and HTML in building your app. Typescript is an extension of Javascript that improves code quality and allows for a better developer experience.
 
 ## Prerequisites
 ### Node.js
-You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Deloitte-issued Windows machines, you should download `node-v18.16.0-x64.msi`). 
+You can install Node on your machine by downloading the appropriate installer for your device directly from the Node.js website. Version [v18.16.0](https://nodejs.org/download/release/v18.16.0/) is suggested for our projects (for most Windows machines, you should download `node-v18.16.0-x64.msi`). 
 
 ### Code Editor
 You'll need to have your code editor of choice downloaded on your machine. We suggest [Visual Studio Code](https://code.visualstudio.com/). 
 <!--Should we mention something about installing VSCode extensions for typescript/javascript?-->
 
 ## Examples
-You can see app examples in the [CFG AI Apps](https://github.com/Deloitte-Default/cfgai-apps) repo. Feel free to download an existing app and use it as scaffold for building your own! Existing work can be used to experiment and learn.
+You can see app examples in the [SEMOSS Apps](https://github.com/Deloitte-Default/cfgai-apps) repo. Feel free to download an existing app and use it as scaffold for building your own! Existing work can be used to experiment and learn.
 > **Note**
 > This is a protected GitHub, if you do not have access to it, or are not currently signed in to your GitHub account you will get a 404 Error. Ask an admin for access.
-<!--Should we link to the public CFG demo here so that first time users can click around and explore the apps in the live site? For a user encountering this guide for the first time, they probably won't know how to interact with the apps in the CFGai-apps repo. It might be useful to copy the "Adding your app to the CFG AI catalog" section of this guide over to the CFGai-apps repo's README.md so that users can be guided on what to do after they've pulled the repo (ex. zipping the files and adding the app within CFG)-->
+<!--Should we link to the public CFG demo here so that first time users can click around and explore the apps in the live site? For a user encountering this guide for the first time, they probably won't know how to interact with the apps in the CFGai-apps repo. It might be useful to copy the "Adding your app to the SEMOSS catalog" section of this guide over to the CFGai-apps repo's README.md so that users can be guided on what to do after they've pulled the repo (ex. zipping the files and adding the app within CFG)-->
 <!--Since this is a React app use case, do all the examples in the CFGai-apps repo also use React? I'm not sure how important this is but it might be helpful for users following this guide to base their app off of another React app in the CFGai-apps repo-->
 
 ## App Structure
-Below is the typical structure of a React app to be uploaded onto the CFG AI platform. The `/java` and `/py` directories hold back-end work. This document will focus on the `client` and `portals` folders.
+Below is the typical structure of a React app to be uploaded onto the SEMOSS platform. The `/java` and `/py` directories hold back-end work. This document will focus on the `client` and `portals` folders.
 <pre>
   <code>
     ├── <a href="#client">client</a>
@@ -105,7 +105,7 @@ This directory contains full app pages, which likely leverage the custom compone
 This directory contains any non-component shared code you might need for your app. For example, you might have a `HelpText.tsx` file to keep all the help text for your app in one place. You might have a `NumberUtilties.tsx` file that has functions to standardize number formatting across your app.
 
 ##### `/client/src/App.tsx`
-This files serves as the main component that will hold all your app contents/pages. For CFG AI apps, the component returned in this file will need to wrap its content with `<UseInsights></UseInsights>` in order to utilize the SEMOSS SDK. Read more about it on [Front End Installation](../../Advanced%20Installation/Frontend%20Installation.md).
+This files serves as the main component that will hold all your app contents/pages. For SEMOSS apps, the component returned in this file will need to wrap its content with `<UseInsights></UseInsights>` in order to utilize the SEMOSS SDK. Read more about it on [Front End Installation](../../Advanced%20Installation/Frontend%20Installation.md).
 <!--As a front end newbie, I think it would be helpful to have a diagram that illustrates the relationship between the Semoss SDK, the App.tsx component, the pages that are in App.tsx, and the (smaller) components that are used on the pages-->
 
 ##### `/client/src/global.d.ts`
@@ -160,7 +160,7 @@ const config = {
 ```
 All you have to do is have the folder. Running Webpack will do the rest! (More on that in the [Bundling Your App](#bundling-your-app) section.)
 
-## Connecting to a CFG AI Instance
+## Connecting to a SEMOSS Instance
 
 See [Connecting to CFG](../Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md) for documentation on how to set up your app with API keys to be added as environment variables.
 
@@ -215,7 +215,7 @@ Ensure that you have the following script in your `client/package.json` file:
 
 From the `client` directory, run the command `npm run build` in your terminal. Webpack will bundle your app and the bundled files will automatically be added to your `/portals` directory. If you don't see any files populate that folder, then you likely have an issue with your Webpack configuration.
 
-## Adding Your App to the CFG AI App Catalog
+## Adding Your App to the SEMOSS App Catalog
 
 1. Compress all the directories in your project _except_ your `/client` folder. Ensure that you do this within the app directory. For example, if my app files are in a folder called `/MyApp`, I should not zip `/MyApp` itself. I should navigate into `/MyApp` and zip all the relevant directories inside of it. 
 2. Navigate to [App Library](https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/) and click "Create a New App" in the top right corner. This will bring you to the Create New App page.
@@ -225,7 +225,7 @@ From the `client` directory, run the command `npm run build` in your terminal. W
 ![Upload App Assets Button](../../../static/img/AppUseCaseImages/code_editor_asset_upload.png)
 5. Attach your zip file in the modal that appears and hit "Upload."
 ![Upload App Assets Modal](../../../static/img/AppUseCaseImages/asset_upload_dialog.png)
-6. Ta-da! You have successfully uploaded your code app to the CFG AI Server!
+6. Ta-da! You have successfully uploaded your code app to the SEMOSS Server!
 
 ## Updating your App In CFG
 

@@ -2,11 +2,11 @@
 
 Welcome to the Contribution page !  
 
-We’re excited to have you here! Contributing to the repository goes way beyond just coding. We are eager to receive your insights and feedback as well. Highlighting issues is an excellent way to share your ideas with the CFG.AI community. Issues not only serve as a log for bugs in both code and documentation, but also as a forum for community discussion. There might be other CFG.AI users who are seeking or proposing similar solutions.  
+We’re excited to have you here! Contributing to the repository goes way beyond just coding. We are eager to receive your insights and feedback as well. Highlighting issues is an excellent way to share your ideas with the SEMOSS community. Issues not only serve as a log for bugs in both code and documentation, but also as a forum for community discussion. There might be other SEMOSS users who are seeking or proposing similar solutions.  
 
-Issues are crucial for identifying flaws as the CFG.AI platform is still in its early stages. We anticipate that developers might encounter various challenges or bugs during the course of platform development. By providing detailed steps for reproduction, along with screenshots and thorough descriptions, you can make it easier for developers to understand and resolve these issues swiftly. The **XX** team is actively monitoring the GitHub issues list to manage and rectify problems as they arise.
+Issues are crucial for identifying flaws as the SEMOSS platform is still in its early stages. We anticipate that developers might encounter various challenges or bugs during the course of platform development. By providing detailed steps for reproduction, along with screenshots and thorough descriptions, you can make it easier for developers to understand and resolve these issues swiftly. The **XX** team is actively monitoring the GitHub issues list to manage and rectify problems as they arise.
 
-For those who wish to contribute to CFG.AI platform, can do so by:  
+For those who wish to contribute to SEMOSS platform, can do so by:  
 
 * [Submitting Bug Report](#reporting-bugs)  
 * [Submitting Feature Enhancement Request](#suggesting-feature-enhancements)  
@@ -19,7 +19,7 @@ For those who wish to contribute to CFG.AI platform, can do so by:
 
 Bug reports play a crucial role in maintaining and enhancing the quality of any software platform. Each report that a user submits acts as a fundamental feedback tool that informs the development team about the existence of an issue that might have otherwise gone unnoticed.  
 
-For reporting a defect in the CFG.AI codebase. Use this to report an issue that is causing the code to:  
+For reporting a defect in the SEMOSS codebase. Use this to report an issue that is causing the code to:  
 * Throw an unhandled error
 * Not work as described
 * Have a regression from the prior version, without any deprecation notice
@@ -72,7 +72,7 @@ Add any other context about the problem here.
 
 ### Suggesting Feature Enhancements  
 
-For introducing a new concept to CFG.AI platform use the steps given below. This should include a possible plan for implementation.
+For introducing a new concept to SEMOSS platform use the steps given below. This should include a possible plan for implementation.
 
 **How to propose new features or improvements**  
 
@@ -143,7 +143,7 @@ If you cannot find an existing request that describes your issue, submit the req
 
 ### Documentation Requests  
 
-For reporting mistakes in the CFG.AI official [documentation](https://workshop.cfg.deloitte.com/docs/). These can be typos, broken links, missing images, or unclear/missing instructions.
+For reporting mistakes in the SEMOSS official [documentation](https://workshop.cfg.deloitte.com/docs/). These can be typos, broken links, missing images, or unclear/missing instructions.
 
 * **Motivation**
 

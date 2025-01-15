@@ -1,12 +1,12 @@
 ---
-sidebar_label: 'Connecting to CFG AI'
+sidebar_label: 'Connecting to SEMOSS'
 sidebar_position: 1
 ---
 # Connecting To CFG 
 
 ## Generating Access and Secret Keys 
 
-To access the CFG AI server, you need to create a user **Access Key** and **Secret Key** through the base application. The steps are as follows:
+To access the SEMOSS server, you need to create a user **Access Key** and **Secret Key** through the base application. The steps are as follows:
 
 Navigate to the home screen of base application/App Library. Find the gear icon on the bottom-left side of the window. Click on it to go to Settings page.
 
@@ -24,9 +24,9 @@ A **'Generate Access Key'** form will pop-up on your screen. Fill it out with th
 > **Important**
 > _Please **do not share** your credentials with anyone_
 
-These keys will be used to configure your SEMOSS SDK with access to the models, databases, and other resources associated with your account on the CFG AI instance where your keys were generated. 
+These keys will be used to configure your SEMOSS SDK with access to the models, databases, and other resources associated with your account on the SEMOSS instance where your keys were generated. 
 
 ### Next Steps
-Now that you have explored the CFG AI platform, you can start to develop your own apps.  To do so, we recommend that you:
+Now that you have explored the SEMOSS platform, you can start to develop your own apps.  To do so, we recommend that you:
 1. Set up your [front end development environment](Packages%20and%20Pre-requisites.md#front-end-prerequisities)
-2. Optionally, set up your [CFG AI back end](Packages%20and%20Pre-requisites.md#back-end-prerequisities) if you plan to create custom back end logic for your apps.
+2. Optionally, set up your [SEMOSS back end](Packages%20and%20Pre-requisites.md#back-end-prerequisities) if you plan to create custom back end logic for your apps.

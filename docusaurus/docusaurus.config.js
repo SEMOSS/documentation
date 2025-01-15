@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CFG AI',
-  tagline: 'CFG AI Documentation',
+  title: 'SEMOSS',
+  tagline: 'SEMOSS Documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -53,7 +53,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'CFG AI',
+        title: 'SEMOSS',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -89,7 +89,7 @@ const config = {
         ],
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} CFG AI Documentation built by Deloitte`,
+        copyright: `Copyright © ${new Date().getFullYear()} SEMOSS Documentation`,
       },
       prism: {
         theme: prismThemes.github,

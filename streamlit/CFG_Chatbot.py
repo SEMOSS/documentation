@@ -22,8 +22,8 @@ def login(secret_key, access_key, ai_server_url):
 
 ## Change 3 ##
 st.title("💬 Chatbot")
-# Change the display reference from OpenAI LLM to CFG AI Server
-st.caption("🚀 A streamlit chatbot powered by CFG AI Server")
+# Change the display reference from OpenAI LLM to SEMOSS Server
+st.caption("🚀 A streamlit chatbot powered by SEMOSS Server")
 
 # Remove OpenAI secret and add additional inputs in the side bar menu
 with st.sidebar:

@@ -1,22 +1,22 @@
 ---
-sidebar_label: 'Introduction to CFG AI'
+sidebar_label: 'Introduction to SEMOSS'
 sidebar_position: 1
 slug: '/'
 ---
 
-## CFG AI Documentation
+## SEMOSS Documentation
 
-:tada: **Welcome to the CFG AI documentation!** 
+:tada: **Welcome to the SEMOSS documentation!** 
 
 By following along with this documentation, you will be able to achieve the following objectives:
-* :computer: Understand what the CFG AI platform is and how to interact with it
-* :link: Compare methods of connecting to a CFG AI server
-* :hammer: Utilize various tools and programs that are useful to start working with CFG AI
-* :art: Create and upload your own sample app to CFG AI
+* :computer: Understand what the SEMOSS platform is and how to interact with it
+* :link: Compare methods of connecting to a SEMOSS server
+* :hammer: Utilize various tools and programs that are useful to start working with SEMOSS
+* :art: Create and upload your own sample app to SEMOSS
 
 :checkered_flag: **Ready? Let's get started!** 
 
-Go ahead and select a link from the table of contents below. If you're new to CFG AI, we recommend that you start from the **[Overview](Get%20Started/Overview.md)**.
+Go ahead and select a link from the table of contents below. If you're new to SEMOSS, we recommend that you start from the **[Overview](Get%20Started/Overview.md)**.
 
 ## Table of Contents
 
@@ -35,8 +35,8 @@ Go ahead and select a link from the table of contents below. If you're new to CF
       3. [Sample VanillaJS Use Case](How%20To/App%20Creation%20Guides/VanillaJS%20App%20Quickstart%20Guide.md)
       4. [In-Depth React App Guide](How%20To/App%20Creation%20Guides/React%20App%20In-Depth%20Guide.md)
       5. [Using the Code Editor](How%20To/App%20Creation%20Guides/Using%20the%20Code%20Editor.md)
-   2. [Establishing A Connection to CFG AI](category/establishing-connection-to-cfg-ai)
-      1. [Connecting to CFG AI](How%20To/Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md)
+   2. [Establishing A Connection to SEMOSS](category/establishing-connection-to-cfg-ai)
+      1. [Connecting to SEMOSS](How%20To/Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md)
       2. [Packages and Prerequisites](How%20To/Establish%20Connection%20to%20CFG%20Portal/Packages%20and%20Pre-requisites.md)
       3. [Using the SDK](How%20To/Establish%20Connection%20to%20CFG%20Portal/Using%20the%20SDK.md)
       4. [OpenAI Endpoints with Python](How%20To/Establish%20Connection%20to%20CFG%20Portal/OpenAI%20Endpoints%20with%20Python.md)
@@ -47,7 +47,7 @@ Go ahead and select a link from the table of contents below. If you're new to CF
      
 3. **[Advanced Installation](category/advanced-installation)**
    
-   *_Intended for developers who will be running CFG AI completely locally_
+   *_Intended for developers who will be running SEMOSS completely locally_
    
    1. [Backend Installation](Advanced%20Installation/Local%20BE%20Install%20Guide.md)
 
@@ -62,5 +62,5 @@ Go ahead and select a link from the table of contents below. If you're new to CF
 
 
 ## Feedback and Support
-Please email CFGAI@deloitte.com for any feedback or support.
+Please email SEMOSS@deloitte.com for any feedback or support.
    

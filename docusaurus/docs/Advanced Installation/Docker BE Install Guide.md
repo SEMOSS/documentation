@@ -3,33 +3,33 @@ sidebar_label: 'Docker Backend Installation'
 sidebar_position: 2
 ---
 
-# CFG AI Docker Installation
-CFG AI supports two ways of running locally: 
+# SEMOSS Docker Installation
+SEMOSS supports two ways of running locally: 
 1. [Fully local installation](Local%20BE%20Install%20Guide.md)
 2. [Docker container](#docker-installation-guide)
 
-This guide will show the steps for installing **Docker** and running CFG AI in a Docker container. 
-For instructions on how to perform a fully local installation of CFG AI instead, click **[here](Local%20BE%20Install%20Guide.md)** for the **backend** installation instructions and **[here](Frontend%20Installation.md)** for the **frontend** instructions.
+This guide will show the steps for installing **Docker** and running SEMOSS in a Docker container. 
+For instructions on how to perform a fully local installation of SEMOSS instead, click **[here](Local%20BE%20Install%20Guide.md)** for the **backend** installation instructions and **[here](Frontend%20Installation.md)** for the **frontend** instructions.
 
 > **Note**
-> If you don't need admin privileges and would prefer a **lightweight, low management** way to connect to CFG AI, then use the [live web server](https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/) instead of following this guide. Instructions to set up a connection to the web version can be found in the [Connecting to CFG AI](../How%20To/Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md) guide.
+> If you don't need admin privileges and would prefer a **lightweight, low management** way to connect to SEMOSS, then use the [live web server](https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/) instead of following this guide. Instructions to set up a connection to the web version can be found in the [Connecting to SEMOSS](../How%20To/Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md) guide.
      
 ## Docker Installation Guide
 
 > **Note**
-> **Quick Link**: If you already created a Docker container for CFG AI by following this guide, then you can jump directly to the shortcuts below to start your server:
+> **Quick Link**: If you already created a Docker container for SEMOSS by following this guide, then you can jump directly to the shortcuts below to start your server:
 >  * **For Windows:** [Running an Existing Docker Container on Windows](#running-an-existing-docker-container-on-windows)
 >  * **For Mac OSX:** [Running an Existing Docker Container on Mac](#running-an-existing-docker-container-on-mac)
 
 ### Download Docker
-If you already have Docker installed, you can skip to the next step ([Accessing the CFG AI Docker Repository](#accessing-the-cfg-ai-docker-repository)).
+If you already have Docker installed, you can skip to the next step ([Accessing the SEMOSS Docker Repository](#accessing-the-cfg-ai-docker-repository)).
 
 If this is your first time installing Docker, please follow the installation guides for your operating system linked below:
 * [Windows Docker Installation Guide​](https://docs.docker.com/desktop/install/windows-install/)
 * [OSX/Mac Docker Installation Guide​](https://docs.docker.com/desktop/install/mac-install/)
 
-### Accessing the CFG AI Docker Repository
-* Please reach out to your administrator to get access to the CFG AI Docker Repository. You can only continue with the rest of the guide after receiving access.
+### Accessing the SEMOSS Docker Repository
+* Please reach out to your administrator to get access to the SEMOSS Docker Repository. You can only continue with the rest of the guide after receiving access.
 * After being granted Docker repository access, log into the repository via Deloitte SSO.
   - If you are not automatically redirected to the SSO login, then click on the button that says **"Login via OIDC Provider"** to be redirected to the Deloitte SSO login.
 ![DockerRepo](../../static/img/DockerBEInstall/repo.png)
@@ -53,7 +53,7 @@ If this is your first time installing Docker, please follow the installation gui
 ### Set Up Your Container and Volume
 * Open up a command prompt and navigate to the `SEMOSS_DOCKER_DIR` by running `cd SEMOSS_DOCKER_DIR` (replace `SEMOSS_DOCKER_DIR` with the actual folder path you copied in the previous step).
 > **Note**
-> The helper scripts default to using port 8080 to host CFG AI. If port 8080 is blocked on your computer and you wish to use a different port, then use any text editor (VSCode or Notepad++) to edit both **init.bat** and **startAIServer.bat** by replacing the `8080` in the lines that say `set ACTIVE_PORT=8080` with your desired port number
+> The helper scripts default to using port 8080 to host SEMOSS. If port 8080 is blocked on your computer and you wish to use a different port, then use any text editor (VSCode or Notepad++) to edit both **init.bat** and **startAIServer.bat** by replacing the `8080` in the lines that say `set ACTIVE_PORT=8080` with your desired port number
 
 * In the command prompt, type `init.bat` and hit enter.
   - You will see some output and auto-executed commands appear (see below image for reference) while Docker pulls the image and the script runs. This process may take up to 45 minutes depending on your connection speed.
@@ -71,7 +71,7 @@ If this is your first time installing Docker, please follow the installation gui
     - **Important**: Make sure your the username you enter matches the username that you created earlier when setting up your admin account.
 * The page will return to the login after successfully creating your account. Enter the username and password you just created, then click **"Login with Native"**.
   ![Native Login Entry](../../static/img/DockerBEInstall/NativeLoginEntry.png)
-* The page will redirect to the CFG AI App Library Landing page.
+* The page will redirect to the SEMOSS App Library Landing page.
   ![App Library Landing](../../static/img/DockerBEInstall/AppLibraryLanding.png)
 * Return to your command terminal, making sure it is still in the `SEMOSS_DOCKER_DIR`.
 * Run:
@@ -121,7 +121,7 @@ If this is your first time installing Docker, please follow the installation gui
 * In your browser, navigate to http://localhost:8080/SemossWeb/packages/client/dist/
   - **Hint**: If you used a different port than 8080 in your `docker run` command, make sure to replace it in the above link.
   ![Initial Login](../../static/img/DockerBEInstall/InitialLogin.png)
-* Accept the cookies if prompted, and you will see the CFG AI login landing page.
+* Accept the cookies if prompted, and you will see the SEMOSS login landing page.
   - Note that this login page will not have an option to enter username/password yet as we still need to enable native user account registration.
 
 ### Creating an Admin and Registering for a Native Account
@@ -163,7 +163,7 @@ If this is your first time installing Docker, please follow the installation gui
     - **Important**: Make sure your the username you enter matches the username that you created earlier when setting up your admin account.
 * The page will return to the login after successfully creating your account. Enter the username and password you just created, then click **"Login with Native"**.
   ![Native Login Entry](../../static/img/DockerBEInstall/NativeLoginEntry.png)
-* The page will redirect to the CFG AI App Library Landing page.
+* The page will redirect to the SEMOSS App Library Landing page.
   ![App Library Landing](../../static/img/DockerBEInstall/AppLibraryLanding.png)
 
 ### Stopping the Container
@@ -175,11 +175,11 @@ To stop the container, open up a **new command prompt/terminal** and enter the f
 >  Do not delete your `genAI` docker container. If you accidentally delete it using `docker rm`, `docker system prune`, or `docker container prune`, then you must redo the steps starting from the [Creating a New Docker Container from the Image](#creating-a-new-docker-container-from-the-image) section of this guide.
 
 ### Running an Existing Docker Container on Mac
-Now that you have created a Docker container to run CFG AI, you can run it directly by entering `docker start genAI` in a command line/terminal. Then, navigate to http://localhost:8080/SemossWeb/packages/client/dist/ in your browser to log in. 
+Now that you have created a Docker container to run SEMOSS, you can run it directly by entering `docker start genAI` in a command line/terminal. Then, navigate to http://localhost:8080/SemossWeb/packages/client/dist/ in your browser to log in. 
 ![Docker Start Output](../../static/img/DockerBEInstall/DockerStart.png)
 
 ## What's Next?
-Want to start developing apps with CFG AI? Learn how to use the SEMOSS Software Development Kit (SEMOSS SDK) in the [SEMOSS SDK Guide](../How%20To/Establish%20Connection%20to%20CFG%20Portal/Using%20the%20SDK.md). 
+Want to start developing apps with SEMOSS? Learn how to use the SEMOSS Software Development Kit (SEMOSS SDK) in the [SEMOSS SDK Guide](../How%20To/Establish%20Connection%20to%20CFG%20Portal/Using%20the%20SDK.md). 
 
 If you've already finished that, try out one of the **App Use Case Quick Start guides** linked below to get a hands-on tutorial with your preferred frontend framework!
    - [React Quick Start Guide](../How%20To/App%20Creation%20Guides/React%20App%20Quickstart%20Guide.md)

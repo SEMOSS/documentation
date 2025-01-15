@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Overview 
 
-The SEMOSS SDK (Software Developer Kit) gives you access to the data that you have stored inside of your CFG instance. It also allows you to make pixel calls, login, and query LLMs. 
+The SEMOSS SDK (Software Developer Kit) gives you access to the data that you have stored inside of your SEMOSS instance. It also allows you to make pixel calls, login, and query LLMs. 
 
 - [Using the SEMOSS SDK](#using-the-semoss-sdk)
 - [SEMOSS Environment Variables](#environment-variables)
@@ -20,23 +20,23 @@ The SEMOSS SDK (Software Developer Kit) gives you access to the data that you ha
 
 
 ### Using the SEMOSS SDK
-In order to use the SEMOSS SDK, you will need to populate your CFG AI instance with models, storage catalogs, and databases for use in your project. Learn how to do that in [Navigating CFG AI](../../Get%20Started/Navigation).
+In order to use the SEMOSS SDK, you will need to populate your SEMOSS instance with models, storage catalogs, and databases for use in your project. Learn how to do that in [Navigating SEMOSS](../../Get%20Started/Navigation).
 
 ### Environment Variables
-The following environment variables are required at the root level of your client directory. They should be defined in `.env` and `.env.local` files. `.env.local` will not already exist in the project and will need to be created. Set the `ACCESS_KEY` and `SECRET_KEY` variables in `.env.local` to be the [access and secret keys](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys) you generated to connect to CFG AI.
+The following environment variables are required at the root level of your client directory. They should be defined in `.env` and `.env.local` files. `.env.local` will not already exist in the project and will need to be created. Set the `ACCESS_KEY` and `SECRET_KEY` variables in `.env.local` to be the [access and secret keys](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys) you generated to connect to SEMOSS.
 
 ![Screenshot of .env and .env.local file contents](../../../static/img/FELocalInstall/env.png)
 
 > **Note**
 > _The `.env.local` file will appear greyed out. This is because it will be ignored by Git, so the file will not be pushed up with the rest of your work. It is important to avoid tracking this file in Git or pushing its changes to a repository since it was create to contain your access and secret keys._
 
-The example `.env` above demonstrates how you would set your environment variables to connect to the CFG AI server. To connect to a local instance instead, use the following variables:
+The example `.env` above demonstrates how you would set your environment variables to connect to the SEMOSS server. To connect to a local instance instead, use the following variables:
 ```
     MODULE=/Monolith_Dev
     ENDPOINT=http://localhost:9090
     APP=<APP_ID>
 ```
-You can access the `APP_ID` after you host the app in CFG AI. Your `APP_ID` will be an alphanumerical string at the end of the app URL. 
+You can access the `APP_ID` after you host the app in SEMOSS. Your `APP_ID` will be an alphanumerical string at the end of the app URL. 
 
 For example, if the app URL is:
 `http://localhost:9090/SEMOSS-ui/packages/client/dist/#/app/75277e50-456e-43f8-8ad7-d03224ebe4da`
@@ -84,7 +84,7 @@ const Child = (props) => {
 ```
 
 #### Using Pixels
-you can access it by using `pixel` API calls. Pixel is a domain-specific language used by CFG AI to access and update data. Below are some examples of how to use a pixel call.
+you can access it by using `pixel` API calls. Pixel is a domain-specific language used by SEMOSS to access and update data. Below are some examples of how to use a pixel call.
 
 ##### Retrieving Models
 ```
@@ -119,8 +119,8 @@ const ask = (question) => {
 ```
 
 ##### Running a Database Query
-CFG AI Platform provides 2 main ways to query a database.
-- Generic Pixel Query syntax: This is CFG AI specific querying syntax which is database agnostic.
+SEMOSS Platform provides 2 main ways to query a database.
+- Generic Pixel Query syntax: This is SEMOSS specific querying syntax which is database agnostic.
 - Native Database Query: This is the way to query based on the native database querying language/dialect.
 
 By using the Generic Pixel Query syntax, you can specify:

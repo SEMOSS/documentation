@@ -1,6 +1,6 @@
 # Formatting and Style Guidelines for Documentation Team
 > **Warning**
-> **Update**: As of October 31, 2023, the formatting for CortexAI for Government is now **CFG AI**. Please replace any existing instances of "CfG.AI" and associated permutations (ex. "CfG") with the official "**CFG AI**" form. Please also note that the shortened "CFG" form is not valid. See below for the list of accepted formats.
+> **Update**: As of October 31, 2023, the formatting for CortexAI for Government is now **SEMOSS**. Please replace any existing instances of "SEMOSS" and associated permutations (ex. "CfG") with the official "**SEMOSS**" form. Please also note that the shortened "CFG" form is not valid. See below for the list of accepted formats.
 
 ## Capitalization Conventions
 > **Important**
@@ -8,7 +8,7 @@
 
 | Name                          | Valid Formats                        | Invalid Formats               |
 |-------------------------------|--------------------------------------|-------------------------------|
-| CortexAI for Government       | CortexAI for Government, CFG AI      | CFG, CFG.AI, CfG.AI, cfg.ai   |
+| CortexAI for Government       | CortexAI for Government, SEMOSS      | CFG, SEMOSS, SEMOSS, SEMOSS   |
 | Semantic Open Source Software | SEMOSS                               | Semoss, semoss                |
 | SEMOSS SDK                    | SEMOSS SDK                           | Semoss sdk, semoss sdk        |
 | Generative AI                 | Generative AI, Gen AI                | genAI, gen AI, gen ai         |
@@ -65,7 +65,7 @@ also a haiku
 ```
 
 ### Links
-If you are linking to a document within the `cfgai-docs` repository, please use the **relative link**, not the full HTTP URL path. 
+If you are linking to a document within the `SEMOSS/documentation` repository, please use the **relative link**, not the full HTTP URL path. 
 
 For example, to create a link to the [README](README.md), use the following markdown syntax:
 `[README Link Text](README.md)`
@@ -90,4 +90,4 @@ Caption images with a **note in italics** and add **alt-text** when embedding im
 ![Alt text goes here](images/FELocalInstall/finalPage.PNG)
 > _This is my caption_
 
-As mentioned in the [Links](#links) section above, if your image is stored within the `cfgai-docs` repository, then please embed it using the **relative path** of the image, not its full GitHub HTTP URL.
+As mentioned in the [Links](#links) section above, if your image is stored within the `SEMOSS/documentation` repository, then please embed it using the **relative path** of the image, not its full GitHub HTTP URL.

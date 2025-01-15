@@ -18,7 +18,7 @@ We supposrt the following endpoints listed on the OpenAI website:
 
 ### Generate Access Key from your AI Platform 
 
-The first step to gaining access to the data stored in your CFG AI platform is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide. 
+The first step to gaining access to the data stored in your SEMOSS platform is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide. 
 
 [Generate Access Key](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys)
 

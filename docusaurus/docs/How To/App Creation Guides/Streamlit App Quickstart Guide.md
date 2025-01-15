@@ -16,9 +16,9 @@ Futhermore, Streamlit has a great gallery of apps that users have created. Its a
 
 [Apps Gallery](https://streamlit.io/gallery)
 
-Please note that as of now there is no native integration of Streamlit as a hosted CFG AI app. However, Streamlit is very useful for quick presentations and Proof-of-Concept creations. Converting them into a CFG AI app would require using either the [VanillaJS Use Case](VanillaJS%20App%20Quickstart%20Guide.md) or the [React Use Case](React%20App%20Quickstart%20Guide.md). In the future there will be a Streamlit conversion guide that will be a more comprehensive guide for converting a streamlit app into a hosted CFG AI app.  
+Please note that as of now there is no native integration of Streamlit as a hosted SEMOSS app. However, Streamlit is very useful for quick presentations and Proof-of-Concept creations. Converting them into a SEMOSS app would require using either the [VanillaJS Use Case](VanillaJS%20App%20Quickstart%20Guide.md) or the [React Use Case](React%20App%20Quickstart%20Guide.md). In the future there will be a Streamlit conversion guide that will be a more comprehensive guide for converting a streamlit app into a hosted SEMOSS app.  
 
-You are, however, able to connect a Streamlit app to use the Models, Databases, and Storage Catalogs that are present in your CFG AI server. This guide will go through and show how to run a local Streamlit app using your CFG AI data.
+You are, however, able to connect a Streamlit app to use the Models, Databases, and Storage Catalogs that are present in your SEMOSS server. This guide will go through and show how to run a local Streamlit app using your SEMOSS data.
 
 It is important to keep in mind that Streamlit also requires a running backend server.
 
@@ -26,7 +26,7 @@ It is important to keep in mind that Streamlit also requires a running backend s
 
 ## Generate Access Key from your AI server 
 
-The first step to gaining access to the data stored in your CFG AI server is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide to complete your Streamlit integration. 
+The first step to gaining access to the data stored in your SEMOSS server is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide to complete your Streamlit integration. 
 
 [Generate Access Key](../Establish%20Connection%20to%20CFG%20Portal/Connecting%20to%20CFG%20AI.md)
 
@@ -42,7 +42,7 @@ pip install ai-server-sdk
 
 ## Integrate with Streamlit 
 
-In this example we will take an existing streamlit app and modify it to be compatible with the CFG AI server instead of Open AI.
+In this example we will take an existing streamlit app and modify it to be compatible with the SEMOSS server instead of Open AI.
 
 ### Step 1: **Clone the Chatbot.py code**
 
@@ -130,8 +130,8 @@ Instead of providing a secret key for Open AI we will change the inputs to match
 ```python
 ## Change 3 ##
 st.title("💬 Chatbot")
-# Change the display reference from OpenAI LLM to CFG AI Server
-st.caption("🚀 A streamlit chatbot powered by CFG AI Server")
+# Change the display reference from OpenAI LLM to SEMOSS Server
+st.caption("🚀 A streamlit chatbot powered by SEMOSS Server")
 
 # Remove OpenAI secret and add additional inputs in the side bar menu
 with st.sidebar:
@@ -141,7 +141,7 @@ with st.sidebar:
     engine_id = st.text_input("Model Engine ID", key="model_engine_id")     # The model engine ID
     server_connection = login(secret_key, access_key, ai_server_url)        # make the loging call
 ```
-Currently Streamlit apps can only interact with CFG AI when you are running an instance of CFG AI locally. As such, you need point your server to your backend. In most instances this will be the Monolith server that you setup and run. 
+Currently Streamlit apps can only interact with SEMOSS when you are running an instance of SEMOSS locally. As such, you need point your server to your backend. In most instances this will be the Monolith server that you setup and run. 
 
 If you were actively developing then you might want to consider hard coding your access credentials so that you don't have to enter them every time. That change would look as follow:
 

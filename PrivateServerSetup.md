@@ -1,9 +1,9 @@
-# Hosting CFG AI Privately
+# Hosting SEMOSS Privately
 
 > **Note**
-> For most use cases, you will not need to host your own instance. Instead, it is sufficient to connect to the public CFG AI server. Please view the [Getting Started guide](GettingStarted.md) to learn how to access the public CFG AI server.
+> For most use cases, you will not need to host your own instance. Instead, it is sufficient to connect to the public SEMOSS server. Please view the [Getting Started guide](GettingStarted.md) to learn how to access the public SEMOSS server.
 > 
-> However, if your use case involves the following factors/situations listed below, then you can host CFG AI on a **private server** (ex. on-premises), or procure your own hosts from a cloud provider and deploy CFG AI onto it.
+> However, if your use case involves the following factors/situations listed below, then you can host SEMOSS on a **private server** (ex. on-premises), or procure your own hosts from a cloud provider and deploy SEMOSS onto it.
 > * Data residency requirements
 > * Confidential or Classified information
 > * **TBD / needs review**
@@ -16,7 +16,7 @@ For this guide, you will need a server with:
 
 ## Instructions
 ### Request Access to the Docker Setup Scripts
-Please contact your administrator to request for a copy of the **AI_Scripts** folder and for the **link to the CFG AI Docker Repository** before proceeding with the guide.
+Please contact your administrator to request for a copy of the **AI_Scripts** folder and for the **link to the SEMOSS Docker Repository** before proceeding with the guide.
 
 ### Install Docker on Server
 - In the bash terminal, run `cd ~ && mkdir AI` to create an `AI/` folder inside the root directory.
@@ -52,7 +52,7 @@ docker run -itd --name ai-server \
 -p 8080:8080 DOCKER_REPOSITORY_URL/genai/genai-server:4.3.0-SNAPSHOT-dev-2023-10-06 bash
 ```
 
->  **Note:** Please replace `DOCKER_REPOSITORY_URL` in the above command with the CFG AI Docker Repository link that you received from your administrator in the [first section](#request-access-to-the-docker-setup-scripts).
+>  **Note:** Please replace `DOCKER_REPOSITORY_URL` in the above command with the SEMOSS Docker Repository link that you received from your administrator in the [first section](#request-access-to-the-docker-setup-scripts).
 - View the running `ai-server` container by running `docker container ps`
 ![AI Server Container](/images/PrivateServerSetup/AIServerContainer.png)
 - Execute the following command:

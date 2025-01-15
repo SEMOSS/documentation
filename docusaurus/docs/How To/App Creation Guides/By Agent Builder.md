@@ -4,7 +4,7 @@ Agent Builder is one of the types of Drag and Drop feature. When we need to deve
 
 In Agent Builder, we develop the initial UI by creating a prompt which contains the type of inputs the user will provide and what output is expected out of the app. Once this initial UI is created, an Agent Builder App is no different from Drag and Drop App. Let's understand the process to develop an app via Agent Builder.
 
-To use Agent Builder, first click on **Create New App* button on the top right corner of your Cfg.Ai home page and then click on **Get Started** on the Agent Builder tab.
+To use Agent Builder, first click on **Create New App* button on the top right corner of your SEMOSS home page and then click on **Get Started** on the Agent Builder tab.
 
 ![AB](../../../static/img/Navigating/Create%20New%20App/AB1.png)
 
