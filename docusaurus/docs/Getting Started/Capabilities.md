@@ -1,7 +1,7 @@
 ---
-sidebar_label: 'Capabilities'
+sidebar_label: 'Platform Features'
 sidebar_position: 2
-slug: '/capabilities'
+slug: '/features'
 ---
 
 ## Leveraging the SEMOSS Platform Capabilities
