@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Introduction to SEMOSS'
+sidebar_label: 'Introduction'
 sidebar_position: 1
 slug: '/'
 ---
