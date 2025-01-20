@@ -14,7 +14,7 @@ When you click on the App Settings tab, you will see all the apps that are house
 
 To change the access settings of any App, click on it.
 
-![Member](../../static/img/Member.png)
+![Member](../../static/img/Members.png)
 
 
 You can also see if there are any Pending request from any practisioners.
