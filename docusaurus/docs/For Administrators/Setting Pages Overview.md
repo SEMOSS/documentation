@@ -8,8 +8,16 @@ You can even edit the type of access given to other practisioners, like for exam
 
 ## App Settings
 
-When you click on the App Settings tab, you will come across the folowwing UI,
+When you click on the App Settings tab, you will see all the apps that are housed under the 'My Apps' section in your platform.
 
-![AppSettings](../../static/img/Appsetting.png)
+![AppSettings](../../static/img/Applist.png)
 
-Here, as mentioned earlier you can give access 
+To change the access settings of any App, click on it.
+
+![AccessSettings](../../static/img/Member.png)
+
+
+You can also see if there are any Pending request from any practisioners.
+
+![AccessSettings](../../static/img/Pending request.png)
+
