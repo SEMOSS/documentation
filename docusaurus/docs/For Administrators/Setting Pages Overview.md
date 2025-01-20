@@ -7,3 +7,9 @@ In the Settings section, you have give or revoke access of any App, Model, Funct
 You can even edit the type of access given to other practisioners, like for example from author to an editor or just a viewer.
 
 ## App Settings
+
+When you click on the App Settings tab, you will come across the folowwing UI,
+
+![AppSettings](../../static/img/Appsetting.png)
+
+Here, as mentioned earlier you can give access 
