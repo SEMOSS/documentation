@@ -68,7 +68,7 @@ const config = {
                 to: "/"
               },
               {
-                label: "Get Started",
+                label: "Getting Started",
                 to: "category/get-started"
               },
               {
