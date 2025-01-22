@@ -1,3 +1,9 @@
+---
+sidebar_label: 'Drag and Drop'
+sidebar_position: 3
+slug: '/drag-and-drop'
+---
+
 # Drag and Drop Blocks to Build UI for your new App
 To build UI for a new app, we can Drag and Drop UI components to customize the app's design as per our requirement. We have different building blocks to design the app and add data to it.
 

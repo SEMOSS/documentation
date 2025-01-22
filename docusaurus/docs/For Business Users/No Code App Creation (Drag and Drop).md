@@ -1,7 +1,7 @@
 ---
 sidebar_label: "No Code App Creation"
 sidebar_position: 1
-slug: '/no-code-app'
+slug: "/no-code-app"
 ---
 
 ## Drag and Drop Blocks to Build UI for your new App
