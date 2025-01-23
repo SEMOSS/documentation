@@ -9,7 +9,11 @@ In this section we are going to see how to navigate and work through the platfor
 ## App Library
 App Library is a section in SEMOSS which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use.
 
+### Creating a New App
 
+
+### Locating an App
+The platform enables you too search the app you 
 
 ## Adding a Model 
 Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on SEMOSS are built on these models. 
