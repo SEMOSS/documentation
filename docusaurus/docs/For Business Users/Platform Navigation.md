@@ -35,11 +35,15 @@ How to build a Code App has been covered in detail here.
    
 How to build a Drag and Drop App has been covered in detail here.
 
+<Link Placeholder>
+
 3.  Agent Builder - This is also a no-code solution.
 
 How to build a Drag and Drop App has been covered in detail here.
 
-![New App](../../static/img/PlatformNavigation/NewappPN.png)
+<Link Placeholder>
+
+> Image Placeholder
 
 ### Manage App Access
 
