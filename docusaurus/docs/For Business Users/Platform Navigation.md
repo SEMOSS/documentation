@@ -3,8 +3,9 @@ SEMOSS is a platform to create Gen AI applications at the client level and deplo
 
 In this section we are going to see how to navigate and work through the platform and its different resources. When you login to Semoss, you arrive at its homepage as illustrated in the picture below.
 
-![Home Page](../../../static/img/PlatformNavigation/HomepagePN.png)
+> Image Placeholder
 
+Let us look at the different elements one by one.
 
 ## App Library
 App Library is a section in SEMOSS which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use.
@@ -12,7 +13,7 @@ App Library is a section in SEMOSS which consists of list of Gen AI applications
 ### Locating an App
 You can quickly navigate to the app you want to use in the library by using the **search** option present at the top right corner of the page. This is highlighted in the picture below.
 
-![App Search](../../static/img/PlatformNavigation/AppsearchPN.png)
+> Image Placeholder
 
 While creating a new app we can add **tags** to it for better segregation and ease of navigation. Tags could be related to the functuality of the app. For example, if your app helps user to itinerary for a trip they are planning, tags attached could include **travel planner**, or **itinerary creator**. You can use these tags to filter out the app you want to use from the entire library.
 
@@ -21,12 +22,14 @@ While creating a new app we can add **tags** to it for better segregation and ea
 ### Creating a new App
 To create a new App, click on the top right corner of the homepage on **Create New App**.
 
-![Create New App](../../static/img/PlatformNavigation/CreatenewappPN.png)
+> Image Placeholder
 
 You can choose among the 3 different options of creating a new app. These are,
 1. Code - You can uild an app by coding using a framework or even from strach
 
 How to build a Code App has been covered in detail here.
+
+<Link Placeholder>
 
 2. Drag and Drop - This is no-code option of creating a new app.
    
