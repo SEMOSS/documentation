@@ -9,11 +9,34 @@ In this section we are going to see how to navigate and work through the platfor
 ## App Library
 App Library is a section in SEMOSS which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use.
 
-### Creating a New App
-
-
 ### Locating an App
-The platform enables you too search the app you 
+You can quickly navigate to the app you want to use in the library by using the **search** option present at the top right corner of the page. This is highlighted in the picture below.
+
+![App Search](../../static/img/PlatformNavigation/AppsearchPN.png)
+
+While creating a new app we can add **tags** to it for better segregation and ease of navigation. Tags could be related to the functuality of the app. For example, if your app helps user to itinerary for a trip they are planning, tags attached could include **travel planner**, or **itinerary creator**. You can use these tags to filter out the app you want to use from the entire library.
+
+> How to add a tag
+
+### Creating a new App
+To create a new App, click on the top right corner of the homepage on **Create New App**.
+
+![Create New App](../../static/img/PlatformNavigation/CreatenewappPN.png)
+
+You can choose among the 3 different options of creating a new app. These are,
+1. Code - You can uild an app by coding using a framework or even from strach
+
+How to build a Code App has been covered in detail here.
+
+2. Drag and Drop - This is no-code option of creating a new app.
+   
+How to build a Drag and Drop App has been covered in detail here.
+
+3.  Agent Builder - This is also a no-code solution.
+
+How to build a Drag and Drop App has been covered in detail here.
+
+![New App](../../static/img/PlatformNavigation/NewappPN.png)
 
 ## Adding a Model 
 Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on SEMOSS are built on these models. 
