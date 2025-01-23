@@ -84,6 +84,13 @@ There are primarily three types of models available with different characteristi
 
 **Embedded -** These kind of models are integrated with other softwares or platforms focused on specific functions. These can be blended seamlessly into the existing system.
 
+### Connecting our App to a Model
+
+When we are working in the **Data Section** of our Drag and Drop feature, to connect our app to a model we can choose **Code** cell, we can go to the CFG resource (Model, Database, Storage, Vector Database etc.) which we want to connect with the App and click on the usage tab within the resource. We can copy the code based on scripting language we have chosen for the cell and paste it in the Notebook query cell. We can also modify this code or write a customized code altogether.
+
+![Usage tab in CFG resource](../../../static/img/Navigating/Resource%20Usage%20Tab.PNG)
+
+
 ## Adding a Storage Source
 Storage is used to store data that is created while using Gen AI Apps on SEMOSS. There are a number of options on which Storage can be hosted (eg- Amazon S3, Google Cloud Storage, Dropbox etc). 
 
