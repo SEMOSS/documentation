@@ -13,6 +13,8 @@ Here, on the leftmost side you will see your App Library along with the 5 platfo
 5. Vector -
 6. Storage -
 
+----------------------------------------------
+
 # SEMOSS Overview
 
 SEMOSS is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your SEMOSS instance. 
@@ -32,12 +34,12 @@ To connect to existing Models or add new Models, click on the **vector** icon on
 
 Once you're in the current Model Catalog, you will find a list of LLMs that already accessible to you. If you do not have any existing LLMs in your current model catalog, you can go to **Discoverable models**, browse through the available models and request access:
 
-![Model Catalog](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Add_Model.PNG)
+![Model Catalog](../../static/img/Navigating/CFG%20AI%20Walkthrough/Add_Model.PNG)
 > _"Add Model" Button_
 
 Click on **Add Model**, chose your model of choice from the list and fill in the details to connect to the model.
 
-![Add Model](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Connect_To_Model.PNG)
+![Add Model](../../static/img/Navigating/CFG%20AI%20Walkthrough/Connect_To_Model.PNG)
 > _Various Model Options_
 
 <ReactPlayer controls url={ModelCatalog} />
@@ -55,22 +57,22 @@ Storage is used to store data that is created while using Gen AI Apps on SEMOSS.
 
 To connect to existing Storage or add new Storage, click on the **box** icon on the left side of SEMOSS portal which will take you to Storage catalog.
 
-![Storage icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/StorageCatalogIcon.PNG)
+![Storage icon](../../static/img/Navigating/CFG%20AI%20Walkthrough/StorageCatalogIcon.PNG)
 > _Highlighted icon for Storage Catalogue_
 
 Once you're in the Storage Catalog, you will find Storage if they are already present and accessible by you as shown below.
 
-![Storage Catalogue](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Storage.PNG)
+![Storage Catalogue](../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Storage.PNG)
 > _"Add Storage" button_
 
 For adding, click on **Add Storage** and it will take you to **Connect to Storage** page where you will find number of Storage options to chose from as illustrated below.
 
-![Add Storage](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Options.PNG)
+![Add Storage](../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Options.PNG)
 > _Various Storage Options_
 
 Click on the **Storage option** which you want for your instance. In this case, we will click on **MINIO** and it will take you to the page where you have to fill out the Storage details.
 
-![Enter Storage Details](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Details.PNG)
+![Enter Storage Details](../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Details.PNG)
 > _Storage Details Required_
 
 Please fill in the details below to connect a test MINIO storage source.
@@ -89,7 +91,7 @@ Please fill in the details below to connect a test MINIO storage source.
 
 Click on **Add Storage** shown at the bottom of details page and Storage will be added to the Storage Catalog as shown in below snapshot.
 
-![Storage Catalogue 2](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Catalogue.png)
+![Storage Catalogue 2](../../static/img/Navigating/CFG%20AI%20Walkthrough/Storage%20Catalogue.png)
 > _Newly added Storage_
 
 <ReactPlayer controls url={StorageCatalogDemo} />
@@ -145,27 +147,27 @@ Databases are organized data that is linked with Gen AI Apps on SEMOSS and can b
 
 To connect to an existing Database or add a new Database, click on the **cylinderical** icon on the left side of SEMOSS portal which will take you to Data catalog.
 
-![Database icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20icon.PNG)
+![Database icon](../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20icon.PNG)
 > _Highlighted icon for Database Catalogue_
 
 Once you're in the current Data Catalog, you will find a list of Database that are already accessible by you as shown below.
 
-![Database catalog](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Database.PNG)
+![Database catalog](../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Database.PNG)
 > _"Add Database" button_
 
 To connect to a Database, click on **Add Database** and you will be directed to the **Add Source** page which will have various options within the Database section mentioned below.
 
-![Add Database](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20Options.PNG)
+![Add Database](../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20Options.PNG)
 > _Different Options of using Database_
 
 Click on **Connect to Database** icon and it will take you to a page where you will have different Database file types to upload and Types of **Connections** to chose from (shown below).
 
-![Connect to Database](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Various%20Database%20type.PNG)
+![Connect to Database](../../static/img/Navigating/CFG%20AI%20Walkthrough/Various%20Database%20type.PNG)
 > _Various Database types to choose from_
 
 You can choose the type of file to upload and then choose the **Connections** type based on your Database or requirements. Once you click on the Connections type, it will direct you to a page where you can fill all the required details as shown in the below image. Click on **Connect** at the bottom of the page.
 
-![Database Connection Double Click](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20Details%20required.PNG)
+![Database Connection Double Click](../../static/img/Navigating/CFG%20AI%20Walkthrough/Database%20Details%20required.PNG)
 > _Database details required to be filled_
 
 <ReactPlayer controls url={DatabaseCatalog} />
@@ -174,46 +176,46 @@ You can choose the type of file to upload and then choose the **Connections** ty
 A vector database is a specialized solution designed for the storage, indexing, and retrieval of massive datasets containing unstructured data. These databases leverage machine learning models and their embeddings to facilitate searching across various forms of unstructured data, including images, video, text, audio, and more. This is done with the help of pixel calls.
 
 To connect to a vector database, go to **App Library > Vector Catalog** and then manually add the vector database.
-![Vector_icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Vector%20Catalog%20Icon.PNG)
+![Vector_icon](../../static/img/Navigating/CFG%20AI%20Walkthrough/Vector%20Catalog%20Icon.PNG)
 > Click on vector icon
   
 Click on **Add Vector** on the top-right section and it will take to different type of connections for Vector.
 
-![Add_Vector_Manually](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Vector.PNG)
+![Add_Vector_Manually](../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Vector.PNG)
 > Adding vector manually
 
 Choose an appropriate **Connection** based on your requirements.
-![ConnectYourVector](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Choose%20a%20connection.PNG)
+![ConnectYourVector](../../static/img/Navigating/CFG%20AI%20Walkthrough/Choose%20a%20connection.PNG)
 > Choosing connection
 
 Fill in the required details. Click on **Add Vector**.
-![AddDetails](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Vector%20Details.PNG)
+![AddDetails](../../static/img/Navigating/CFG%20AI%20Walkthrough/Add%20Vector%20Details.PNG)
 > Fill in the details and click create vector
 
 Your vector database is now ready to use. 
 
 Now to embed your vector database with some data, **Click** on it to open.
-![Vector Catalog](../../../static/img/Navigating/CFG%20AI%20Walkthrough/NewVectorCatalog.png)
+![Vector Catalog](../../static/img/Navigating/CFG%20AI%20Walkthrough/NewVectorCatalog.png)
 
 You will see 4-5 tabs within your database depending upon your access privileges. Go to **Files**.
 
 Click on **+ Embed New Document** to upload your data file. It only accepts files with .txt, .csv, ,pdf, .doc, .ppt extensions.
-![Embed Data](../../../static/img/Navigating/CFG%20AI%20Walkthrough/NewEmbedData.png)
+![Embed Data](../../static/img/Navigating/CFG%20AI%20Walkthrough/NewEmbedData.png)
 
 Click on **upload files** to select and upload your data and click on **Embed**. You can also drag and drop your file to the same window.
-![Upload Files](../../../static/img/Navigating/CFG%20AI%20Walkthrough/NewUploadData.png)
+![Upload Files](../../static/img/Navigating/CFG%20AI%20Walkthrough/NewUploadData.png)
 
 You should now be able to see your file inside the vector database.
-![Data Files](../../../static/img/Navigating/CFG%20AI%20Walkthrough/NewDataFiles.png)
+![Data Files](../../static/img/Navigating/CFG%20AI%20Walkthrough/NewDataFiles.png)
 
 If you have questions regarding the policies or your datasets, go to **Q&A** tab and type in your query in the space provided.
-![Q&A Tab](../../../static/img/Navigating/CFG%20AI%20Walkthrough/NewQ%26ATab.png)
+![Q&A Tab](../../static/img/Navigating/CFG%20AI%20Walkthrough/NewQ%26ATab.png)
 
 Once the file is uploaded, run the following command.
 
 `CreateEmbeddingsFromDocuments ( engine = "80a482d5-06b7-4ff6-bedc-0d0570b7bfeb" , filePaths = [ "TestFile.csv" ] , paramValues = [ { "columnsToIndex" : [ "content" ] } ] ) ;`
 
-![EmbedDB](../../../static/img/VectorDatabase/EmbedDB.png)
+![EmbedDB](../../static/img/VectorDatabase/EmbedDB.png)
 > Execute this command to embed your vector database with the .csv file
 
 * This will take a while to run. Once completed, your vector database is ready to use.
@@ -223,7 +225,7 @@ Once the file is uploaded, run the following command.
 
 * To do so, go back to App Library > Vector Catalog by clicking the vector icon on the left-side.
 
-![Vector_icon](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Vector%20Catalog%20Icon.PNG)
+![Vector_icon](../../static/img/Navigating/CFG%20AI%20Walkthrough/Vector%20Catalog%20Icon.PNG)
 > Look for the database you just created.
 
 <ReactPlayer controls url={VectorCatalogDemo} />
@@ -231,17 +233,17 @@ Once the file is uploaded, run the following command.
 ## Access to resources
 **Discoverable items** in catalogs are the resources which are created by other users and present on SEMOSS portal. You need to request access to those resources to use them.
 
-![Discoverable Items](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Discoverable%20Items.PNG)
+![Discoverable Items](../../static/img/Navigating/CFG%20AI%20Walkthrough/Discoverable%20Items.PNG)
 > _Discoverable Models_
 
 To get access to any Model, Database, or Storage, click on that resource and it will direct you to that resource page as shown below.
 
-![Request Access](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Request%20Access.PNG)
+![Request Access](../../static/img/Navigating/CFG%20AI%20Walkthrough/Request%20Access.PNG)
 > _Request access to Model_
 
 Click on **Request Access** near the top-right corner and a pop-up will provide you with 3 options to choose from - Author, Editor & Read-Only. You can choose the option based on your role and request.
 
-![Grant Permission](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Permission%20Levels.PNG)
+![Grant Permission](../../static/img/Navigating/CFG%20AI%20Walkthrough/Permission%20Levels.PNG)
 > _Permission Levels_
 
 ### Permission Levels
@@ -280,22 +282,22 @@ This tab is present in **My Resources** and consists of adjustable settings rela
 
 If you ever want to remove an App from your SEMOSS server, the first thing that you should do is navigate to your settings sections (the gear). 
 
-![Settings Tool](../../../static/img/Navigating/CFG%20AI%20Walkthrough/Settings%20Tool%20icon.PNG)
+![Settings Tool](../../static/img/Navigating/CFG%20AI%20Walkthrough/Settings%20Tool%20icon.PNG)
 > _The settings tool_
 
 Inside Settings, you should see a screen that has a settings sections for each of the resources you have in SEMOSS. Click on App Settings. 
 
-![App Settings](../../../static/img/Navigating/CFG%20AI%20Walkthrough/CfGAI%20Settings_2.PNG)
+![App Settings](../../static/img/Navigating/CFG%20AI%20Walkthrough/CfGAI%20Settings_2.PNG)
 > _This will house all the Gen AI apps that you have in your App Catalog_
 
 Here you will see each of your apps listed individually. Click on the app that you would like to delete. 
 
-![App Catalog in Settings Page](../../../static/img/Navigating/Navigating3.PNG)
+![App Catalog in Settings Page](../../static/img/Navigating/Navigating3.PNG)
 > _All of your Apps displayed_
 
 Once inside an app, you can easily delete it by clicking the delete button. 
 
-![Delete Button](../../../static/img/Navigating/Navigating4.png)
+![Delete Button](../../static/img/Navigating/Navigating4.png)
 > _Delete Button_
 
 > **Warning**:
@@ -374,6 +376,4 @@ This process can be replicated for all other resource types (databases, models, 
 * **Can a new document be added to an already available database?**
 
     Yes, in the "Files" tab of the vector database, one can add or remove documents. Please see the following page for more information: [Adding a vector Database](../../Get%20Started/Navigation/CFG%20AI%20Walkthrough.mdx#adding-a-vector-database.md)
-
-![Home Page](../../static/img/PlatformNavigation/HomepagePN.png)
 
