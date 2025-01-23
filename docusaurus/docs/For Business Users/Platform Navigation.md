@@ -3,7 +3,7 @@ SEMOSS is a platform to create Gen AI applications at the client level and deplo
 
 In this section we are going to see how to navigate and work through the platform and its different resources. When you login to Semoss, you arrive at its homepage as illustrated in the picture below.
 
-![Home Page](../../static/img/PlatformNavigation/HomepagePN.png)
+![Home Page](../../../static/img/PlatformNavigation/HomepagePN.png)
 
 
 ## App Library
