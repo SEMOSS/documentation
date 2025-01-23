@@ -38,6 +38,24 @@ How to build a Drag and Drop App has been covered in detail here.
 
 ![New App](../../static/img/PlatformNavigation/NewappPN.png)
 
+### Manage App Access
+
+You can control the type of access other users have to the apps you create. To manage the access of a particular app, open the app and click on **edit** on the top right corner of the app page.
+
+![New App](../../static/img/PlatformNavigation/NewappPN.png)
+
+You can either give access as,
+an author - who can make changes to the app UI and functioning and even tweak the app access settings,
+an editor - who can make changes to the app UI and functioning but not tweak the app access settings, or
+a read-only - who can only use the app and can make no changes to its working
+
+![New App](../../static/img/PlatformNavigation/NewappPN.png)
+
+Others can even ask for access to your app and these requests will be visible in **Pending request**. Similarly, you can even ask for permission for access of a particular app. You search for apps you currently don't have access to, click on **Discoverable tab** on the home page.
+
+
+
+
 ## Adding a Model 
 Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on SEMOSS are built on these models. 
 
