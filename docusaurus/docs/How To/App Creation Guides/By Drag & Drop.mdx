@@ -1,14 +1,21 @@
 ---
-sidebar_label: 'Drag and Drop'
+sidebar_label: "Drag and Drop"
 sidebar_position: 3
-slug: '/drag-and-drop'
+slug: "/drag-and-drop"
 ---
 
+import ReactPlayer from "react-player";
+import DragandDrop from "../../../static/Demos/DragandDropDemo.mp4";
+import BlockGuideDemo from "../../../static/Demos/BlockGuideDemo.mp4";
+import AskLLMTemplateDemo from "../../../static/Demos/AskLLMTemplateVideo.mp4";
+import AskCSVTemplateDemo from "../../../static/Demos/AskCSVDemo.mp4";
+
 # Drag and Drop Blocks to Build UI for your new App
+
 To build UI for a new app, we can Drag and Drop UI components to customize the app's design as per our requirement. We have different building blocks to design the app and add data to it.
 
 Before starting let us first have a top level understanding of the app creation process. The overall process can be divided in 3 tabs- **UI**, **Notebook**, and **Variables**.
-**UI tab**- Here, we drag and drop the UI elements to build our app design. This section defines how our app will look and what features and elements will it have for the user. 
+**UI tab**- Here, we drag and drop the UI elements to build our app design. This section defines how our app will look and what features and elements will it have for the user.
 **Notebook tab**- Here we create requests to be made from the multiple app resources we have at our peril
 **Variables tab**- Here connect the **UI tab** with the **Notebook tab**. Variables tab empowers us to enter an input (and hit a command) and the App will run through a relevant data repository and provide an output.
 
@@ -25,7 +32,9 @@ Enter name of the new app. It will then go to the page where we can start buildi
 You will be able to see the various blocks that can be used to build the UI. The different blocks and information about their usage are listed below.
 
 ## Design
+
 ### Element
+
 Here we can add basic elements in the app like HTML, IFrame or an image block. **HTML** block is added to the App for inclusion of a web page. We can either generate HTML page using AI or can write a customized HTML code. **IFrame** block can be used when we want to add a web page into the App interface.
 
 We can add images using the **Image block**. After adding an Image block (by drag and drop), we can click on **Block Settings tab** (on the left side of the page) and put url of the image we want to insert along with also mentioning its position in the block and setting the dimension details.
@@ -33,30 +42,34 @@ We can add images using the **Image block**. After adding an Image block (by dra
 ![Input](../../../static/img/Navigating/Create%20New%20App/DND3.png)
 
 ### Input
+
 This category will enable to add Input placeholder to the page using Audio Player, Button, Checkbox, Select, Input, Toggle Button, or Upload. **Button** is added to the page so that we can click on it to execute an action or get the output of App. **Checkbox** is added to the page to check & un-check any condition in the App.
 
-**Select** is added to the page to provide us with drop-down options as input which we can select to get our output. After adding a Select block (by drag and drop), we can click on **Block Settings tab** (on the left side of the page) and customize the input values and even add a query to it if required. **Input** is similar to **Select** but here input can be entered from the user instead of choosing from drop down. **Toggle Button** gives the option to switch on/off any feature or condition in the App. **Upload** is added to the page to provide an option to the user to upload any file which can be used in the App. 
+**Select** is added to the page to provide us with drop-down options as input which we can select to get our output. After adding a Select block (by drag and drop), we can click on **Block Settings tab** (on the left side of the page) and customize the input values and even add a query to it if required. **Input** is similar to **Select** but here input can be entered from the user instead of choosing from drop down. **Toggle Button** gives the option to switch on/off any feature or condition in the App. **Upload** is added to the page to provide an option to the user to upload any file which can be used in the App.
 
 ![Input](../../../static/img/Navigating/Create%20New%20App/DND4.png)
 
 ### Layout and Progress
+
 This category will enable to build UI layout using Containers and Query. **Container Block** is a block in which we can enter other blocks like Element, Input or Text. Using the Block Settings tab, we can customize the specifications of the container from Layout to Border. **Progress** block is added to display progress of any feature/element in the App.
 
 ![Layout](../../../static/img/Navigating/Create%20New%20App/DND5.png)
 
 ### Text
+
 This category will enable to add Text to the page using Link, Logs, Markdown or Text blocks. **Link** is added to the page to provide a link within App to another page or a file (details of the link can added by clicking on Block setting and selecting the **link block**). **Logs** are embedded in the App to track App performance and user activities. **Markdown** is a block in which we can put text formatted as headers, lists, bold, italics, etc. for web pages (Block Settings tab can be used to customize the specifications). **Text** is a block in which we can put plain text as required by the App on its UI (to format it, we can click on Block Settings, select the Text block and use the customization section).
 
-![Text](../../../static/img/Navigating/Create%20New%20App/DND6.png) 
+![Text](../../../static/img/Navigating/Create%20New%20App/DND6.png)
 
-**Layers tab** on the left as shown below will list all the blocks that are layered in a App. 
+**Layers tab** on the left as shown below will list all the blocks that are layered in a App.
 
 ![Text](../../../static/img/Navigating/Create%20New%20App/DND7.png)
 
 ## Data
+
 **Data tab** in the leftmost cloumn enables users to connect the CFG platform resources like Model, Database, Storage, etc. with the App.
 
-In the **Notebook tab**, we can add a query and enter an ID to it and it will take us to a cell where we can enter our code in Pixel, Python or R. 
+In the **Notebook tab**, we can add a query and enter an ID to it and it will take us to a cell where we can enter our code in Pixel, Python or R.
 
 ![Scripting Language](../../../static/img/Navigating/Create%20New%20App/DND8.png)
 
@@ -84,11 +97,12 @@ We can also transform data presented in the colums of the table using **Transfor
 
 ![Transformation](../../../static/img/Navigating/Create%20New%20App/DND12.png)
 
-After that a new cell for selected transformation will appear below and in that choose the Frame in which we want to transform data. Then select required details as per the transformation type chosen and run the query. We  can then see modified/updated data in the Frame compared to previously shown data as displayed in below screenshot.
+After that a new cell for selected transformation will appear below and in that choose the Frame in which we want to transform data. Then select required details as per the transformation type chosen and run the query. We can then see modified/updated data in the Frame compared to previously shown data as displayed in below screenshot.
 
 ![Transformation Uppercase](../../../static/img/Navigating/Create%20New%20App/DND13.png)
 
 ### Creating and using variables
+
 Now finally we will connect the UI with our created queries. For this, we click on the **Variables tab**, then on **add(+)** on the left side of the panel and define the variable by adding details as shown below. In the UI tab, we have add different types of blocks (like image, text, button, etc.), thus we can define our variable as the type of the block we want to connect it with.
 
 ![Create variables](../../../static/img/Navigating/Create%20New%20App/DND14.png)
@@ -107,7 +121,7 @@ To link query in Notebook with Button block we can click on **"New Action"** on 
 
 ![Link Query with Action Block](../../../static/img/Navigating/Create%20New%20App/Query%20linked%20to%20action.png)
 
-To connect a query that automatically runs when an App page is opened, select **page** block that embeds all other blocks and click on **New Action** on the right hand side under **ON PAGE LOAD** and enter query type and query ID as shown in below screenshot.We can add multiple queries to the Page and they will automatically run whenever someone opens the App Page. 
+To connect a query that automatically runs when an App page is opened, select **page** block that embeds all other blocks and click on **New Action** on the right hand side under **ON PAGE LOAD** and enter query type and query ID as shown in below screenshot.We can add multiple queries to the Page and they will automatically run whenever someone opens the App Page.
 
 ![Page Query](../../../static/img/Navigating/Create%20New%20App/Pagequery.png)
 
@@ -123,18 +137,19 @@ Now we can go into App Library and click on the App we have created. We can see 
 
 <ReactPlayer controls url={DragandDrop} />
 
-
 # Use pre-built templates
+
 Developers and business users can use these pre-built templates to create and customize apps. This makes the devopment process quicker and accelerates time to delivery.
 
 ## Work with blocks in UI builder
+
 To use different blocks that we have discussed above, there is a **Block Guide**. It is a template that allow users to experiment with each of the blocks in the UI builder. We can leverage all blocks in the template or remove some blocks as required in the app. We can also connect our own data to this app and customize queries that will run the app.
 
-To create new app using **Block Guide**, click on **Create New App** and then click on **open** in Block Guide within browse template section as shown below. 
+To create new app using **Block Guide**, click on **Create New App** and then click on **open** in Block Guide within browse template section as shown below.
 
 ![Browse Template Block Guide](../../../static/img/Navigating/BrowseTemplateBlockGuide.PNG)
 
-Enter the name we want to give to the App and then click on **Create**. After entering the template, we can browse from top to bottom to see through all the blocks present in the App. 
+Enter the name we want to give to the App and then click on **Create**. After entering the template, we can browse from top to bottom to see through all the blocks present in the App.
 
 ![Block Guide App](../../../static/img/Navigating/BlockGuideApp.PNG)
 
@@ -156,9 +171,7 @@ Once we connect queries in data tab to blocks and update configurations of these
 
 ![Created App](../../../static/img/Navigating/NewAppThroughBlockGuide.PNG)
 
-
 <ReactPlayer controls url={BlockGuideDemo} />
-
 
 ## Landing Page Guide
 
@@ -176,11 +189,11 @@ Enter a name and then click on Create.
 
 ![CreateLandingPage](../../../static/img/Navigating/Create%20New%20App/LandingPage3.png)
 
-You’ll find a sample landing page template ready for use. 
+You’ll find a sample landing page template ready for use.
 
 ![SampleLandingPage](../../../static/img/Navigating/Create%20New%20App/LandingPage4.png)
 
-Use the design tab to modify the UI. Click on each block to customize the landing page as per your requirements.  
+Use the design tab to modify the UI. Click on each block to customize the landing page as per your requirements.
 
 ## Ask LLM Guide
 
@@ -192,11 +205,11 @@ Go to App Library Home Page and click on **Create New App**.
 
 Scroll down to **Browse Templates** and go to **Ask LLM** and click Open.
 
-![Ask LLM Template](../../../static/img/Navigating/Create%20New%20App/AskLLM1.png)  
+![Ask LLM Template](../../../static/img/Navigating/Create%20New%20App/AskLLM1.png)
 
 Enter a name and then click on Create.
 
-![Create LLM App](../../../static/img/Navigating/Create%20New%20App/AskLLM2.png)  
+![Create LLM App](../../../static/img/Navigating/Create%20New%20App/AskLLM2.png)
 
 click on the input block that has the label **Question** inside it. Type in your question inside **Value** box in the **Design** tab that open up on the right side.
 
@@ -204,7 +217,7 @@ click on the input block that has the label **Question** inside it. Type in your
 
 Now go to **Ask** button and click on **Run Query** under the editing options on the right hand side.
 
-![Run Query](../../../static/img/Navigating/Create%20New%20App/AskLLM4.png)  
+![Run Query](../../../static/img/Navigating/Create%20New%20App/AskLLM4.png)
 
 You will have your answer in the response box once the query runs successfully.
 
@@ -218,7 +231,6 @@ Save your app when you finalize the changes and share with other users.
 
 <ReactPlayer controls url={AskLLMTemplateDemo} />
 
-
 ## Ask CSV Guide
 
 Use this template to create a basic app that lets you generate an SQL query to read data from an SQL file. You can upload a csv file and type in the question for the data you need. The app will return a CSV query in response.
@@ -229,15 +241,15 @@ Go to App Library Home Page and click on **Create New App**.
 
 Scroll down to **Browse Templates** and go to **Ask CSV** and click Open.
 
-![Ask CSV Template](../../../static/img/Navigating/Create%20New%20App/AskCSV1.png)  
+![Ask CSV Template](../../../static/img/Navigating/Create%20New%20App/AskCSV1.png)
 
 Enter a name and then click on Create.
 
-![Create CSV App](../../../static/img/Navigating/Create%20New%20App/AskCSV2.png)  
+![Create CSV App](../../../static/img/Navigating/Create%20New%20App/AskCSV2.png)
 
 You will see a template ready to use. Click on the **Upload** block and choose the file you want to run the query on.
 
-![Upload CSV File](../../../static/img/Navigating/Create%20New%20App/AskCSV3.png)  
+![Upload CSV File](../../../static/img/Navigating/Create%20New%20App/AskCSV3.png)
 
 After the file is uploaded, type in the question for which you want to generate the CSV query in the **Question** block as an input.
 
@@ -245,9 +257,9 @@ After the file is uploaded, type in the question for which you want to generate 
 
 Now, click on **Ask** button and then on the right, click on **Run Query** to generate results.
 
-![Run Query](../../../static/img/Navigating/Create%20New%20App/AskCSV5.png)  
+![Run Query](../../../static/img/Navigating/Create%20New%20App/AskCSV5.png)
 
-Once it runs successfully, it will return the SQL query you need to retrieve the data for the question you asked earlier. 
+Once it runs successfully, it will return the SQL query you need to retrieve the data for the question you asked earlier.
 
 ![Query Results](../../../static/img/Navigating/Create%20New%20App/AskCSV6.png)
 
@@ -255,12 +267,11 @@ Save your app when you finalize the changes and share with other users.
 
 <ReactPlayer controls url={AskCSVTemplateDemo} />
 
-
-
 # Commonly Asked Questions
 
 ## Using Upload Block
-When using **Upload Block** in the App and using **Python** as scripting language in code/query, we should use **"ROOT + "file"** in code as shown below, for calling the **file** instead of just using **"file"** as in case of **Pixel.** 
+
+When using **Upload Block** in the App and using **Python** as scripting language in code/query, we should use **"ROOT + "file"** in code as shown below, for calling the **file** instead of just using **"file"** as in case of **Pixel.**
 
 ![Python Prefix for Upload Block](../../../static/img/Navigating/Pythonprefixforuploadblock.png)
 
