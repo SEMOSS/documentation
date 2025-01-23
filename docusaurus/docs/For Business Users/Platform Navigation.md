@@ -27,7 +27,7 @@ Models are LLMs (Large Language Model) which is a type of AI (Artifical Intellig
 
 To connect to existing Models or add new Models, click on the **vector** icon on the left side of SEMOSS portal which will take you to Model catalog.
 
-![App Library](../../../static/img/Navigating/CFG%20AI%20Walkthrough/ModelCatalogIconHighlight.PNG)
+![App Library](../../static/img/Navigating/CFG%20AI%20Walkthrough/ModelCatalogIconHighlight.PNG)
 > _Highlighted icon for Model Catalog_
 
 Once you're in the current Model Catalog, you will find a list of LLMs that already accessible to you. If you do not have any existing LLMs in your current model catalog, you can go to **Discoverable models**, browse through the available models and request access:
