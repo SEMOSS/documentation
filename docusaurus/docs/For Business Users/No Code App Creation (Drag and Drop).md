@@ -1,6 +1,6 @@
 ---
 sidebar_label: "No Code App Creation"
-sidebar_position: 1
+sidebar_position: 2
 slug: "/no-code-app"
 ---
 
