@@ -25,23 +25,23 @@ To create a new App, click on the top right corner of the homepage on **Create N
 > Image Placeholder
 
 You can choose among the 3 different options of creating a new app. These are,
-1. Code - You can uild an app by coding using a framework or even from strach
+1. Code - You can build an app by coding using a framework or even from strach
 
 How to build a Code App has been covered in detail here.
 
-<Link Placeholder>
+> Link Placeholder
 
 2. Drag and Drop - This is no-code option of creating a new app.
    
 How to build a Drag and Drop App has been covered in detail here.
 
-<Link Placeholder>
+> Link Placeholder
 
 3.  Agent Builder - This is also a no-code solution.
 
 How to build a Drag and Drop App has been covered in detail here.
 
-<Link Placeholder>
+> Link Placeholder
 
 > Image Placeholder
 
@@ -49,18 +49,18 @@ How to build a Drag and Drop App has been covered in detail here.
 
 You can control the type of access other users have to the apps you create. To manage the access of a particular app, open the app and click on **edit** on the top right corner of the app page.
 
-![New App](../../static/img/PlatformNavigation/NewappPN.png)
+> Image Placeholder
 
 You can either give access as,
-an author - who can make changes to the app UI and functioning and even tweak the app access settings,
-an editor - who can make changes to the app UI and functioning but not tweak the app access settings, or
 a read-only - who can only use the app and can make no changes to its working
+an editor - Read only + who can make changes to the app UI and functioning and tweak the app access settings, or
+an author - Editor + Delete the app
 
-![New App](../../static/img/PlatformNavigation/NewappPN.png)
+> Image Placeholder
 
 Others can even ask for access to your app and these requests will be visible in **Pending request**. Similarly, you can even ask for permission for access of a particular app. You search for apps you currently don't have access to, click on **Discoverable tab** on the home page.
 
-
+> To be added
 
 
 ## Adding a Model 
