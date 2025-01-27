@@ -207,19 +207,19 @@ Enter a name and then click on Create.
 
 click on the input block that has the label **Question** inside it. Type in your question inside **Value** box in the **Design** tab that open up on the right side.
 
-![Type Question](../../../static/img/Navigating/Create%20New%20App/AskLLM3.png)
+![Type Question](../../static/img/Navigating/Create%20New%20App/AskLLM3.png)
 
 Now go to **Ask** button and click on **Run Query** under the editing options on the right hand side.
 
-![Run Query](../../../static/img/Navigating/Create%20New%20App/AskLLM4.png)
+![Run Query](../../static/img/Navigating/Create%20New%20App/AskLLM4.png)
 
 You will have your answer in the response box once the query runs successfully.
 
-![Response Generated](../../../static/img/Navigating/Create%20New%20App/AskLLM5.png)
+![Response Generated](../../static/img/Navigating/Create%20New%20App/AskLLM5.png)
 
 You might get an error in case you do not have access to the model that this app is using. Request access to that LLM or swap it with any other model in your model catalog that you already have access to.
 
-![Ask LLM Error](../../../static/img/Navigating/Create%20New%20App/AskLLMError.png)
+![Ask LLM Error](../../static/img/Navigating/Create%20New%20App/AskLLMError.png)
 
 Save your app when you finalize the changes and share with other users.
 
@@ -231,31 +231,31 @@ Use this template to create a basic app that lets you generate an SQL query to r
 
 Go to App Library Home Page and click on **Create New App**.
 
-![CreateApp](../../../static/img/Navigating/Create%20New%20App/LandingPage1.png)
+![CreateApp](../../static/img/Navigating/Create%20New%20App/LandingPage1.png)
 
 Scroll down to **Browse Templates** and go to **Ask CSV** and click Open.
 
-![Ask CSV Template](../../../static/img/Navigating/Create%20New%20App/AskCSV1.png)
+![Ask CSV Template](../../static/img/Navigating/Create%20New%20App/AskCSV1.png)
 
 Enter a name and then click on Create.
 
-![Create CSV App](../../../static/img/Navigating/Create%20New%20App/AskCSV2.png)
+![Create CSV App](../../static/img/Navigating/Create%20New%20App/AskCSV2.png)
 
 You will see a template ready to use. Click on the **Upload** block and choose the file you want to run the query on.
 
-![Upload CSV File](../../../static/img/Navigating/Create%20New%20App/AskCSV3.png)
+![Upload CSV File](../../static/img/Navigating/Create%20New%20App/AskCSV3.png)
 
 After the file is uploaded, type in the question for which you want to generate the CSV query in the **Question** block as an input.
 
-![Ask Question](../../../static/img/Navigating/Create%20New%20App/AskCSV4.png)
+![Ask Question](../../static/img/Navigating/Create%20New%20App/AskCSV4.png)
 
 Now, click on **Ask** button and then on the right, click on **Run Query** to generate results.
 
-![Run Query](../../../static/img/Navigating/Create%20New%20App/AskCSV5.png)
+![Run Query](../../static/img/Navigating/Create%20New%20App/AskCSV5.png)
 
 Once it runs successfully, it will return the SQL query you need to retrieve the data for the question you asked earlier.
 
-![Query Results](../../../static/img/Navigating/Create%20New%20App/AskCSV6.png)
+![Query Results](../../static/img/Navigating/Create%20New%20App/AskCSV6.png)
 
 Save your app when you finalize the changes and share with other users.
 
@@ -267,8 +267,8 @@ Save your app when you finalize the changes and share with other users.
 
 When using **Upload Block** in the App and using **Python** as scripting language in code/query, we should use **"ROOT + "file"** in code as shown below, for calling the **file** instead of just using **"file"** as in case of **Pixel.**
 
-![Python Prefix for Upload Block](../../../static/img/Navigating/Pythonprefixforuploadblock.png)
+![Python Prefix for Upload Block](../../static/img/Navigating/Pythonprefixforuploadblock.png)
 
 After making this tweak in the query code, we can run the App seemlessly. As shown below, after uploading a csv file, we can run the App without any hiccups.
 
-![App using Upload Block](../../../static/img/Navigating/UploadBlockApp.PNG)
+![App using Upload Block](../../static/img/Navigating/UploadBlockApp.PNG)
