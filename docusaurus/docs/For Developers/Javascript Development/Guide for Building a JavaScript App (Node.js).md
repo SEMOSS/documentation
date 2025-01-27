@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'docusaurus/docs/For Developers/Javascript Development/End-to-End Guide for Building a JavaScript App (Node.js)'
+sidebar_label: 'Guide for Building a Javascript App (Node.js)'
 sidebar_position: 1
 ---
 
