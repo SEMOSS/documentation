@@ -17,7 +17,7 @@ Before starting let us first have a top level understanding of the app creation 
 
 To use this feature, click on **Create New App** and then click on **Get Started** in Drag and Drop as shown below.
 
-![Drag and Drop UI](../../../static/img/Navigating/Create%20New%20App/Drag%20and%20Drop.png)
+![Drag and Drop UI](../../static/img/Navigating/Create%20New%20App/Drag%20and%20Drop.png)
 
 Enter name of the new app. It will then go to the page where we can start building UI for our app. In the leftmost column we can see **UI**, **Data**, **Dev**, and **Settings** tabs. Click on **UI** and then on **Block tab** on the left side of the page as highlighted below.
 
