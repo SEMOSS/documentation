@@ -3,8 +3,23 @@ You can find the Settings icon at the bottom left corner of the platform.
 
 ![Settings](../../static/img/Settings.png)
 
-In the Settings section, you have give or revoke access of any App, Model, Function, Database, Vector, or Storage of which you are an author.
-You can even edit the type of access given to other practisioners, like changing the access from author to an editor or just a viewer.
+In the Settings section, you have give or revoke access of any App, Model, Function, Database, Vector, or Storage of which you are an author. You can even edit the type of access given to other practisioners, like changing the access from author to an editor or just a viewer. Below mentioned is the difference between the 3 types of permission.
+
+## Permission Levels
+
+As mentioned in the section above, there are 3 separate permission levels that a user can choose from. For most resources, the majority of users with access should be Editors or Read-Only.
+
+> **Note**:
+> Turnaround time for access is **variable**. Currently all access has to be approved by a user with **Author** privileges.
+
+**Author**  
+An author user has the ability to edit an App or the resource and to also grant users access to the app/resource. On a given team, only one or two people should have Author level privileges. This is to limit the amount of people that are able to change the resource.
+
+**Editor**  
+An Editor has access to the app/resource and can freely make pixel calls to query the resource. This should be the base level that is given to most users, especially to developers who want to create Gen AI apps that utilize the SEMOSS server.
+
+**Read-Only**  
+This level of access should only be given to users who are meant to demo already created applications. They will be unable to generate new data but can see any generated data.
 
 ## App Settings
 
