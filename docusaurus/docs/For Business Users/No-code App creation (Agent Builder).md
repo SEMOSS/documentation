@@ -12,7 +12,7 @@ In Agent Builder, we develop the initial UI by creating a prompt which contains 
 
 To use Agent Builder, first click on **Create New App\* button on the top right corner of your SEMOSS home page and then click on **Get Started\*\* on the Agent Builder tab.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB1.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB1.png)
 
 ## Create a Prompt
 
