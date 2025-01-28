@@ -24,5 +24,12 @@ You can also see if there are any Pending requests from any practisioners. If th
 
 ### Data Apps
 
+> To be added
+
+
+## Model, Function, Database, Vector, Storage Setting
+
+Settings for all the resources works in the same way as it is for App Settings. The only difference is that in these 5 resource settings you will not find the 'Data Apps' tab. Apart from this, all features and functuality remains the same.
+
 
 
