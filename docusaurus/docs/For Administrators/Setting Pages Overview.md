@@ -12,12 +12,11 @@ When you click on the App Settings tab, you will see all the apps that are house
 
 ![AppSettings](../../static/img/Applist.png)
 
-To change the access settings of any App, click on it. Let's consider the app DandDAudit for example.
+To change the access settings of any App, click on it. You will see the following UI,
 
 ![Member](../../static/img/Members.png)
 
-
-You can also see if there are any Pending request from any practisioners.
+You can also see if there are any Pending requests from any practisioners.
 
 ![Pendingrequest](../../static/img/Pendingrequest.png)
 
