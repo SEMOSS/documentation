@@ -16,7 +16,13 @@ To change the access settings of any App, click on it. You will see the followin
 
 ![Member](../../static/img/Members.png)
 
-You can also see if there are any Pending requests from any practisioners.
+### Pending Request
+
+You can also see if there are any Pending requests from any practisioners. If there are any requests, you can either approve or reject them. You can even control the type of access given (author, editor, or viewer).
 
 ![Pendingrequest](../../static/img/Pendingrequest.png)
+
+### Data Apps
+
+
 
