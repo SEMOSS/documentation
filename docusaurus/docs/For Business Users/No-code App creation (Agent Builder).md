@@ -22,13 +22,13 @@ In this section, we give a name to our yet-to-be-defined prompt. Then we assign 
 
 Next we select an model (LLM) which we want the prompt to run through and provide the output to the user (as per the input entered).
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB2.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB2.png)
 
 ### Define the prompt
 
 Here we will write the actual prompt. This prompt will define the input options we will give to the user and how the UI of our App will look like. To write a prompt assume you are talking to the App. Assume the App to be a living being and tell it about itself (for example for an itinerary creator app we will write- Suppose you are a travel agent). So we give information on what does the App do. Also include what inputs the user will provide to the App and what output should the app then finally present.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB3.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB3.png)
 
 For example, please see below a sample prompt for a travel guide app,
 Prompt- Suppose you are a travel agent. The user will provide with the destination, number of days of travel, and their travel pace preference (slow or fast). Prepare an itinerary for them.
@@ -41,19 +41,19 @@ Prompt- 'Suppose you are a travel agent. The user will provide with the \{\{dest
 
 You can even define the input parameters under the 'Define input' section. Just click on the word you want to create as a input parameter. However in this method you won't be able to create an input parameter with multiple words. For example- you can assign 'destination' as an input parameter but no 'number of days'. So it is recommended to use the curly brackets method only.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB4.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB4.png)
 
 ### Define the input parameter
 
 Here you can define the type of the input parameter you have selected. Selected any among the different options provided in dropdown.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB5.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB5.png)
 
 ### Set Constraints
 
 Here you can set constraints for the output. Examples include limiting responses to a certain number of words, should the output be in bullet points or not, etc.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB6.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB6.png)
 
 Click on Preview to save your settings. You will be direct to the preview of the App. Click on Create App to complete creating the app. You will be directed the UI page where you will be able to see the input parameters that you created. Once you enter inputs for these prompts, the App will run through the model and provide an output.
 
@@ -63,11 +63,11 @@ Click on Preview to save your settings. You will be direct to the preview of the
 
 It is possible to edit the original prompt you have created. To do this, go to your app in the App library. Click on edit in the top right corner.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB7.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB7.png)
 
 Now go to the Data tab and click on Notebooks tab and then on **Prompt Query**. Here, inside the query (highlighted by blue colour in the image below) we can edit the original prompt. Save the changes so it reflects in the UI.
 
-![AB](../../../static/img/Navigating/Create%20New%20App/AB8.png)
+![AB](../../static/img/Navigating/Create%20New%20App/AB8.png)
 
 ### Editing the UI tab or Data tab
 
