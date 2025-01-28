@@ -12,7 +12,7 @@ When you click on the App Settings tab, you will see all the apps that are house
 
 ![AppSettings](../../static/img/Applist.png)
 
-To change the access settings of any App, click on it. You will see the following UI,
+To change the access settings of any App, click on it. You will have to be an author of the app to edit the access settigs. If you are an author, you can either add members, revoke access from any existing members, or edit the access type.
 
 ![Member](../../static/img/Members.png)
 
