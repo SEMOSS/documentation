@@ -84,5 +84,9 @@ Settings for all the resources works in the same way as it is for App Settings. 
 
 ## My Profile
 
+Here you can view your profile details like Name, Email, your ID.
 
+![App Catalog in Settings Page](../../static/img/Navigating/Navigating3.PNG)
+
+The important function housed in My Profile section 
 
