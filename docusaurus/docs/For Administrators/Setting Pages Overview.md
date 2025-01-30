@@ -78,5 +78,11 @@ This process can be replicated for all other resource types (databases, models, 
 
 Settings for all the resources works in the same way as it is for App Settings. The only difference is that in these 5 resource settings you will not find the 'Data Apps' tab. Apart from this, all features and functuality remains the same.
 
+## Jobs
+
+> To be added
+
+## My Profile
+
 
 
