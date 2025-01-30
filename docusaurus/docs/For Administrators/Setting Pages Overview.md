@@ -86,17 +86,17 @@ Settings for all the resources works in the same way as it is for App Settings. 
 
 Here you can view your profile details like Name, Email, your ID.
 
-![Access token](../../static/img/Settings/profileinfo.PNG)
+![Access token](../../static/img/Settings/profileinfo.png)
 
 The important function housed in My Profile section is that of **Personal Access Token**. You can use this section especially if you a frontend developer and want to access Semssos backend. To do this you need to create a **access key** and a **secret key**.
 
 For this, click on + New Key, highlighted in the image below.
 
-![Access token](../../static/img/Settings/personalaccesstoken.PNG)
+![Access token](../../static/img/Settings/personalaccesstoken.png)
 
 Give a name to your request and add a description (optional) and hit generate.
 
-![Access token](../../static/img/Settings/generatekey.PNG)
+![Access token](../../static/img/Settings/generatekey.png)
 
 Once you hit generate, you will be able to see your 'Access Key' and 'Secret Key'. Please note that you can view your secret key only once so make sure you copy it and save it somewhere.
 
@@ -104,5 +104,5 @@ Once you click 'close', you will return to the 'My Profile' page. Now you will s
 
 Now to connect to Semoss backend, you need to write a code in your .env file. The code to write is mentioned on the 'My profile' page, just you need to paste the keys (access and secret) and you are good to go.
 
-![Access token](../../static/img/Settings/codesample.PNG)
+![Access token](../../static/img/Settings/codesample.png)
 
