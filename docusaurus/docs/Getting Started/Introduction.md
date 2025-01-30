@@ -31,9 +31,9 @@ Go ahead and select a link from the table of contents below. If you're new to SE
 
 2. **[For Business Users](category/for-business-users)**
 
-   1. [No Code App Creation](<../For%20Business%20Users/No%20Code%20App%20Creation%20(Drag%20and%20Drop).md>)
-
-   2. [Platform Navigation](../For%20Business%20Users/Platform%20Navigation.mdx)
+   1. [Platform Navigation](../For%20Business%20Users/Platform%20Navigation.mdx)
+   2. [No Code App Creation](<../For%20Business%20Users/No%20Code%20App%20Creation%20(Drag%20and%20Drop).md>)
+   3. [No Code App Creation Using Agent Builder](../For%20Business%20Users/No-code%20App%20creation%20(Agent%20Builder).mdx)
 
 3. **[For Administrators](category/for-administrators)**
 
@@ -42,6 +42,8 @@ Go ahead and select a link from the table of contents below. If you're new to SE
    2. [App Deployment](../For%20Administrators/App%20Deployment%20Steps.md)
 
    3. [Setting Pages Overview](../For%20Administrators/Setting%20Pages%20Overview.md)
+   4. [Javascript Development](<../For%20Developers/Javascript%20Development/Guide%20for%20Building%20a%20JavaScript%20App%20(Node.js).md>)
+   5. [Java Development](../For%20Developers/Java%20Development/Pixels%20and%20Reactors.md)
 
 4. **[For Developers](category/for-developers)**
 
