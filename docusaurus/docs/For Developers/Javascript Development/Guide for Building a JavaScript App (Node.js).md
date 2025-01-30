@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'Guide for Building a Javascript App (Node.js)'
 sidebar_position: 1
+slug: "/javascript-guide"
 ---
 
 # Creating a SEMOSS GenAI App Using React

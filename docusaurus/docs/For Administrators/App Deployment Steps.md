@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'App Deployment'
 sidebar_position: 3
+slug: "/app-deployment"
 ---
 
 ## Access Platform Login Page
