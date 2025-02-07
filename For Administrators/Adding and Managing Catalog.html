@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-For Administrators/Adding and Managing Catalog" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">SEMOSS Overview | SEMOSS</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://semoss.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://semoss.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://semoss.github.io/documentation/For Administrators/Adding and Managing Catalog"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="SEMOSS Overview | SEMOSS"><meta data-rh="true" name="description" content="SEMOSS is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your SEMOSS instance."><meta data-rh="true" property="og:description" content="SEMOSS is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your SEMOSS instance."><link data-rh="true" rel="icon" href="/documentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://semoss.github.io/documentation/For Administrators/Adding and Managing Catalog"><link data-rh="true" rel="alternate" href="https://semoss.github.io/documentation/For Administrators/Adding and Managing Catalog" hreflang="en"><link data-rh="true" rel="alternate" href="https://semoss.github.io/documentation/For Administrators/Adding and Managing Catalog" hreflang="x-default"><link rel="stylesheet" href="/documentation/assets/css/styles.c4193bed.css">
+<script src="/documentation/assets/js/runtime~main.8b27a888.js" defer="defer"></script>
+<script src="/documentation/assets/js/main.a29a80fc.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documentation/"><div class="navbar__logo"><img src="/documentation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documentation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">SEMOSS</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/documentation/">Introduction</a></li><li><a class="dropdown__link" href="/documentation/category/get-started">Getting Started</a></li><li><a class="dropdown__link" href="/documentation/category/how-to">How To</a></li><li><a class="dropdown__link" href="/documentation/category/advanced-installation">Advanced Installation</a></li></ul></div></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/getting-started">Getting Started</a><button aria-label="Expand sidebar category &#x27;Getting Started&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/how-to">How To</a><button aria-label="Expand sidebar category &#x27;How To&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/for-business-users">For Business Users</a><button aria-label="Expand sidebar category &#x27;For Business Users&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/documentation/category/for-administrators">For Administrators</a><button aria-label="Collapse sidebar category &#x27;For Administrators&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/documentation/For Administrators/Adding and Managing Catalog">Adding and Managing Catalog</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/settings-overview">Settings Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/app-deployment">App Deployment</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/for-developers">For Developers</a><button aria-label="Expand sidebar category &#x27;For Developers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/advanced-installation">Advanced Installation</a><button aria-label="Expand sidebar category &#x27;Advanced Installation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documentation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/documentation/category/for-administrators"><span itemprop="name">For Administrators</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Adding and Managing Catalog</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>SEMOSS Overview</h1>
+<p>SEMOSS is a platform that enables developers to create Gen AI (Generative AI) applications at the client level and deploy within the enterprise. It manages logging, monitoring, metering, and access management so that developers can focus on the business problem. It consists of App Library, Models, Database and Storage. In this section we are going to go through how to add to and populate your SEMOSS instance.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="app-library">App Library<a href="#app-library" class="hash-link" aria-label="Direct link to App Library" title="Direct link to App Library">​</a></h2>
+<p>App Library is a section in SEMOSS which consists of list of Gen AI applications present on the platform and are created by user. Once you click on a particular app in the App Library, it will open the App which is ready to use. App Library also let developers create Gen AI applications by adding App details and uploading code for the app.</p>
+<div style="width:640px;height:360px"></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-a-model">Adding a Model<a href="#adding-a-model" class="hash-link" aria-label="Direct link to Adding a Model" title="Direct link to Adding a Model">​</a></h2>
+<p>Models are LLMs (Large Language Model) which is a type of AI (Artifical Intelligence) algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. Gen AI Apps created on SEMOSS are built on these models.</p>
+<p>To connect to existing Models or add new Models, click on the <strong>vector</strong> icon on the left side of SEMOSS portal which will take you to Model catalog.</p>
+<p><img loading="lazy" alt="App Library" src="/documentation/assets/images/ModelCatalogIconHighlight-293caa1307896007559fd499fb75cca0.PNG" width="1887" height="838" class="img_ev3q"></p>
+<blockquote>
+<p><em>Highlighted icon for Model Catalog</em></p>
+</blockquote>
+<p>Once you&#x27;re in the current Model Catalog, you will find a list of LLMs that already accessible to you. If you do not have any existing LLMs in your current model catalog, you can go to <strong>Discoverable models</strong>, browse through the available models and request access:</p>
+<p><img loading="lazy" alt="Model Catalog" src="/documentation/assets/images/Add_Model-40cbb8ee058746405402afa4de44dc31.PNG" width="1904" height="832" class="img_ev3q"></p>
+<blockquote>
+<p><em>&quot;Add Model&quot; Button</em></p>
+</blockquote>
+<p>Click on <strong>Add Model</strong>, chose your model of choice from the list and fill in the details to connect to the model.</p>
+<p><img loading="lazy" alt="Add Model" src="/documentation/assets/images/Connect_To_Model-78ad8c8d98b4d6d7e22b719c55f7df8e.PNG" width="1889" height="853" class="img_ev3q"></p>
+<blockquote>
+<p><em>Various Model Options</em></p>
+</blockquote>
+<div style="width:640px;height:360px"></div>
+<p>There are primarily three types of models available with different characteristics:</p>
+<p><strong>Commercially-hosted -</strong> These are managed by an external vendor and comes with a subscription or licensing fee. The vendor handles hosting and maintenance. These models are highly scalable and customizable.</p>
+<p><strong>Locally-hosted -</strong> These are installed and managed on the organization&#x27;s own servers attached with a subscription or licensing fee. This means the organization is in full control of the model and can customize the model as per the requirements.</p>
+<p><strong>Embedded -</strong> These kind of models are integrated with other softwares or platforms focused on specific functions. These can be blended seamlessly into the existing system.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-a-storage-source">Adding a Storage Source<a href="#adding-a-storage-source" class="hash-link" aria-label="Direct link to Adding a Storage Source" title="Direct link to Adding a Storage Source">​</a></h2>
+<p>Storage is used to store data that is created while using Gen AI Apps on SEMOSS. There are a number of options on which Storage can be hosted (eg- Amazon S3, Google Cloud Storage, Dropbox etc).</p>
+<p>To connect to existing Storage or add new Storage, click on the <strong>box</strong> icon on the left side of SEMOSS portal which will take you to Storage catalog.</p>
+<p><img loading="lazy" alt="Storage icon" src="/documentation/assets/images/StorageCatalogIcon-e0cee10b90c90475fec0e2764b2402ce.PNG" width="1895" height="847" class="img_ev3q"></p>
+<blockquote>
+<p><em>Highlighted icon for Storage Catalogue</em></p>
+</blockquote>
+<p>Once you&#x27;re in the Storage Catalog, you will find Storage if they are already present and accessible by you as shown below.</p>
+<p><img loading="lazy" alt="Storage Catalogue" src="/documentation/assets/images/Add Storage-721bb449a3f960310ce74c02dabf5878.PNG" width="1900" height="839" class="img_ev3q"></p>
+<blockquote>
+<p><em>&quot;Add Storage&quot; button</em></p>
+</blockquote>
+<p>For adding, click on <strong>Add Storage</strong> and it will take you to <strong>Connect to Storage</strong> page where you will find number of Storage options to chose from as illustrated below.</p>
+<p><img loading="lazy" alt="Add Storage" src="/documentation/assets/images/Storage Options-d7c07dd3eca1e98b64f5132a42d49d95.PNG" width="1911" height="847" class="img_ev3q"></p>
+<blockquote>
+<p><em>Various Storage Options</em></p>
+</blockquote>
+<p>Click on the <strong>Storage option</strong> which you want for your instance. In this case, we will click on <strong>MINIO</strong> and it will take you to the page where you have to fill out the Storage details.</p>
+<p><img loading="lazy" alt="Enter Storage Details" src="/documentation/assets/images/Storage Details-0982284d065cd7f1b5d8082591653c0f.PNG" width="1912" height="859" class="img_ev3q"></p>
+<blockquote>
+<p><em>Storage Details Required</em></p>
+</blockquote>
+<p>Please fill in the details below to connect a test MINIO storage source.</p>
+<p><strong>Name</strong> - semoss-demo</p>
+<p><strong>Region</strong> - us-east-1</p>
+<p><strong>Access Key</strong> - semossaidemo</p>
+<p><strong>Secret Key</strong> - ENcgT9q9</p>
+<p><strong>End Point</strong> - <a href="http://34.118.228.102:9000" target="_blank" rel="noopener noreferrer">http://34.118.228.102:9000</a></p>
+<p><strong>Root Bucket Path</strong> - demo-bucket</p>
+<p>Click on <strong>Add Storage</strong> shown at the bottom of details page and Storage will be added to the Storage Catalog as shown in below snapshot.</p>
+<p><img loading="lazy" alt="Storage Catalogue 2" src="/documentation/assets/images/Storage Catalogue-c1d3e9e3ea1748074a695643c435f1f9.png" width="3830" height="1659" class="img_ev3q"></p>
+<blockquote>
+<p><em>Newly added Storage</em></p>
+</blockquote>
+<div style="width:640px;height:360px"></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="using-a-storage-source">Using a Storage Source<a href="#using-a-storage-source" class="hash-link" aria-label="Direct link to Using a Storage Source" title="Direct link to Using a Storage Source">​</a></h3>
+<p>These commands demonstrate how to use the storage engine via the Terminal app and within any apps that you create. These commands are not to be confused with the SDK which are seperate.</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Initialize the storage engine</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">from gaas_gpt_storage import StorageEngine</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine = StorageEngine(engine_id = &quot;2d905aa3-b703-4c98-8133-5bcaefddac1e&quot;, insight_id = &#x27;${i}&#x27;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># List the files on your storage path</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.list(storagePath = &quot;my_s3_storage_path&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># List the files on your storage path with extra details</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.listDetails(storagePath = &quot;my_s3_storage_path&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Sync&#x27;ing your local folder to the specified storage directory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Space can be the project id, &quot;user&quot; or &quot;insight&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># This is where the local path starts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># So in this case, the local path starts in the project directory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.syncLocalToStorage(storagePath=&quot;my/s3/storage/path&quot;, localPath=&quot;/my/local/dir&quot;, space=&quot;my_project_id&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Sync&#x27;ing your storage directory to the local folder</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Space can be the project id, &quot;user&quot; or &quot;insight&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.syncStorageToLocal(storagePath=&quot;my/s3/storage/path&quot;, localPath=&quot;/my/local/dir&quot;, space=&quot;my_project_id&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Upload a folder or file from your local project/insight/user directory to the specified storage directory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.copyToStorage(storagePath=&quot;my/s3/storage/path&quot;, localPath=&quot;/my/local/dir&quot;, space=&quot;my_project_id&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Download a folder or file from the specified storage directory to your local project/insight/user directory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.copyToLocal(storagePath=&quot;my/s3/storage/path&quot;, localPath=&quot;/my/local/dir&quot;, space=&quot;my_project_id&quot;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Delete a folder or file from the specified storage directory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">storageEngine.deleteFromStorage(storagePath = &#x27;your/storage/file/path&#x27;, leaveFolderStructure=False)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-a-database">Adding a Database<a href="#adding-a-database" class="hash-link" aria-label="Direct link to Adding a Database" title="Direct link to Adding a Database">​</a></h2>
+<p>Databases are organized data that is linked with Gen AI Apps on SEMOSS and can be used by those Apps to use data. Databases enable Apps to provide results as per requirement. You can create a new database or add locally available databases to SEMOSS which can be then connected to Apps.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pre-requisites">Pre-requisites<a href="#pre-requisites" class="hash-link" aria-label="Direct link to Pre-requisites" title="Direct link to Pre-requisites">​</a></h3>
+<ul>
+<li>Before adding a Database to your SEMOSS instance, it must be detached from any existing instance otherwise it might return an error.</li>
+<li>When you attach a Database, all data files for the Database must be available</li>
+</ul>
+<p>To connect to an existing Database or add a new Database, click on the <strong>cylinderical</strong> icon on the left side of SEMOSS portal which will take you to Data catalog.</p>
+<p><img loading="lazy" alt="Database icon" src="/documentation/assets/images/Database icon-6998bde5c9a06d89a7f6a7fc0d55e72f.PNG" width="1887" height="838" class="img_ev3q"></p>
+<blockquote>
+<p><em>Highlighted icon for Database Catalogue</em></p>
+</blockquote>
+<p>Once you&#x27;re in the current Data Catalog, you will find a list of Database that are already accessible by you as shown below.</p>
+<p><img loading="lazy" alt="Database catalog" src="/documentation/assets/images/Add Database-dfa853108b895c41ada73959cbf39fb8.PNG" width="1895" height="836" class="img_ev3q"></p>
+<blockquote>
+<p><em>&quot;Add Database&quot; button</em></p>
+</blockquote>
+<p>To connect to a Database, click on <strong>Add Database</strong> and you will be directed to the <strong>Add Source</strong> page which will have various options within the Database section mentioned below.</p>
+<p><img loading="lazy" alt="Add Database" src="/documentation/assets/images/Database Options-db79192e2cabd5701f3a14666d2aa47d.PNG" width="1889" height="829" class="img_ev3q"></p>
+<blockquote>
+<p><em>Different Options of using Database</em></p>
+</blockquote>
+<p>Click on <strong>Connect to Database</strong> icon and it will take you to a page where you will have different Database file types to upload and Types of <strong>Connections</strong> to chose from (shown below).</p>
+<p><img loading="lazy" alt="Connect to Database" src="/documentation/assets/images/Various Database type-de4c7f8e8d50c947b56ae02bc87ea3f8.PNG" width="1890" height="858" class="img_ev3q"></p>
+<blockquote>
+<p><em>Various Database types to choose from</em></p>
+</blockquote>
+<p>You can choose the type of file to upload and then choose the <strong>Connections</strong> type based on your Database or requirements. Once you click on the Connections type, it will direct you to a page where you can fill all the required details as shown in the below image. Click on <strong>Connect</strong> at the bottom of the page.</p>
+<p><img loading="lazy" alt="Database Connection Double Click" src="/documentation/assets/images/Database Details required-2f49e0783be50c331d754645550abd97.PNG" width="1907" height="867" class="img_ev3q"></p>
+<blockquote>
+<p><em>Database details required to be filled</em></p>
+</blockquote>
+<div style="width:640px;height:360px"></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-a-vector-database">Adding a Vector Database<a href="#adding-a-vector-database" class="hash-link" aria-label="Direct link to Adding a Vector Database" title="Direct link to Adding a Vector Database">​</a></h2>
+<p>A vector database is a specialized solution designed for the storage, indexing, and retrieval of massive datasets containing unstructured data. These databases leverage machine learning models and their embeddings to facilitate searching across various forms of unstructured data, including images, video, text, audio, and more. This is done with the help of pixel calls.</p>
+<p>To connect to a vector database, go to <strong>App Library &gt; Vector Catalog</strong> and then manually add the vector database.
+<img loading="lazy" alt="Vector_icon" src="/documentation/assets/images/Vector Catalog Icon-3c232d7f949f9145d56566e5ef264af1.PNG" width="1874" height="838" class="img_ev3q"></p>
+<blockquote>
+<p>Click on vector icon</p>
+</blockquote>
+<p>Click on <strong>Add Vector</strong> on the top-right section and it will take to different type of connections for Vector.</p>
+<p><img loading="lazy" alt="Add_Vector_Manually" src="/documentation/assets/images/Add Vector-de5cc23d10446d1ec11bcf9fa035ab02.PNG" width="1875" height="839" class="img_ev3q"></p>
+<blockquote>
+<p>Adding vector manually</p>
+</blockquote>
+<p>Choose an appropriate <strong>Connection</strong> based on your requirements.
+<img loading="lazy" alt="ConnectYourVector" src="/documentation/assets/images/Choose a connection-5adee79a37e8d048d96f9c715779278c.PNG" width="1892" height="836" class="img_ev3q"></p>
+<blockquote>
+<p>Choosing connection</p>
+</blockquote>
+<p>Fill in the required details. Click on <strong>Add Vector</strong>.
+<img loading="lazy" alt="AddDetails" src="/documentation/assets/images/Add Vector Details-d379c2d3cf8ef3bfb339df9a7bef5b7c.PNG" width="1894" height="872" class="img_ev3q"></p>
+<blockquote>
+<p>Fill in the details and click create vector</p>
+</blockquote>
+<p>Your vector database is now ready to use.</p>
+<p>Now to embed your vector database with some data, <strong>Click</strong> on it to open.
+<img loading="lazy" alt="Vector Catalog" src="/documentation/assets/images/NewVectorCatalog-9f1479e401b4c04d02338cbbb0b3a2f4.png" width="1896" height="593" class="img_ev3q"></p>
+<p>You will see 4-5 tabs within your database depending upon your access privileges. Go to <strong>Files</strong>.</p>
+<p>Click on <strong>+ Embed New Document</strong> to upload your data file. It only accepts files with .txt, .csv, ,pdf, .doc, .ppt extensions.
+<img loading="lazy" alt="Embed Data" src="/documentation/assets/images/NewEmbedData-c23052901daf5624916bf76a687292fa.png" width="1917" height="795" class="img_ev3q"></p>
+<p>Click on <strong>upload files</strong> to select and upload your data and click on <strong>Embed</strong>. You can also drag and drop your file to the same window.
+<img loading="lazy" alt="Upload Files" src="/documentation/assets/images/NewUploadData-bf4a6e9a874a6016588d098a985239a6.png" width="1915" height="799" class="img_ev3q"></p>
+<p>You should now be able to see your file inside the vector database.
+<img loading="lazy" alt="Data Files" src="/documentation/assets/images/NewDataFiles-8dd792d706a197f96848e30e7fb0f217.png" width="1895" height="797" class="img_ev3q"></p>
+<p>If you have questions regarding the policies or your datasets, go to <strong>Q&amp;A</strong> tab and type in your query in the space provided.
+<img loading="lazy" alt="Q&amp;amp;A Tab" src="/documentation/assets/images/NewQ&amp;ATab-cdbe6dd5e70e2a37c6b01ff60d1a0e88.png" width="1909" height="791" class="img_ev3q"></p>
+<p>Once the file is uploaded, run the following command.</p>
+<p><code>CreateEmbeddingsFromDocuments ( engine = &quot;80a482d5-06b7-4ff6-bedc-0d0570b7bfeb&quot; , filePaths = [ &quot;TestFile.csv&quot; ] , paramValues = [ { &quot;columnsToIndex&quot; : [ &quot;content&quot; ] } ] ) ;</code></p>
+<p><img loading="lazy" alt="EmbedDB" src="data:image/png;base64,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" width="1425" height="43" class="img_ev3q"></p>
+<blockquote>
+<p>Execute this command to embed your vector database with the .csv file</p>
+</blockquote>
+<ul>
+<li>This will take a while to run. Once completed, your vector database is ready to use.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>
+The engine ID above needs to match the engine ID of the vector database you just created.</p>
+</blockquote>
+<ul>
+<li>To do so, go back to App Library &gt; Vector Catalog by clicking the vector icon on the left-side.</li>
+</ul>
+<p><img loading="lazy" alt="Vector_icon" src="/documentation/assets/images/Vector Catalog Icon-3c232d7f949f9145d56566e5ef264af1.PNG" width="1874" height="838" class="img_ev3q"></p>
+<blockquote>
+<p>Look for the database you just created.</p>
+</blockquote>
+<div style="width:640px;height:360px"></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="access-to-resources">Access to resources<a href="#access-to-resources" class="hash-link" aria-label="Direct link to Access to resources" title="Direct link to Access to resources">​</a></h2>
+<p><strong>Discoverable items</strong> in catalogs are the resources which are created by other users and present on SEMOSS portal. You need to request access to those resources to use them.</p>
+<p><img loading="lazy" alt="Discoverable Items" src="/documentation/assets/images/Discoverable Items-aa69e6225884e065a3cc7f310c65e5a3.PNG" width="1885" height="837" class="img_ev3q"></p>
+<blockquote>
+<p><em>Discoverable Models</em></p>
+</blockquote>
+<p>To get access to any Model, Database, or Storage, click on that resource and it will direct you to that resource page as shown below.</p>
+<p><img loading="lazy" alt="Request Access" src="/documentation/assets/images/Request Access-85a43971988c29b74b53727d863acb3e.PNG" width="1907" height="831" class="img_ev3q"></p>
+<blockquote>
+<p><em>Request access to Model</em></p>
+</blockquote>
+<p>Click on <strong>Request Access</strong> near the top-right corner and a pop-up will provide you with 3 options to choose from - Author, Editor &amp; Read-Only. You can choose the option based on your role and request.</p>
+<p><img loading="lazy" alt="Grant Permission" src="/documentation/assets/images/Permission Levels-5d4405f550a189743862e8ea245d61be.PNG" width="1873" height="855" class="img_ev3q"></p>
+<blockquote>
+<p><em>Permission Levels</em></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="permission-levels">Permission Levels<a href="#permission-levels" class="hash-link" aria-label="Direct link to Permission Levels" title="Direct link to Permission Levels">​</a></h3>
+<p>As mentioned in the section above, there are 3 separate permission levels that a user can choose from. For most resources, the majority of users with access should be Editors or Read-Only.</p>
+<blockquote>
+<p><strong>Note</strong>:
+Turnaround time for access is <strong>variable</strong>. Currently all access has to be approved by a user with <strong>Author</strong> privileges.</p>
+</blockquote>
+<p><strong>Author</strong><br>
+<!-- -->An author user has the ability to edit the database and to also grant users access to the resource. On a given team, only one or two people should have Author level privileges. This is to limit the amount of people that are able to change the resource.</p>
+<p><strong>Editor</strong><br>
+<!-- -->An Editor has access to the database and can freely make pixel calls to query the resource. This should be the base level that is given to most users, especially to developers who want to create Gen AI apps that utilize the SEMOSS server.</p>
+<p><strong>Read-Only</strong><br>
+<!-- -->This level of access should only be given to users who are meant to demo already created applications. They will be unable to generate new data but can see any generated data.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="inside-the-resource">Inside the resource<a href="#inside-the-resource" class="hash-link" aria-label="Direct link to Inside the resource" title="Direct link to Inside the resource">​</a></h3>
+<p>Once you click on the resource (Model, Database, Storage etc.), you will be directed into the resource page where you will see <strong>Overview</strong>, <strong>Usage</strong>, <strong>Metadata</strong> and <strong>Settings</strong> tabs.</p>
+<p><strong>Overview</strong><br>
+<!-- -->This tab consists of information related to the resource, like technical details, versions, and model type. Tagging and Domain details are also included in this section.</p>
+<p><strong>Usage</strong><br>
+<!-- -->This tab consist of code in <strong>Pixel</strong>, <strong>Python</strong> and <strong>Java</strong>. You can copy and use the code in any of the languages based on your Application code.</p>
+<p><strong>Metadata</strong><br>
+<!-- -->This tab is present in <strong>Database</strong> only and consists of information related to data present in the Database.</p>
+<p><strong>Settings</strong><br>
+<!-- -->This tab is present in <strong>My Resources</strong> and consists of adjustable settings related to resource. You can also add or remove members and give them permissions by their role. There is also an option to edit SMSS properties within the <strong>Settings</strong> tab.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="removing-an-app-from-semoss">Removing an App from SEMOSS<a href="#removing-an-app-from-semoss" class="hash-link" aria-label="Direct link to Removing an App from SEMOSS" title="Direct link to Removing an App from SEMOSS">​</a></h2>
+<p>If you ever want to remove an App from your SEMOSS server, the first thing that you should do is navigate to your settings sections (the gear).</p>
+<p><img loading="lazy" alt="Settings Tool" src="/documentation/assets/images/Settings Tool icon-6a4d859672c3e35c4daa9375970a6ff0.PNG" width="1884" height="860" class="img_ev3q"></p>
+<blockquote>
+<p><em>The settings tool</em></p>
+</blockquote>
+<p>Inside Settings, you should see a screen that has a settings sections for each of the resources you have in SEMOSS. Click on App Settings.</p>
+<p><img loading="lazy" alt="App Settings" src="/documentation/assets/images/CfGAI Settings_2-c6249d3bd48fe539d3c34d0e4a01bc91.PNG" width="1895" height="850" class="img_ev3q"></p>
+<blockquote>
+<p><em>This will house all the Gen AI apps that you have in your App Catalog</em></p>
+</blockquote>
+<p>Here you will see each of your apps listed individually. Click on the app that you would like to delete.</p>
+<p><img loading="lazy" alt="App Catalog in Settings Page" src="/documentation/assets/images/Navigating3-c744ba3f5a0b15a926b03ce51bb438ce.PNG" width="1589" height="783" class="img_ev3q"></p>
+<blockquote>
+<p><em>All of your Apps displayed</em></p>
+</blockquote>
+<p>Once inside an app, you can easily delete it by clicking the delete button.</p>
+<p><img loading="lazy" alt="Delete Button" src="/documentation/assets/images/Navigating4-797bdf24d8ffc35321b9e9738518636f.png" width="1499" height="752" class="img_ev3q"></p>
+<blockquote>
+<p><em>Delete Button</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Warning</strong>:
+This will <strong>delete</strong> the App for all users!</p>
+</blockquote>
+<p>This process can be replicated for all other resource types (databases, models, storage catalogs, etc) in SEMOSS!</p>
+<div style="width:640px;height:360px"></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="commonly-asked-questions">Commonly Asked Questions<a href="#commonly-asked-questions" class="hash-link" aria-label="Direct link to Commonly Asked Questions" title="Direct link to Commonly Asked Questions">​</a></h2>
+<ul>
+<li>
+<p><strong>What should we do if we encounter errors while using the platform?</strong></p>
+<p>For immediate issues, please take a screenshot of the error and share it via Teams, including the URL bar for context. If the error message is related to system capacity, such as limited GPU space, try again later or opt for a managed model.</p>
+</li>
+<li>
+<p><strong>Can models and other endpoints be called from outside environment like AWS compute or local system?</strong></p>
+<p>Yes, you can use the SDKs to set up authentication to access the resources in another environment. Please refer to the following page for more information:</p>
+<p><a href="/How To/Establish Connection to CFG Portal/OpenAI Endpoints with Python.md">How to establish connection to SEMOSS Portal</a></p>
+</li>
+<li>
+<p><strong>In models, can we edit parameters like temperature, etc.?</strong></p>
+<p>Yes, temperature and other parameters can be set up for models. Please refer to the following page for more information:</p>
+<p><a href="/Get Started/Navigation/Apps in CFG AI.mdx#3-playground.md">Playground App</a></p>
+</li>
+<li>
+<p><strong>How can we find descriptions of each model available?</strong></p>
+<p>Model descriptions are available in the metadata of each model.</p>
+</li>
+<li>
+<p><strong>How do we access different models and choose the most relevant one as per our needs?</strong></p>
+<p>It is recommended to experiment with various models to see which aligns best with your data. Navigate Model Overviews and use Tags to narrow your selection based on specific use case.</p>
+</li>
+<li>
+<p><strong>What is the difference between &#x27;Commercially Hosted&#x27;, &#x27;Locally Hosted&#x27;, and &#x27;Embedded&#x27; models?</strong></p>
+<p><strong>Commercially Hosted</strong>: Models like OpenAI and AWS Titan are closed systems.
+<strong>Locally Hosted</strong>: Ideal for clients who wish to use open-source models and maintain control over their data.
+<strong>Embedded</strong>: Typically involves fine-tuned models running directly within the same container, useful for specific data processing tasks.</p>
+</li>
+<li>
+<p><strong>How long does model response typically take?</strong></p>
+<p>Response times vary based on server load and the complexity of the query.</p>
+</li>
+<li>
+<p><strong>How do we select the appropriate embedder for our documents?</strong></p>
+<p>Choose an embedder based on the type of documents you are working with and prior data on which embedder has been trained to ensure accuracy and relevance in results.</p>
+</li>
+<li>
+<p><strong>Can we extract a string of text from an image in a document (e.g., a PDF)?</strong></p>
+<p>There is an optional routine we can run with a image to text model which not just extract the text but can also interpret the image so one can semantically search images. However, due to poor GPU capabilities, it is not exposed yet.</p>
+</li>
+<li>
+<p><strong>How many files/documents can be ingested into a vector database?</strong></p>
+<p>This depends on the size of the files, specific hardware and the environment.</p>
+</li>
+<li>
+<p><strong>How do we add documents to a vector catalog? Is it similar to training a RAG?</strong></p>
+<p>Adding documents involves embedding and indexing them within the catalog, its different from training a RAG (Retriever-Answer Generator).</p>
+</li>
+<li>
+<p><strong>Can vectors created in one model be utilized across other models?</strong></p>
+<p>Yes, vectors are typically interoperable across models, but effectiveness can depend on the similarity of the data types they were trained on.</p>
+</li>
+<li>
+<p><strong>Does each vector database connection (like Pinecone, FAISS etc.) use their own embedding methods like TFIDF or bag of words?</strong></p>
+<p>One can define the embedding method they want to use when creating a vector database.</p>
+</li>
+<li>
+<p><strong>Can a vector database be moved to a GCP environment or we should use a cloud native tool for that?</strong></p>
+<p>One can utilize a vector database hosted within a VPC or a cloud native tool as well.</p>
+</li>
+<li>
+<p><strong>Do vector databases support CSV/Excel files directly or do we need to consider additional things if we are using CSV/Excel files in vector database?</strong></p>
+<p>CSV/Excel files can be uploaded to a vector database, but there are some additional things that need to be provided for how these should be parsed. E.g, is it a column with text that you want to add? Are all columns concatenated together?</p>
+</li>
+<li>
+<p><strong>Can a new document be added to an already available database?</strong></p>
+<p>Yes, in the &quot;Files&quot; tab of the vector database, one can add or remove documents. Please see the following page for more information: <a href="/Get Started/Navigation/CFG AI Walkthrough.mdx#adding-a-vector-database.md">Adding a vector Database</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What&#x27;s Next?<a href="#whats-next" class="hash-link" aria-label="Direct link to What&#x27;s Next?" title="Direct link to What&#x27;s Next?">​</a></h2>
+<p>Finished with this guide?</p>
+<p>Check out one of the App Use Case Quick Start guides linked below to get a hands-on tutorial with your preferred frontend framework!</p>
+<ul>
+<li><a href="/documentation/How To/App Creation Guides/React App Quickstart Guide">React Quick Start Guide</a></li>
+<li><a href="/documentation/How To/App Creation Guides/VanillaJS App Quickstart Guide">Sample VanillaJS Use Case</a></li>
+<li><a href="/documentation/How To/App Creation Guides/Streamlit App Quickstart Guide">Sample Streamlit Use Case</a></li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documentation/category/for-administrators"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">For Administrators</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documentation/settings-overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Settings Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#app-library" class="table-of-contents__link toc-highlight">App Library</a></li><li><a href="#adding-a-model" class="table-of-contents__link toc-highlight">Adding a Model</a></li><li><a href="#adding-a-storage-source" class="table-of-contents__link toc-highlight">Adding a Storage Source</a><ul><li><a href="#using-a-storage-source" class="table-of-contents__link toc-highlight">Using a Storage Source</a></li></ul></li><li><a href="#adding-a-database" class="table-of-contents__link toc-highlight">Adding a Database</a><ul><li><a href="#pre-requisites" class="table-of-contents__link toc-highlight">Pre-requisites</a></li></ul></li><li><a href="#adding-a-vector-database" class="table-of-contents__link toc-highlight">Adding a Vector Database</a></li><li><a href="#access-to-resources" class="table-of-contents__link toc-highlight">Access to resources</a><ul><li><a href="#permission-levels" class="table-of-contents__link toc-highlight">Permission Levels</a></li><li><a href="#inside-the-resource" class="table-of-contents__link toc-highlight">Inside the resource</a></li></ul></li><li><a href="#removing-an-app-from-semoss" class="table-of-contents__link toc-highlight">Removing an App from SEMOSS</a></li><li><a href="#commonly-asked-questions" class="table-of-contents__link toc-highlight">Commonly Asked Questions</a></li><li><a href="#whats-next" class="table-of-contents__link toc-highlight">What&#39;s Next?</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 SEMOSS Documentation</div></div></div></footer></div>
+</body>
+</html>
