@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Getting Started/Quick Installation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Quick Installation (Docker) | SEMOSS</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://semoss.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://semoss.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://semoss.github.io/documentation/quick-installation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Quick Installation (Docker) | SEMOSS"><meta data-rh="true" name="description" content="This guide covers installing Docker and running SEMOSS in a Docker container. For local SEMOSS installation of SEMOSS instead, click here for the backend installation instructions and here for the frontend instructions."><meta data-rh="true" property="og:description" content="This guide covers installing Docker and running SEMOSS in a Docker container. For local SEMOSS installation of SEMOSS instead, click here for the backend installation instructions and here for the frontend instructions."><link data-rh="true" rel="icon" href="/documentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://semoss.github.io/documentation/quick-installation"><link data-rh="true" rel="alternate" href="https://semoss.github.io/documentation/quick-installation" hreflang="en"><link data-rh="true" rel="alternate" href="https://semoss.github.io/documentation/quick-installation" hreflang="x-default"><link rel="stylesheet" href="/documentation/assets/css/styles.c4193bed.css">
+<script src="/documentation/assets/js/runtime~main.5a895256.js" defer="defer"></script>
+<script src="/documentation/assets/js/main.367b6cb1.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documentation/"><div class="navbar__logo"><img src="/documentation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documentation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">SEMOSS</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/documentation/">Introduction</a></li><li><a class="dropdown__link" href="/documentation/category/get-started">Getting Started</a></li><li><a class="dropdown__link" href="/documentation/category/how-to">How To</a></li><li><a class="dropdown__link" href="/documentation/category/advanced-installation">Advanced Installation</a></li></ul></div></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/documentation/category/getting-started">Getting Started</a><button aria-label="Collapse sidebar category &#x27;Getting Started&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/features">Platform Features</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/documentation/quick-installation">Quick Installation</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/for-business-users">For Business Users</a><button aria-label="Expand sidebar category &#x27;For Business Users&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/for-administrators">For Administrators</a><button aria-label="Expand sidebar category &#x27;For Administrators&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/for-developers">For Developers</a><button aria-label="Expand sidebar category &#x27;For Developers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/documentation/category/advanced-installation">Advanced Installation</a><button aria-label="Expand sidebar category &#x27;Advanced Installation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/documentation/category/app-creation-guides">How To</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documentation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/documentation/category/getting-started"><span itemprop="name">Getting Started</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Quick Installation</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Quick Installation (Docker)</h1>
+<p>This guide covers installing Docker and running SEMOSS in a Docker container. For local SEMOSS installation of SEMOSS instead, click <strong><a href="/documentation/Local BE Install Guide.md">here</a></strong> for the <strong>backend</strong> installation instructions and <strong><a href="/documentation/Frontend Installation.md">here</a></strong> for the <strong>frontend</strong> instructions.</p>
+<p><strong>Please Note</strong></p>
+<p>If you don&#x27;t require administrative privileges and are seeking a <strong>simple and low-overhead</strong> method to access SEMOSS, it&#x27;s recommended that you use the <a href="https://workshop.cfg.deloitte.com/cfg-ai-demo/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">live web server</a>. You can find detailed instructions for setting up a connection to the web version in the <a href="/documentation/connecting-to-semoss">Connecting to SEMOSS</a> guide.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="docker-installation-guide">Docker Installation Guide<a href="#docker-installation-guide" class="hash-link" aria-label="Direct link to Docker Installation Guide" title="Direct link to Docker Installation Guide">​</a></h2>
+<blockquote>
+<p><strong>Note</strong>
+<strong>Quick Link</strong>: If you already created a Docker container for SEMOSS by following this guide, then you can jump directly to the shortcuts below to start your server:</p>
+<ul>
+<li><strong>For Windows:</strong> <a href="#running-an-existing-docker-container-on-windows">Running an Existing Docker Container on Windows</a></li>
+<li><strong>For Mac OSX:</strong> <a href="#running-an-existing-docker-container-on-mac">Running an Existing Docker Container on Mac</a></li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="download-docker">Download Docker<a href="#download-docker" class="hash-link" aria-label="Direct link to Download Docker" title="Direct link to Download Docker">​</a></h3>
+<p>If you already have Docker installed, you can skip to the next step (<a href="#accessing-the-cfg-ai-docker-repository">Accessing the SEMOSS Docker Repository</a>).</p>
+<p>If this is your first time installing Docker, please follow the installation guides for your operating system linked below:</p>
+<ul>
+<li><a href="https://docs.docker.com/desktop/install/windows-install/" target="_blank" rel="noopener noreferrer">Windows Docker Installation Guide​</a></li>
+<li><a href="https://docs.docker.com/desktop/install/mac-install/" target="_blank" rel="noopener noreferrer">OSX/Mac Docker Installation Guide​</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-the-semoss-docker-repository">Accessing the SEMOSS Docker Repository<a href="#accessing-the-semoss-docker-repository" class="hash-link" aria-label="Direct link to Accessing the SEMOSS Docker Repository" title="Direct link to Accessing the SEMOSS Docker Repository">​</a></h3>
+<ul>
+<li>Please reach out to your administrator to get access to the SEMOSS Docker Repository. You can only continue with the rest of the guide after receiving access.</li>
+<li>After being granted Docker repository access, log into the repository via Deloitte SSO.<!-- -->
+<ul>
+<li>If you are not automatically redirected to the SSO login, then click on the button that says <strong>&quot;Login via OIDC Provider&quot;</strong> to be redirected to the Deloitte SSO login.
+<img loading="lazy" alt="DockerRepo" src="/documentation/assets/images/repo-0855575d707b209d494c0dc725fb2cbb.png" width="1915" height="829" class="img_ev3q"></li>
+</ul>
+</li>
+<li>After logging in, <strong>click on your username in the top right hand corner</strong>, then click <strong>User Profile</strong> in the dropdown menu.</li>
+<li>In your user profile, look for the <strong>CLI secret</strong> field. Click on the blue copy icon to the right to copy it to your clipboard.
+<img loading="lazy" alt="secretkey" src="/documentation/assets/images/secretkey-64b3f3e663845a0f56a50bfc0c4f17a5.png" width="1920" height="841" class="img_ev3q"></li>
+<li>Make sure that your Docker Desktop is currently running. If it is not, then launch the Docker Desktop app.</li>
+<li>Open up a new command prompt/terminal and enter the following command: <code>docker login DOCKER_REPOSITORY_URL</code>, and replace <code>DOCKER_REPOSITORY_URL</code> with the repository link that your administrator provided you.<!-- -->
+<ul>
+<li>It will take a few moments to connect.</li>
+<li>When it prompts for your username, enter your <strong>Deloitte email address</strong></li>
+<li>When it prompts for your password, hit ctrl-V <em>ONCE</em> to paste the password that you copied from your user profile details (or command-V for Mac), then hit enter.<!-- -->
+<ul>
+<li><strong>Note: The password will not appear in the terminal when you paste it</strong>, so be careful to only hit ctrl-v/command-V once (and do not type in anything else), followed by enter.</li>
+</ul>
+</li>
+<li>It may take a few moments for the authentication to complete. Once complete, a message will say <strong>&quot;Login succeeded&quot;</strong></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="windows-instructions">Windows Instructions<a href="#windows-instructions" class="hash-link" aria-label="Direct link to Windows Instructions" title="Direct link to Windows Instructions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="download-the-helper-scripts">Download the Helper Scripts<a href="#download-the-helper-scripts" class="hash-link" aria-label="Direct link to Download the Helper Scripts" title="Direct link to Download the Helper Scripts">​</a></h3>
+<ul>
+<li>Click <a target="_blank" href="/documentation/assets/files/windows_docker_starter_scripts-f5e15001d7195457455861ae839b1b4e.zip">here</a> to download a zip file called <code>windows_docker_starter_scripts.zip</code>.</li>
+<li>Unzip this folder to any location and copy its path. This guide will refer to this path as <code>SEMOSS_DOCKER_DIR</code>. For example, in the image below, the <code>SEMOSS_DOCKER_DIR</code> folder path is <code>C:\workspace\cfgai-docs\assets\windows_docker_starter_scripts</code>
+<img loading="lazy" alt="SEMOSS Docker Directory" src="/documentation/assets/images/SemossDockerDir-ed82c11df98120c5b9528df233c494a3.png" width="1437" height="633" class="img_ev3q"></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="set-up-your-container-and-volume">Set Up Your Container and Volume<a href="#set-up-your-container-and-volume" class="hash-link" aria-label="Direct link to Set Up Your Container and Volume" title="Direct link to Set Up Your Container and Volume">​</a></h3>
+<ul>
+<li>Open up a command prompt and navigate to the <code>SEMOSS_DOCKER_DIR</code> by running <code>cd SEMOSS_DOCKER_DIR</code> (replace <code>SEMOSS_DOCKER_DIR</code> with the actual folder path you copied in the previous step).</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>
+The helper scripts default to using port 8080 to host SEMOSS. If port 8080 is blocked on your computer and you wish to use a different port, then use any text editor (VSCode or Notepad++) to edit both <strong>init.bat</strong> and <strong>startAIServer.bat</strong> by replacing the <code>8080</code> in the lines that say <code>set ACTIVE_PORT=8080</code> with your desired port number</p>
+</blockquote>
+<ul>
+<li>In the command prompt, type <code>init.bat</code> and hit enter.<!-- -->
+<ul>
+<li>You will see some output and auto-executed commands appear (see below image for reference) while Docker pulls the image and the script runs. This process may take up to 45 minutes depending on your connection speed.
+<img loading="lazy" alt="init.bat Output" src="/documentation/assets/images/initBatOutput-d18589282584d10294e3e7d2aa29fb62.png" width="2229" height="1503" class="img_ev3q"></li>
+</ul>
+</li>
+<li>Once it completes, your browser window will automatically open 2 tabs.</li>
+<li>Access the tab at <a href="http://localhost:8080/Monolith/setAdmin/" target="_blank" rel="noopener noreferrer">http://localhost:8080/Monolith/setAdmin/</a> to designate an admin user.
+<img loading="lazy" alt="Admin Username" src="/documentation/assets/images/AdminUsername-d902bfaf55599c1cd42475acac433aea.png" width="3840" height="2050" class="img_ev3q">
+<ul>
+<li>You will see a table appear with an input field to enter your admin credentials.</li>
+<li>Since we are creating a native account, you can enter in any username you want.  Please remember the username you entered.</li>
+<li>Click &quot;Submit&quot; after typing in your username. Do not worry if the page does not respond/redirect: this is normal. As long as you clicked the submit button, your admin username has been stored.</li>
+</ul>
+</li>
+<li>Close this tab and navigate to the other tab at <a href="http://localhost:8080/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">http://localhost:8080/SemossWeb/packages/client/dist/</a> and click on the <strong>Register Now</strong> link
+<img loading="lazy" alt="Native Registration Button" src="/documentation/assets/images/NativeRegistrationButton-447e2ebdf50284e99593e9c24ff2380c.png" width="1315" height="1257" class="img_ev3q">
+<ul>
+<li>Fill out the fields for Name, Last Name, Username, Email Address, Password, and Confirm Password.
+<img loading="lazy" alt="Register User" src="/documentation/assets/images/RegisterUser-46808d5c14059a6175bd5c47a7b52550.png" width="1317" height="1440" class="img_ev3q"></li>
+<li><strong>Important</strong>: Make sure your the username you enter matches the username that you created earlier when setting up your admin account.</li>
+</ul>
+</li>
+<li>The page will return to the login after successfully creating your account. Enter the username and password you just created, then click <strong>&quot;Login with Native&quot;</strong>.
+<img loading="lazy" alt="Native Login Entry" src="/documentation/assets/images/NativeLoginEntry-d512e97ef64c68de9a8d6ba63c7f1846.png" width="1335" height="1392" class="img_ev3q"></li>
+<li>The page will redirect to the SEMOSS App Library Landing page.
+<img loading="lazy" alt="App Library Landing" src="/documentation/assets/images/AppLibraryLanding-aac6bd3f115ed0ed5bf77edf564eed60.png" width="3840" height="1757" class="img_ev3q"></li>
+<li>Return to your command terminal, making sure it is still in the <code>SEMOSS_DOCKER_DIR</code>.</li>
+<li>Run:<!-- -->
+<ul>
+<li><code>cloneAIServer.bat</code></li>
+<li><code>startAIServer.bat</code>
+<img loading="lazy" alt="cloneAIServer.bat and startAIServer.bat output" src="/documentation/assets/images/cloneAndStartBat-e965e066d534ecf3bc059c92a19ca5b3.png" width="2341" height="1755" class="img_ev3q"></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="shutdown-and-clean-up">Shutdown and Clean Up<a href="#shutdown-and-clean-up" class="hash-link" aria-label="Direct link to Shutdown and Clean Up" title="Direct link to Shutdown and Clean Up">​</a></h3>
+<ul>
+<li>To stop running the Docker container, open up a new command terminal, then run:<!-- -->
+<ul>
+<li><code>cd SEMOSS_DOCKER_DIR</code></li>
+<li><code>stopAIServer.bat</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="running-an-existing-docker-container-on-windows">Running an Existing Docker Container on Windows<a href="#running-an-existing-docker-container-on-windows" class="hash-link" aria-label="Direct link to Running an Existing Docker Container on Windows" title="Direct link to Running an Existing Docker Container on Windows">​</a></h3>
+<ul>
+<li>To start running a container, open up a command prompt at the <code>SEMOSS_DOCKER_DIR</code> and run <code>startAIServer.bat</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mac-osx-instructions">Mac OSX Instructions<a href="#mac-osx-instructions" class="hash-link" aria-label="Direct link to Mac OSX Instructions" title="Direct link to Mac OSX Instructions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pulling-the-docker-image">Pulling the Docker Image<a href="#pulling-the-docker-image" class="hash-link" aria-label="Direct link to Pulling the Docker Image" title="Direct link to Pulling the Docker Image">​</a></h3>
+<ul>
+<li>Navigate to the Docker Repository URL that your administrator provided to you. You will see a list of projects.</li>
+<li>Click on the <strong>genai</strong> project, and then <strong>genai/genai-server</strong>.
+<img loading="lazy" alt="repo2" src="/documentation/assets/images/repo2-80bdd2e37f61d481dc270f9ea737fe00.png" width="1910" height="849" class="img_ev3q"></li>
+<li>In the table that appears, look for the header that says <strong>&quot;Push Time&quot;</strong>. Click twice on this header to sort the table from <strong>most recent to oldest</strong>.</li>
+<li>In the first row on the table (the most recent image), click on the <strong>&quot;Copy&quot;</strong> icon in the <strong>&quot;Pull Command&quot;</strong> column.
+<img loading="lazy" alt="repo3" src="/documentation/assets/images/repo3-fc7824fe720754a87559b3b7612384bb.png" width="1919" height="833" class="img_ev3q"></li>
+<li>In a command prompt/terminal, paste the command that you just copied. It should start with <code>docker pull DOCKER_REPOSITORY_URL ...</code>
+<ul>
+<li>It may take a while (between 5 - 45 minutes, depending on your internet connection speed) to finish pulling.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-a-new-docker-container-from-the-image">Creating a New Docker Container from the Image<a href="#creating-a-new-docker-container-from-the-image" class="hash-link" aria-label="Direct link to Creating a New Docker Container from the Image" title="Direct link to Creating a New Docker Container from the Image">​</a></h3>
+<ul>
+<li>Enter the following command to list your images: <code>docker images</code></li>
+<li>Find the row in the output that says <code>DOCKER_REPOSITORY_URL/genai/genai-server</code> under the <strong>REPOSITORY</strong> heading. This corresponds to the image that was just pulled.
+<img loading="lazy" alt="Docker Images Output" src="/documentation/assets/images/DockerImages-90d44238290fd221d285b1833fbb51cf.png" width="2430" height="329" class="img_ev3q"></li>
+<li>Copy the value under <strong>IMAGE ID</strong> for that row.</li>
+<li>Tag your image with a nickname called <code>genai-image</code> by executing the following command: <code>docker tag YOUR_IMAGE_ID genai-image:latest</code>
+<ul>
+<li>Replace <code>YOUR_IMAGE_ID</code> in the above command with the actual <strong>IMAGE ID</strong> that you copied from the previous step.</li>
+<li><code>latest</code> identifies that this is the <strong>most recent</strong> image.
+<img loading="lazy" alt="Docker Tag Output" src="/documentation/assets/images/DockerTag-53cb581b4e77e7ccdbb4b12fc5ca2caa.png" width="2421" height="425" class="img_ev3q"></li>
+</ul>
+</li>
+<li>Enter the following command to run a container from the image: <code>docker run -d -p 8080:8080 --name genAI genai-image</code>
+<ul>
+<li><strong>-d tag:</strong> The <code>-d</code> tag runs the Docker container in <strong>detached mode</strong>, which allows the container to keep running even after you close the command line/terminal window.
+If you want the Docker container to automatically shut down when you close the command line/terminal, you can <strong>omit the <code>-d</code> tag</strong>.</li>
+<li><strong><code>-p</code> tag:</strong> The <code>-p</code> tag, followed by the <code>8080:8080</code> argument, specifies the mapping of the container port (8080) to your local machine&#x27;s port (8080).<!-- -->
+<ul>
+<li>If you already have a different process running on port 8080 locally, you can replace the <strong>first</strong> <code>8080</code> with any other open port (ex. <code>9090:8080</code>).</li>
+</ul>
+</li>
+<li><strong><code>--name</code> tag:</strong> This allows you to specify a nickname/alias for your container. We set it to <code>genAI</code>, but you can replace it.</li>
+<li><strong><code>genai-image</code></strong>: This is the nickname for the image that we tagged in the previous step.</li>
+</ul>
+</li>
+<li>After you enter the command, you will see an alphanumeric string output in the command prompt/terminal.
+<img loading="lazy" alt="Docker Run Output" src="/documentation/assets/images/DockerRun-002c2c9ec6ae8126f6b795c1c10edd11.png" width="2284" height="275" class="img_ev3q"></li>
+<li>You can verify that the container is running by entering the following command: <code>docker ps</code>
+<ul>
+<li>This will list all of the containers you have running. You should see a row with the name <code>genAI</code> (or whatever alias you set in your <code>docker run</code> command).</li>
+</ul>
+</li>
+<li>In your browser, navigate to <a href="http://localhost:8080/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">http://localhost:8080/SemossWeb/packages/client/dist/</a>
+<ul>
+<li><strong>Hint</strong>: If you used a different port than 8080 in your <code>docker run</code> command, make sure to replace it in the above link.
+<img loading="lazy" alt="Initial Login" src="/documentation/assets/images/InitialLogin-c7194d30a4c776acbaa16f7fed0ccd9e.png" width="3840" height="1876" class="img_ev3q"></li>
+</ul>
+</li>
+<li>Accept the cookies if prompted, and you will see the SEMOSS login landing page.<!-- -->
+<ul>
+<li>Note that this login page will not have an option to enter username/password yet as we still need to enable native user account registration.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-an-admin-and-registering-for-a-native-account">Creating an Admin and Registering for a Native Account<a href="#creating-an-admin-and-registering-for-a-native-account" class="hash-link" aria-label="Direct link to Creating an Admin and Registering for a Native Account" title="Direct link to Creating an Admin and Registering for a Native Account">​</a></h3>
+<ul>
+<li>Return to your command line/terminal window, and run the following command to connect to a bash shell inside of the container: <code>docker exec -it genAI /bin/bash</code>
+<img loading="lazy" alt="Docker Exec Output" src="/documentation/assets/images/DockerExec-a4cd763f9accf00f2a4454e08e5c8eff.png" width="1222" height="409" class="img_ev3q">
+<ul>
+<li>If you named your container something different than <code>genAI</code>, then replace <code>genAI</code> with the alias you set.</li>
+<li>If you enter the shell successfully, you should see that the terminal prompter looks like: <code>root@XXXXXXXX/opt/semoss-artifacts/artifacts/scripts</code></li>
+</ul>
+</li>
+<li>In the shell, run the following commands:<!-- -->
+<ul>
+<li><code>cd /opt/semosshome/</code></li>
+<li><code>sed -i &#x27;s|&lt;NATIVE_ENABLE&gt;|true|&#x27; social.properties</code></li>
+<li><code>sed -i &#x27;s|&lt;NATIVE_REGISTRATION_ENABLE&gt;|true|&#x27; social.properties</code></li>
+<li><code>sed -i &#x27;s|&lt;REDIRECT&gt;|http://localhost:8080/SemossWeb/packages/client/dist|&#x27; social.properties</code></li>
+<li><code>head social.properties</code>
+<img loading="lazy" alt="Bash Commands" src="/documentation/assets/images/BashCommands-8018d522b540b9a826449878846349dd.png" width="2550" height="760" class="img_ev3q"></li>
+</ul>
+</li>
+<li>Verify that the first 4 lines of output from the last command match what is below:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> redirect http://localhost:8080/SemossWeb/packages/client/dist</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  #Logins Enabled/Disabled</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  native_login true</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  native_registration true</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>Next, run the following commands:<!-- -->
+<ul>
+<li><code>$TOMCAT_HOME/bin/stop.sh</code></li>
+<li><code>$TOMCAT_HOME/bin/start.sh</code>
+<img loading="lazy" alt="Tomcat Restart" src="/documentation/assets/images/TomcatRestart-cbabe98af0a95b31aa45327e4f50e15c.png" width="2235" height="1275" class="img_ev3q"></li>
+</ul>
+</li>
+<li>You will see some logs and output begin to appear in the terminal. Return to a browser window and navigate to <a href="http://localhost:8080/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">http://localhost:8080/SemossWeb/packages/client/dist/</a>
+<img loading="lazy" alt="Native Login" src="/documentation/assets/images/NativeLogin-aec3cf238c71f9854278ee5bf4a6de51.png" width="3840" height="2059" class="img_ev3q"></li>
+<li>Verify that an option to enter a username and password has now appeared on the login page. Do not login or register yet.</li>
+<li>Now, you will designate an admin user. Navigate to this link: <a href="http://localhost:8080/Monolith/setAdmin/" target="_blank" rel="noopener noreferrer">http://localhost:8080/Monolith/setAdmin/</a>
+<img loading="lazy" alt="Admin Username" src="/documentation/assets/images/AdminUsername-d902bfaf55599c1cd42475acac433aea.png" width="3840" height="2050" class="img_ev3q">
+<ul>
+<li>You will see a table appear with an input field to enter your admin credentials</li>
+<li>Since we are creating a native account, you can enter in any username you want.  Please remember the username you entered.</li>
+<li>Click &quot;Submit&quot; after typing in your username. Do not worry if the page does not respond/redirect: this is normal. As long as you clicked the submit button, your admin username has been stored.</li>
+</ul>
+</li>
+<li>Return to <a href="http://localhost:8080/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">http://localhost:8080/SemossWeb/packages/client/dist/</a> and click on the <strong>Register Now</strong> link
+<img loading="lazy" alt="Native Registration Button" src="/documentation/assets/images/NativeRegistrationButton-447e2ebdf50284e99593e9c24ff2380c.png" width="1315" height="1257" class="img_ev3q">
+<ul>
+<li>Fill out the fields for Name, Last Name, Username, Email Address, Password, and Confirm Password.
+<img loading="lazy" alt="Register User" src="/documentation/assets/images/RegisterUser-46808d5c14059a6175bd5c47a7b52550.png" width="1317" height="1440" class="img_ev3q"></li>
+<li><strong>Important</strong>: Make sure your the username you enter matches the username that you created earlier when setting up your admin account.</li>
+</ul>
+</li>
+<li>The page will return to the login after successfully creating your account. Enter the username and password you just created, then click <strong>&quot;Login with Native&quot;</strong>.
+<img loading="lazy" alt="Native Login Entry" src="/documentation/assets/images/NativeLoginEntry-d512e97ef64c68de9a8d6ba63c7f1846.png" width="1335" height="1392" class="img_ev3q"></li>
+<li>The page will redirect to the SEMOSS App Library Landing page.
+<img loading="lazy" alt="App Library Landing" src="/documentation/assets/images/AppLibraryLanding-aac6bd3f115ed0ed5bf77edf564eed60.png" width="3840" height="1757" class="img_ev3q"></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="stopping-the-container">Stopping the Container<a href="#stopping-the-container" class="hash-link" aria-label="Direct link to Stopping the Container" title="Direct link to Stopping the Container">​</a></h3>
+<p>To stop the container, open up a <strong>new command prompt/terminal</strong> and enter the following command: <code>docker stop genAI</code></p>
+<ul>
+<li>If you named your container something different than <code>genAI</code>, then replace <code>genAI</code> with the alias you set.
+<img loading="lazy" alt="Docker Stop Output" src="/documentation/assets/images/DockerStop-78927cd1c5bd359bd0bf6d84b06bc3ea.png" width="1445" height="601" class="img_ev3q"></li>
+</ul>
+<blockquote>
+<p><strong>Warning</strong>
+Do not delete your <code>genAI</code> docker container. If you accidentally delete it using <code>docker rm</code>, <code>docker system prune</code>, or <code>docker container prune</code>, then you must redo the steps starting from the <a href="#creating-a-new-docker-container-from-the-image">Creating a New Docker Container from the Image</a> section of this guide.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="running-an-existing-docker-container-on-mac">Running an Existing Docker Container on Mac<a href="#running-an-existing-docker-container-on-mac" class="hash-link" aria-label="Direct link to Running an Existing Docker Container on Mac" title="Direct link to Running an Existing Docker Container on Mac">​</a></h3>
+<p>Now that you have created a Docker container to run SEMOSS, you can run it directly by entering <code>docker start genAI</code> in a command line/terminal. Then, navigate to <a href="http://localhost:8080/SemossWeb/packages/client/dist/" target="_blank" rel="noopener noreferrer">http://localhost:8080/SemossWeb/packages/client/dist/</a> in your browser to log in.
+<img loading="lazy" alt="Docker Start Output" src="/documentation/assets/images/DockerStart-23e6487fc8dd5ef5ab99d7fdff71df6e.png" width="2280" height="447" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What&#x27;s Next?<a href="#whats-next" class="hash-link" aria-label="Direct link to What&#x27;s Next?" title="Direct link to What&#x27;s Next?">​</a></h2>
+<p>Want to start developing apps with SEMOSS? Learn how to use the SEMOSS Software Development Kit (SEMOSS SDK) in the <a href="/documentation/using-sdk">SEMOSS SDK Guide</a>.</p>
+<p>If you&#x27;ve already finished that, try out one of the <strong>App Use Case Quick Start guides</strong> linked below to get a hands-on tutorial with your preferred frontend framework!</p>
+<ul>
+<li><a href="/documentation/How To/App Creation Guides/React App Quickstart Guide">React Quick Start Guide</a></li>
+<li><a href="/documentation/How To/App Creation Guides/React App In-Depth Guide">Using React Locally</a></li>
+<li><a href="/documentation/How To/App Creation Guides/VanillaJS App Quickstart Guide">Sample VanillaJS Use Case</a></li>
+<li><a href="/documentation/How To/App Creation Guides/Streamlit App Quickstart Guide">Sample Streamlit Use Case</a></li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documentation/features"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Platform Features</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documentation/category/for-business-users"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">For Business Users</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#docker-installation-guide" class="table-of-contents__link toc-highlight">Docker Installation Guide</a><ul><li><a href="#download-docker" class="table-of-contents__link toc-highlight">Download Docker</a></li><li><a href="#accessing-the-semoss-docker-repository" class="table-of-contents__link toc-highlight">Accessing the SEMOSS Docker Repository</a></li></ul></li><li><a href="#windows-instructions" class="table-of-contents__link toc-highlight">Windows Instructions</a><ul><li><a href="#download-the-helper-scripts" class="table-of-contents__link toc-highlight">Download the Helper Scripts</a></li><li><a href="#set-up-your-container-and-volume" class="table-of-contents__link toc-highlight">Set Up Your Container and Volume</a></li><li><a href="#shutdown-and-clean-up" class="table-of-contents__link toc-highlight">Shutdown and Clean Up</a></li><li><a href="#running-an-existing-docker-container-on-windows" class="table-of-contents__link toc-highlight">Running an Existing Docker Container on Windows</a></li></ul></li><li><a href="#mac-osx-instructions" class="table-of-contents__link toc-highlight">Mac OSX Instructions</a><ul><li><a href="#pulling-the-docker-image" class="table-of-contents__link toc-highlight">Pulling the Docker Image</a></li><li><a href="#creating-a-new-docker-container-from-the-image" class="table-of-contents__link toc-highlight">Creating a New Docker Container from the Image</a></li><li><a href="#creating-an-admin-and-registering-for-a-native-account" class="table-of-contents__link toc-highlight">Creating an Admin and Registering for a Native Account</a></li><li><a href="#stopping-the-container" class="table-of-contents__link toc-highlight">Stopping the Container</a></li><li><a href="#running-an-existing-docker-container-on-mac" class="table-of-contents__link toc-highlight">Running an Existing Docker Container on Mac</a></li></ul></li><li><a href="#whats-next" class="table-of-contents__link toc-highlight">What&#39;s Next?</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 SEMOSS Documentation</div></div></div></footer></div>
+</body>
+</html>
