@@ -1,3 +1,9 @@
+---
+sidebar_label: "SEMOSS Installation"
+sidebar_position: 4
+slug: "/semoss-installation"
+---
+
 ## Table of Contents
 
 *    [Semoss Installation for Windows](#Semoss-Installation-for-Windows)
@@ -65,7 +71,7 @@ Click on [node.js](https://nodejs.org/download/release/v18.16.0/)
   - Type 'node -v' and hit enter
   - This should return the version of the node installed
 
-### maven
+### Maven
 Click on [Maven](https://maven.apache.org/download.cgi)
 - Click the download link beside Binary zip archive, and unzip this to your Documents folder
 
@@ -894,22 +900,23 @@ BaseFolder C:\\workspace\\Semoss to your Semoss folder
 ### Create settings.xml
 - Add a settings.xml into your ~/.m2 directory
   - If you do not see this folder in your finder, open finder and use command+shift+. (dot) to see hidden files/folders
-  ```
 - Save the below into a file named settings.xml in ~/.m2  (under you user home)
-\<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+```xml 
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  \<servers\>
-    \<server\>
-      \<id\>3rdPartyJARs\</id\>
-      \<username\>semossdevuser\</username\>
-      \<password\>foxhole\</password\>
-      \<configuration\>\</configuration\>
-    \</server\>
-  \</servers\>
-\</settings>\
+  <servers>
+    <server>
+      <id>3rdPartyJARs</id>
+      <username>semossdevuser</username>
+      <password>foxhole</password>
+      <configuration></configuration>
+    </server>
+  </servers>
+</settings> 
 ```
+
 ![Semoss](../../../static/img/SemossDevInstallation/Mac9.png)
 
 ### Update Maven
@@ -1023,7 +1030,7 @@ PATH=/Library/Frameworks/R.framework/Resources/bin R_DOC_DIR=/Library/Frameworks
 - Open workspace/Semoss/RDF_Map.prop
 - Edit Line 23: USE_PYTHON true
 - Edit Line starting with LD_LIBRARY_PATH:
-  - For LD_LIBRARY_PATH, insert your Python Home directory where it says “{{INPUT_YOUR_PYTHON_HOME}}”
+  - For LD_LIBRARY_PATH, insert your Python Home directory where it says `“{{INPUT_YOUR_PYTHON_HOME}}”`
   - Remember to take out the braces (i.e. LD_LIBRARY_PATH must point to a valid path)
 
  ![Semoss](../../../static/img/SemossDevInstallation/Mac14.png)
@@ -1235,7 +1242,7 @@ PATH=/Library/Frameworks/R.framework/Resources/bin R_DOC_DIR=/Library/Frameworks
 	- Check the jce.jar and jsse.jar boxes so that Monolith will inherit
 	- You may need to go through the Refresh steps
  
-![Semoss](../../../static/img/SemossDevInstallation/Trick20.png)
+![Semoss](../../../static/img/SemossDevInstallation/Trick20.jpg)
 
 ![Semoss](../../../static/img/SemossDevInstallation/Trick21.png)
 
@@ -1296,15 +1303,15 @@ PATH=/Library/Frameworks/R.framework/Resources/bin R_DOC_DIR=/Library/Frameworks
 	- “Path” and “Document Base” should have the same name as your Monolith project (ex. Monolith)
 
  **Server In Use**
--If you are getting a message that your server port is already in use, follow these steps:
-	- Close Eclipse
-	- Open Command prompt as an Administrator
-	- Run the command: `netstat -ano | findstr : <9090>`
-	- Replace `<9090>` with the port number that is in use if it is different
-	- The output will specify the process identifier that is running (numbers to the right of ‘LISTENING’)
-	- Run the command: taskkill /PID <PID> /F
-	- Replace <PID> with the process identifier in step 4
-	- Reopen Eclipse as an Administrator and start server
+- If you are getting a message that your server port is already in use, follow these steps:
+- Close Eclipse
+- Open Command prompt as an Administrator
+- Run the command: `netstat -ano | findstr :<9090>`
+- Replace `<9090>` with the port number that is in use if it is different
+- The output will specify the process identifier that is running (numbers to the right of ‘LISTENING’)
+- Run the command: `taskkill /PID <PID> /F`
+- Replace `<PID>` with the process identifier in step 4
+- Reopen Eclipse as an Administrator and start the server
 
  **Missing R Packages**
 - Open the R console

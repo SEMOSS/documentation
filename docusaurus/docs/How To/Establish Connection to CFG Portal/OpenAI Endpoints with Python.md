@@ -1,24 +1,26 @@
 ---
-sidebar_label: 'OpenAI Endpoints with Python'
-sidebar_position: 4
+sidebar_label: "OpenAI Endpoints with Python"
+sidebar_position: 5
+slug: "/openai-python"
 ---
-# Utilizing CFG Models through OpenAI APIs
 
+# Utilizing CFG Models through OpenAI APIs
 
 ## 1. Overview
 
 OpenAI is one of the pioneering companies within the AI landscape. As such, most packages ensure integration with the OpenAI API. Therefore, we have decided to follow suit and allow any CFG Model Engines to be accessed via the OpenAI API.
 
 We supposrt the following endpoints listed on the OpenAI website:
+
 - [Chat Completions](https://platform.openai.com/docs/guides/text-generation/chat-completions-api)
 - [Completions](https://platform.openai.com/docs/guides/text-generation/completions-api)
 - [Embeddings](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings)
 
-## 2. Installation Guide 
+## 2. Installation Guide
 
-### Generate Access Key from your AI Platform 
+### Generate Access Key from your AI Platform
 
-The first step to gaining access to the data stored in your SEMOSS platform is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide. 
+The first step to gaining access to the data stored in your SEMOSS platform is to generate an access key and a secret key. To do this, click on the link below. After you have generated your keys, navigate back to this guide.
 
 [Generate Access Key](./Connecting%20to%20CFG%20AI.md#generating-access-and-secret-keys)
 
@@ -26,20 +28,23 @@ The first step to gaining access to the data stored in your SEMOSS platform is t
 
 A [new OpenAI Python](https://github.com/openai/openai-python/discussions/742) library was recently released. We provide examples of how to use the current major version (openai >= 1.0.0) and the old major version (openai \<= 0.28.1).
 
-Open up a command prompt or terminal. 
+Open up a command prompt or terminal.
 Then, run the following commands to install OpenAI Python API library and AI Platform Python library:
 
 ##### openai
+
 ```
 pip install openai
 pip install --upgrade ai-server-sdk
 ```
 
 ##### openai \<= 0.28.1
+
 ```
 pip install openai<=0.28.1
 pip install --upgrade ai-server-sdk
 ```
+
 > **Note**
 > This guide assumes that you already have Python (3.9+) and pip installed. If you do not, please follow the [Back End Setup](../../Advanced%20Installation/Local%20BE%20Install%20Guide.md) section first.
 
@@ -49,9 +54,10 @@ In this walkthrough we will use existing code from the above endpoints and modif
 
 ### Step 3.1: **Create a connection to the AI Platform**
 
-Every api call that is made usually requires some level of authentication. First we store our credentials so that they only have to be passed once. 
+Every api call that is made usually requires some level of authentication. First we store our credentials so that they only have to be passed once.
 
 **Please note**: This step is required before moving to any other step.
+
 ```python
 # import the ai platform package
 import ai_server
@@ -84,7 +90,7 @@ client = OpenAI(
 )
 ```
 
-### Step 3.3: **Modifying the Code** 
+### Step 3.3: **Modifying the Code**
 
 We are going to modify the existing examples for each of the endpoints above.
 
@@ -131,6 +137,7 @@ response = client.completions.create(
     extra_body={"insight_id":server_connection.cur_insight} # add the insight_id as an extra param
 )
 ```
+
 #### Embeddings
 
 ```python
@@ -164,7 +171,7 @@ http_client = httpx.Client()
 http_client.cookies=server_connection.cookies
 
 chat = ChatOpenAI(
-    api_key="EMPTY", 
+    api_key="EMPTY",
     base_url=server_connection.get_openai_endpoint(),
     default_headers=server_connection.get_auth_headers(),
     extra_body={"insight_id":server_connection.cur_insight},
