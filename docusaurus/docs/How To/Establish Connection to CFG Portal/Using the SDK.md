@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'Using the SDK'
 sidebar_position: 3
+slug: "/using-sdk"
 ---
 # Using the SEMOSS SDK
 
